@@ -23,29 +23,9 @@ class Solution:
             hashSet.add(n)
         return False
 
+# valid anagram
+# Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        
-        
-        if len(s) != len(t):
-            return False
+# Solution : counting each value and putting it an hashMap and compare if it true or false:
+#  {a : 3 , g : 1 , r : 1 , m : 1} and compare with other hashmap
 
-        countS, countT = {} , {}
-
-        for i in range(len(s)):
-            countS[s[i]] = 1 + countS.get(s[i] ,0)
-            countT[s[i]] = 1 + countT.get(t[i] ,0)
-        return countS == countT
-
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
-            return False
-
-        countS, countT = {}, {}
-
-        for i in range(len(s)):
-            countS[s[i]] = 1 + countS.get(s[i], 0)
-            countT[t[i]] = 1 + countT.get(t[i], 0)
-        return countS == countT
