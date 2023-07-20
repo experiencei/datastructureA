@@ -58,9 +58,10 @@ class Solution:
 # Specifically, ans is the concatenation of two nums arrays.
 
 # Solution : is concatenating array is by tutning [ 1 , 3 , 5] to [1 , 3 , 5 , 1 , 3 , 5].
-# the first approach is creating an empty [] and concatenate in n time
+# the first approach is creating an empty [] and concatenate in n time which is two times and 
+# the Time complexity is 0(n)
 class Solution:
-    def concatenateArray(self, nums: list(int))-> list(int):
+    def concatenateArray(self, nums: list[int])-> list[int]:
         ans = []
         for i in range(2):
             for n in nums:
