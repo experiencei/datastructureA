@@ -88,3 +88,15 @@ class Solution:
         # Efficient
 # now in reverse order getting the maximal values from back first and store it before comparison
 #    which is now new[0] = Max(arr[i] , prev[i])   meaning we're getting for five different value
+class Solution:
+    def replaceElement(self, arr:list[int]) -> list[int]:
+        #initial Max = -1
+        # reverse iteration
+        # new max = max(oldmax , arr[i])
+        rightMax = -1
+        for i in range(len(arr) -1 , -1  , -1):
+            newMax = max(arr[i], rightMax)
+            arr[i] = rightMax
+            rightMax = newMax
+        return arr
+
