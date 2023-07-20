@@ -79,3 +79,6 @@ class Solution:
 
 # Input: arr = [17,18,5,4,6,1]
 # Output: [18,6,6,6,1,-1]
+
+# Solution : [17,18,5,4,6,1] to get the new maximum value in array 
+# e.g for new[0] = Max(arr[1: 5])
