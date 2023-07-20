@@ -82,3 +82,5 @@ class Solution:
 
 # Solution : [17,18,5,4,6,1] to get the new maximum value in array 
 # e.g for new[0] = Max(arr[1: 5])
+        # new[1] = Max(arr[2: 5])
+        # new[2] = Max(arr[3: 5]) instead of repititive work what if we shorten it to a comparison
