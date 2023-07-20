@@ -24,7 +24,7 @@ class Solution:
         return False
 
 # valid anagram
-# Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+# QUESTION -->  Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 
 # Solution : counting each value and putting it an hashMap and compare if it true or false:
 #  {a : 3 , g : 1 , r : 1 , m : 1} and compare with other hashmap and validate the same length as well 
@@ -52,3 +52,10 @@ class Solution:
             countS[s[i]] = 1 + countS.get(s[i], 0)
             countT[t[i]] = 1 + countT.get(t[i], 0)
         return countS == countT
+
+# Concatenation of an array
+# Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
+# Specifically, ans is the concatenation of two nums arrays.
+
+# Solution : is concatenating array is by tutning [ 1 , 3 , 5] to [1 , 3 , 5 , 1 , 3 , 5].
+# the first approach is creating an empty [] and concatenate in n time
