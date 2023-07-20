@@ -81,9 +81,9 @@ class Solution:
 # Output: [18,6,6,6,1,-1]
 
 # Solution : [17,18,5,4,6,1] to get the new maximum value in array 
-# e.g for new[0] = Max(arr[1: 5])
+# e.g for new[0] = Max(arr[1: 5]) meaning we're getting for five different value
         # new[1] = Max(arr[2: 5])
         # new[2] = Max(arr[3: 5]) instead of repititive work what if we shorten it to a comparison
-
+        # TIME complexity of 0(n2)
 # now in reverse order getting the maximal values from back first and store it before comparison
-   which is now new[0] = 
+#    which is now new[0] = Max(arr[i] , prev[i])   meaning we're getting for five different value
