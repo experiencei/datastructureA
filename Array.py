@@ -107,4 +107,6 @@ class Solution:
 # long as we find string S
     # sample -- > s="muf" and t="nfmliutgfy"
     #                 |1           |2
-    
+class Solution:
+    def isSubsequence(self , s : str , t : str) -> bool:
+        i , r = 0 , 0
