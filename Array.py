@@ -141,6 +141,9 @@ class Solution:
         return True if i == len(s) else False
 
 #  length of last word
+# Question --> Given a string s consisting of words and spaces, return the length of the last word in the string.
+# A word is a maximal substring consisting of non-space characters only.
+
 # we want to return the lenth of the last word after space (" ")
 # sample s = " what is my name ? is ibrahim "
 
