@@ -107,14 +107,9 @@ class Solution:
 # long as we find string S
     # sample -- > s="muf" and t="nfmliutgfy"
     #                 |1           |2
+
 class Solution:
-    def isSubsequence(self , s : str , t : str) -> bool:
-        i , r = 0 , 0
-        while i < len(s) and r < len(t):
-            if s[i] == t[r]:
-                i += 1
-                j += 1
-            else :
-                j += 1
-        return True if i == len(s) else False
+    def isSubsequence(self ,  s : str , t : str) -> bool:
+        m , n = 0 , 0
+        while m < len(s) and n < 
             
