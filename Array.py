@@ -114,5 +114,7 @@ class Solution:
             if s[i] == t[r]:
                 i += 1
                 j += 1
-            else j += 1
+            else :
+                j += 1
+        return True 
             
