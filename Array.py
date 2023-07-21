@@ -130,4 +130,13 @@ class Solution:
                 j += 1
         return True if i == len(s) else False
 
-            
+#  length of last word
+class solution:
+    def lengthOflastword(self , s : str) -> int:
+        n = 0
+        for i in range(len(s) -1 , -1 , -1):
+            if 1 != " ":
+                n += 1
+        return n
+                
+
