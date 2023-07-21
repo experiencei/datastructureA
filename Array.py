@@ -105,3 +105,6 @@ class Solution:
 # find string s in correct order in t string.
 #  Solution : --> we have 2 pointer , 1 on string S and other on string T we keep moving the pointer on T as 
 # long as we find string S
+    # sample -- > s="muf" and t="nfmliutgfy"
+    #                 |1           |2
+    
