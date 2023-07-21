@@ -102,4 +102,6 @@ class Solution:
 
 # is Subsequence
 # Given two string S and T s=ace and t= amcnme , as long as we can 
-# find string s in correct order in t string
+# find string s in correct order in t string.
+#  Solution : --> we have 2 pointer , 1 on string S and other on string T we keep moving the pointer on T as 
+# long as we find string S
