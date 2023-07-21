@@ -100,3 +100,6 @@ class Solution:
             rightMax = newMax
         return arr
 
+# is Subsequence
+# Given two string S and T s=ace and t= amcnme , as long as we can 
+# find string s in correct order in t string
