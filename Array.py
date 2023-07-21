@@ -132,7 +132,7 @@ class Solution:
 
 #  length of last word
 # we want to return the lenth of the last word after space (" ")
-sample s = " what is my name ? is ibrahim "
+# sample s = " what is my name ? is ibrahim "
 
 class solution:
     def lengthOflastword(self , s : str) -> int:
