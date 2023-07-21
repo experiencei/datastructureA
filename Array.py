@@ -131,6 +131,7 @@ class Solution:
         return True if i == len(s) else False
 
 #  length of last word
+# we want to return the lenth of the last word after space (" ")
 class solution:
     def lengthOflastword(self , s : str) -> int:
         n = 0
