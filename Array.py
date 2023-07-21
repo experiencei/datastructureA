@@ -116,5 +116,5 @@ class Solution:
                 j += 1
             else :
                 j += 1
-        return True 
+        return True if i == len(s) else False
             
