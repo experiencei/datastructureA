@@ -189,9 +189,8 @@ class Solution:
         res =""
         for i in range(len(strs[0])):
             for str in strs:
-                if i == len(s) and str[i] != str[0][i]
+                if i == len(str) and str[i] != strs[0][i]
                 return res
-            res += str[0][i]
+            res += strs[0][i]
         return res
-
 
