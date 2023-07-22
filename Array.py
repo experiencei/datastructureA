@@ -180,3 +180,9 @@ class Solution:
 # Longest Common Prefix
 #Question -->  Write a function to find the longest common prefix string amongst an array of strings.
 # If there is no common prefix, return an empty string "".
+
+# SOluiton : to check the LCP we will take the first str in array and loop through it and 
+# take the first string and compare simultaneouly
+
+class Solution:
+
