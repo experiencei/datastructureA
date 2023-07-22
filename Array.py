@@ -172,5 +172,7 @@ class Solution:
         prevMap = {}  #val : index
         for i , n in enumerate(nums):
             val = target - i
+            if val in prevMap:
+                return []
 
             
