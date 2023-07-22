@@ -167,3 +167,5 @@ class solution:
     # the next value and adjusting the pointer which is basically 0(n2)
 # Efficient --> we have a hashmap {value : index} take the 
         # different btw the target and the current value and look for the value in Hashmap
+class Solution:
+     def twoSum(self, nums: List[int], target: int) -> List[int]:
