@@ -171,8 +171,10 @@ class Solution:
      def twoSum(self, nums: list[int], target: int) -> list[int]:
         prevMap = {}  #val : index
         for i , n in enumerate(nums):
-            val = target - i
+            val = target - n
             if val in prevMap:
-                return []
+                return [prevMap[val] , i]
+            prevMap[n] = 1
+        return
 
             
