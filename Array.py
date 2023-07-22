@@ -165,3 +165,5 @@ class solution:
 # Solution: [ 2 , 5 , 6 , 4 , 1] target = 9
     # we can loop through the array by taking one value and adding 
     # the next value and adjusting the pointer which is basically 0(n2)
+# Efficient --> we have a hashmap {value : index} take the 
+        # different btw the target and the current value and look for the value in Hashmap
