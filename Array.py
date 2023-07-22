@@ -185,4 +185,6 @@ class Solution:
 # take the first string and compare simultaneouly
 
 class Solution:
+    def longestcommonPrefix(self , strs: list[str]) -> str:
+        
 
