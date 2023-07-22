@@ -186,5 +186,12 @@ class Solution:
 
 class Solution:
     def longestcommonPrefix(self , strs: list[str]) -> str:
-        
+        res =""
+        for i in range(len(strs[0])):
+            for str in strs:
+                if i == len(s) and str[i] != str[0][i]
+                return res
+            res += str[0][i]
+        return res
+
 
