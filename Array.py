@@ -169,12 +169,6 @@ class solution:
         # different btw the target and the current value and look for the value in Hashmap
 class Solution:
      def twoSum(self, nums: list[int], target: int) -> list[int]:
-        prevMap = {}  #val : index
-        for i , n in enumerate(nums):
-            val = target - n
-            if val in prevMap:
-                return [prevMap[val] , i]
-            prevMap[n] = 1
-        return
+        
 
             
