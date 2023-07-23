@@ -184,13 +184,3 @@ class Solution:
 # SOluiton : to check the LCP we will take the first str in array and loop through it and 
 # take the first string and compare simultaneouly
 
-class Solution:
-    def longestcommonPrefix(self , strs: list[str]) -> str:
-        res =""
-        for i in range(len(strs[0])):
-            for str in strs:
-                if i == len(str) and str[i] != strs[0][i]
-                return res
-            res += strs[0][i]
-        return res
-
