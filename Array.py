@@ -194,3 +194,12 @@ class Solution:
             res += strs[0][i]
         return res
 
+# Groups Anagram
+# QUESTION --> Given an array of strings strs, group the anagrams together. 
+# You can return the answer in any order.
+
+
+# Input: strs = ["eat","tea","tan","ate","nat","bat"]
+# Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+Solution : we can sort 
