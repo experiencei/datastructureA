@@ -203,5 +203,20 @@ class Solution:
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 # Solution : we can sort evry string in the array and group the match together in Result
-  --> in efficient as Sorting takes 0(nlogn) * m
-EFficient Solution would be 
+#   --> in efficient as Sorting takes 0(nlogn) * m
+# EFficient Solution would be getting each str and counting the occurence of it.
+# {["eat" , "tea" , "ate"] all has 1 - a , 1 - t and 1 - e}
+
+
+class Solution:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+        ans = collections.defaultdict(list)
+
+        for s in strs:
+            #initializing coumt with 0
+            count = [0] * 26
+            for c in s:
+                # assigning every characters to acsii value of it and the increment to count them
+                count[ord(c) - ord("a")] += 1
+            ans[tuple(count)].append(s)
+        return ans.values()
