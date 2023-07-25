@@ -270,3 +270,8 @@ class Solution:
 # For example, "alice.z@leetcode.com" and "alicez@leetcode.com" forward to the same email address.
 # If you add a plus '+' in the local name, everything after the first plus sign will be ignored. 
 # This allows certain emails to be filtered. Note that this rule does not apply to domain names.
+
+class Solution:
+    def uniqueEmail(self , emails : list[str] ) -> int:
+        unique_emails: set[str] = set()
+        for email in emails:
