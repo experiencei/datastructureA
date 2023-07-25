@@ -246,6 +246,11 @@ class Solution:
 #QUESTION -->  Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
 # The order of the elements may be changed. 
 # Then return the number of elements in nums which are not equal to val.
+
+# Solution : given nums [ 1 , 3 , 5 , 2, 2 , 3] val = 3 , 
+# we want to return count of nums that are not val in array num
+# we want to modify the array in place .
+
 class Solution:
     def removeElement(self, nums : list[int] , val : int) -> int :
         k = 0
