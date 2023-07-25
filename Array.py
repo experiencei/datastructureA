@@ -225,15 +225,18 @@ class Solution:
 # Question --> Given an integer numRows, return the first numRows of Pascal's triangle.
 # In Pascal's triangle, each number is the sum of the two numbers directly above it as
 
-# Solution 
+# Solution  : we want to initaial the 1st one since we knew it going to be 1.
+
 
 class Solution:
     def generateTriangle(self, numRows : int) -> list[list[int]]:
         res = [[1]]
 
+#   the first loop is length of pascal - 1 CAUSE we already did the first one
         for i in range(numRows - 1):
             temp = [0] + res[-1] + [0]
             row = []
+            # loop for building the next row , which is length of previous row + 1
             for j in range(len(res[-1]) + 1):
                 row.append(temp[j] + temp[j + 1])
             res.append(row)
