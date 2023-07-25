@@ -275,3 +275,4 @@ class Solution:
     def uniqueEmail(self , emails : list[str] ) -> int:
         unique_emails: set[str] = set()
         for email in emails:
+            local_name, domain_name = email.split('@')
