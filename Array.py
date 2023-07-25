@@ -202,4 +202,6 @@ class Solution:
 # Input: strs = ["eat","tea","tan","ate","nat","bat"]
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
-Solution : we can sort 
+# Solution : we can sort evry string in the array and group the match together in Result
+  --> in efficient as Sorting takes 0(nlogn) * m
+EFficient Solution would be 
