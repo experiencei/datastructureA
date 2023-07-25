@@ -278,3 +278,5 @@ class Solution:
             local_name, domain_name = email.split('@')
             local_name = local_name.split('+')[0]
             local_name = local_name.replace('.', '')
+            email = local_name + '@' + domain_name
+            unique_emails.add(email)
