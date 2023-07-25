@@ -280,3 +280,4 @@ class Solution:
             local_name = local_name.replace('.', '')
             email = local_name + '@' + domain_name
             unique_emails.add(email)
+        return len(unique_emails)
