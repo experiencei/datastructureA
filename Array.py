@@ -319,3 +319,15 @@ class Solution:
 # we are going to puting an Zero at the begining and end of the array and before we can plant
 # a flower we are going to check if the spot is 0 and the spot before it is 0 and after it is 0 as well
 # and we keep decreementing our flower and check before the loops run out
+class Solution3:
+    def canPlaceFlowers(self, flowerbed: list[int], n: int) -> bool:
+       # Solution with O(n) space complexity
+       #  adding 0 at the beginning and ending of the array
+       f = [0] + flowerbed + [0]       
+       for i in range(1, len(f) - 1):  # skip first & last because of added zero
+           if f[i - 1] == 0 and f[i] == 0 and f[i + 1] == 0:
+            #  plant flower if we have  3 zero
+               f[i] = 1
+               #  decreement flower
+               n -= 1
+       return n <= 0
