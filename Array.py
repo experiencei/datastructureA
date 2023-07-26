@@ -316,4 +316,5 @@ class Solution:
                 # 0 [ 1 , 0 , 0 , 0 , 1] 0
                 # 0 [  0 , 0 , 1] 0
                 
-# we are going to puting an Zero at the begining and end of the array
+# we are going to puting an Zero at the begining and end of the array and before we can plant
+# a flower we are going to check if the spot is 0 and the spot before it is 0 and after it is 0 as well
