@@ -289,3 +289,6 @@ class Solution:
 
 # All occurrences of a character must be replaced with another character while preserving the order of characters. 
 # No two characters may map to the same character, but a character may map to itself.
+
+# Solution : mapping the string simultaneously i.e S ---->  T and T -----> S which means we are mapping it 
+# it both way
