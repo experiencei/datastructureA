@@ -313,6 +313,7 @@ class Solution:
 # return true if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers rule and false otherwise.
 # Solution --> [ 1 , 0 , 1]
             #    [ 1 , 0 , 0 , 1]
-                #  [ 1 , 0 , 0 , 0 , 1]
-                # [  0 , 0 , 1]
+                # 0 [ 1 , 0 , 0 , 0 , 1] 0
+                # 0 [  0 , 0 , 1] 0
                 
+# we are going to puting an Zero at the begining and end of the array
