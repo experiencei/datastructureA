@@ -343,3 +343,14 @@ class Solution3:
 
 # Input: nums = [3,2,3]
 # Output: 3
+
+# Solution : using hashmap to set {number - count} and keep track of the maximum value 
+class Solution:
+    def majorityElement(self, nums : list[int]) -> int :
+        count = {}
+        res , maxCount = 0 , 0
+        for n in nums :
+            count[n] = 1 + count.get(n, 0)
+            res = n if count[n] > maxCount else res
+            maxCount = max(count[n] , maxCount)
+        return res
