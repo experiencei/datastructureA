@@ -361,3 +361,14 @@ class Solution:
 #     res = 0
 #     count = 0
     # we keep increementing count if the value is the same and decreementing count if the value is different
+    class Solution:
+        def majorityElem(self , nums : list[int]) -> int :
+            res , count = 0 , 0
+            for n in nums:
+                if res == 0:
+                    res = n
+                count +=  ( 1 if n == res else -1)
+            return res
+
+
+            
