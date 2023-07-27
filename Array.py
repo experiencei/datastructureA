@@ -387,5 +387,11 @@ class Solution:
         nums1Idx  = { n : i for  i , n in enumerate(nums1)}
         # initailizing res to -1
         res = [-1] * len(nums1)
-        
+
+
+        for i in range(len(nums2)):
+            # we don't want to do anything if it doesn't appear in nums1 thenn we continue
+            if nums2[i] not in nums1Idx:
+                continue
+
 
