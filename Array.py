@@ -396,5 +396,11 @@ class Solution:
             # loop starting frm the next value
             for j in range(i + 1 , len(nums2)):
                 if nums2[j] > nums2[i]:
+                    #  get the index from nums1 since it greater than the current & appear as well
+                    idx = nums1Idx[nums2[i]]
+                    # assign it
+                    res[idx] = nums2[j]
+                    break
+        return res
 
 
