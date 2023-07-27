@@ -331,3 +331,5 @@ class Solution3:
                #  decreement flower
                n -= 1
        return n <= 0
+
+# Majority Element
