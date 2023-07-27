@@ -393,5 +393,8 @@ class Solution:
             # we don't want to do anything if it doesn't appear in nums1 thenn we continue
             if nums2[i] not in nums1Idx:
                 continue
+            # loop starting frm the next value
+            for j in range(i + 1 , len(nums2)):
+                if nums2[j] > nums2[i]:
 
 
