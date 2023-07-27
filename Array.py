@@ -383,4 +383,9 @@ class Solution:
 
 class Solution:
    def nextGreaterElement(self, nums1: list[int], nums2: list[int]) -> list[int]:
-    
+        # assigning hashmap with value --- index
+        nums1Idx  = { n : i for  i , n in enumerate(nums1)}
+        # initailizing res to -1
+        res = [-1] * len(nums1)
+        
+
