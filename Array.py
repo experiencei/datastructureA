@@ -365,6 +365,7 @@ class Solution:
         def majorityElem(self , nums : list[int]) -> int :
             res , count = 0 , 0
             for n in nums:
+                # setting result to the current number if the res == 0
                 if res == 0:
                     res = n
                 count +=  ( 1 if n == res else -1)
