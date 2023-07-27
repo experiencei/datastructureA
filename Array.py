@@ -354,3 +354,5 @@ class Solution:
             res = n if count[n] > maxCount else res
             maxCount = max(count[n] , maxCount)
         return res
+    
+# Boyer moore Algorithms
