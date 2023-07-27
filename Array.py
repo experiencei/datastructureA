@@ -356,3 +356,8 @@ class Solution:
         return res
     
 # Boyer moore Algorithms
+#   keeping track of the most occurence in a single variable e.g
+#     nums = [ 1 , 1 , 2 , 3 , 2 , 1]
+#     res = 0
+#     count = 0
+    # we keep increementing count if the value is the same and decreementing count if the value is different
