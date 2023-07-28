@@ -404,3 +404,4 @@ class Solution:
         return res
 
 
+# Range Sum Query - Immutable
