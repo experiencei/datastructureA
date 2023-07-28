@@ -442,3 +442,15 @@ class NumArray:
 #  This also applies to the right edge of the array.
 
 # Return the leftmost pivot index. If no such index exists, return -1.
+
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
+        total = sum(nums)  # O(n)
+
+        leftSum = 0
+        for i in range(len(nums)):
+            rightSum = total - nums[i] - leftSum
+            if leftSum == rightSum:
+                return i
+            leftSum += nums[i]
+        return -1
