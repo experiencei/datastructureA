@@ -414,4 +414,5 @@ class Solution:
 # int sumRange(int left, int right) Returns the sum of the elements of nums between indices left and right inclusive 
 # (i.e. nums[left] + nums[left + 1] + ... + nums[right]).
 
-Solution 
+# Solution : to avoid heavy computational range which is 0(n2) we have to compute the prefix
+# and just get the range of computed prefix inside the array
