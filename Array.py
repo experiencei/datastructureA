@@ -418,7 +418,7 @@ class Solution:
 # and just get the range of computed prefix inside the array
 class NumArray:
 
-    def __init__(self, nums: List[int]):
+    def __init__(self, nums: list[int]):
         self.prefix = []
         cur = 0
         for n in nums:
