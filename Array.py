@@ -416,7 +416,7 @@ class Solution:
 
 # Solution : to avoid heavy computational range which is 0(n2) we have to compute the prefix
 # and just get the range of computed prefix inside the array
-class NumArray:
+class Solution:
 
     def __init__(self, nums: list[int]):
         self.prefix = []
