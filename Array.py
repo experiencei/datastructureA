@@ -444,7 +444,7 @@ class NumArray:
 # Return the leftmost pivot index. If no such index exists, return -1.
 
 class Solution:
-    def pivotIndex(self, nums: List[int]) -> int:
+    def pivotIndex(self, nums: list[int]) -> int:
         total = sum(nums)  # O(n)
 
         leftSum = 0
