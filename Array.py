@@ -225,7 +225,7 @@ class Solution:
 # Question --> Given an integer numRows, return the first numRows of Pascal's triangle.
 # In Pascal's triangle, each number is the sum of the two numbers directly above it as
 
-# Solution  : we want to initaial the 1st one since we knew it going to be 1.
+# Solution  : we want to initial the 1st one since we knew it going to be 1.
 
 
 class Solution:
