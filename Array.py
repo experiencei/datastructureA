@@ -469,6 +469,7 @@ class Solution:
             # Space complexity -- 0(n)
             # Time complexity -- 0(n)
 # Efficients
+            0   1   2   3    4   6
           [ 1 , 3 , 4 , 7  , 5 , 4 ]
 
           0 <---> n - 1   == index
