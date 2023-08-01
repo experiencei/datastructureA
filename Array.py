@@ -460,3 +460,6 @@ class Solution:
 
 # Question ==> Given an array nums of n integers where nums[i] is in the range [1, n], 
 #              return an array of all the integers in the range [1, n] that do not appear in nums.
+
+# Solution : we will have an hashSet that contain value { 1 , n} and we loop 
+#    through the nums array and pop from the from the HashSet which is 0(1)
