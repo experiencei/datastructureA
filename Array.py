@@ -443,15 +443,15 @@ class Solution:
 
 # Return the leftmost pivot index. If no such index exists, return -1.
 
-class Solution:
-    def pivotIndex(self, nums: list[int]) -> int:
-        total = sum(nums)  # O(n)
+    class Solution:
+        def pivotIndex(self, nums: list[int]) -> int:
+            total = sum(nums)  # O(n)
 
-        leftSum = 0
-        for i in range(len(nums)):
-            rightSum = total - nums[i] - leftSum
-            if leftSum == rightSum:
-                return i
-            leftSum += nums[i]
-        return -1
-        
+            leftSum = 0
+            for i in range(len(nums)):
+                rightSum = total - nums[i] - leftSum
+                if leftSum == rightSum:
+                    return i
+                leftSum += nums[i]
+            return -1
+            
