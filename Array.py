@@ -468,3 +468,5 @@ class Solution:
     #             cancel out any occurence from it
             # Space complexity -- 0(n)
             # Time complexity -- 0(n)
+# Efficients
+[ 1 , 3 , 4 , 7  , 5 , 4 ]
