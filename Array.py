@@ -468,8 +468,12 @@ class Solution:
     #             cancel out any occurence from it
             # Space complexity -- 0(n)
             # Time complexity -- 0(n)
-# Efficients
-            0   1   2   3    4   6
+# Efficients -- since it"s one - one mapping how about if we see 1 we set the value
+     at index 0 to -1 
+     3 we set the value at index 2 to -4
+     4 we set the value at index 3 to -7
+     7 we set the value at index 6
+            0   1   2   3    4   5
           [ 1 , 3 , 4 , 7  , 5 , 4 ]
 
           0 <---> n - 1   == index
