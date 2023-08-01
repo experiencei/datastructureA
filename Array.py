@@ -463,3 +463,6 @@ class Solution:
 
 # Solution : we will have an hashSet that contain value { 1 , n} and we loop 
 #    through the nums array and pop from the from the HashSet which is 0(1)
+    #   Input: nums = [4,3,2,7,8,2,3,1]
+    #             Output: [5,6]  i.e we are creating { 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 } and 
+    #             cancel out any occurence from it
