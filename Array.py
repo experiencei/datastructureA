@@ -469,16 +469,19 @@ class Solution:
             # Space complexity -- 0(n)
             # Time complexity -- 0(n)
 # Efficients -- since it"s one - one mapping how about if we see 1 we set the value
-     at index 0 to -1 
-     3 we set the value at index 2 to -4
-     4 we set the value at index 3 to -7
-     7 we set the value at index 6
-            0   1   2   3    4   5
-          [ 1 , 3 , 4 , 7  , 5 , 4 ]
+    #  at index 0 to -1 
+    #  1 we set the value at index 0 to -1
+    #  4 we set the value at index 3 to -4
 
-          0 <---> n - 1   == index
-          1 <---> n       == value
+    #         0   1  2   3   
+    #       [ 1 , 4, 4 , 4,  ]
+
+    #       0 <---> n - 1   == index
+    #       1 <---> n       == value
 
 
 class Solution:
     def findDisappearedNumbers(self, nums: list[int]) -> list[int]:
+        for n in nums:
+            i = abs(n) - 1
+            nums[i] = -1 * abs(nums[i])
