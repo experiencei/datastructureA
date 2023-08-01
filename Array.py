@@ -478,3 +478,7 @@ class Solution:
 
           0 <---> n - 1   == index
           1 <---> n       == value
+
+
+class Solution:
+    def findDisappearedNumbers(self, nums: list[int]) -> list[int]:
