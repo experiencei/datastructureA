@@ -496,3 +496,11 @@ class Solution:
 # Question --> Given a string text, you want to use the characters of text to 
 # form as many instances of the word "balloon" as possible.
 # You can use each character in text at most once. Return the maximum number of instances that can be formed
+
+# Solution :  for "nlaebolko"
+        # Counter({'l': 2, 'o': 2, 'n': 1, 'a': 1, 'e': 1, 'b': 1, 'k': 1})
+        # Counter({'l': 2, 'o': 2, 'b': 1, 'a': 1, 'n': 1})
+        
+        # Idea is to check how many parts can be obtained from given string
+        # for example. In parent we have 2 o's, we need 2 o's to make 1 baloon
+        # so we divide those 2 and get 1. and we keep updating the minimum
