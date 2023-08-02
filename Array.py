@@ -504,3 +504,9 @@ class Solution:
         # Idea is to check how many parts can be obtained from given string
         # for example. In parent we have 2 o's, we need 2 o's to make 1 baloon
         # so we divide those 2 and get 1. and we keep updating the minimum
+from collections import Counter
+
+class Solution:
+    def maxNumberOfBalloons(self , text : str) -> int:
+        hcountText = Counter(text)
+        balloon = Counter("balloon")
