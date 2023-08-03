@@ -554,3 +554,35 @@ class Solution:
 # void add(key) Inserts the value key into the HashSet.
 # bool contains(key) Returns whether the value key exists in the HashSet or not.
 # void remove(key) Removes the value key in the HashSet. If key does not exist in the HashSet, do nothing.
+
+# solution
+class MyHashSet:
+
+    def __init__(self):
+        self.bucket_size = 1
+        self.hs = [[] for _ in range(self.bucket_size)]
+
+    def hashFunc(self, num: int) -> int:
+        return num % self.bucket_size
+        
+    def add(self, key: int) -> None:
+        hash_value = self.hashFunc(key)
+        # first item in the bucket, don't add duplicate keys
+        if key not in self.hs[hash_value]:
+            self.hs[hash_value].append(key)
+
+    def remove(self, key: int) -> None:
+        hash_value = self.hashFunc(key)
+        # Check weather the hashed bucket exist
+        if not self.hs[hash_value]:
+            return False
+        else:
+            try:
+                self.hs[hash_value].pop(self.hs[hash_value].index(key))
+            # Not found in the bucket either
+            except ValueError:
+                return False
+        
+    def contains(self, key: int) -> bool:
+        hash_value = self.hashFunc(key)
+        return key in self.hs[hash_value]
