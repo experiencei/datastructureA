@@ -600,3 +600,7 @@ class MyHashSet:
 #  If the key already exists in the map, update the corresponding value.
 # int get(int key) returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key.
 # void remove(key) removes the key and its corresponding value if the map contains the mapping for the key.
+
+# Solution --> efficient use a dummyNode to avoid edge cases of pointing to null 
+#   after hasfunction of moding value with 1000 [ index | key : value]
+#    after moding the key to be index we still want to keep tap of the real value of key
