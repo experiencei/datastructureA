@@ -526,3 +526,5 @@ class Solution:
 # Example 1:
 # Input: pattern = "abba", s = "dog cat cat dog"
 # Output: true
+
+# Solution --> more like ISOMORPHIC string we will have pair matching in hashmap
