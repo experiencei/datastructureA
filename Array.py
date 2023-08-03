@@ -625,4 +625,13 @@ class MyHashMap:
                 cur.next.val = value
                 return
             cur = cur.next
-        cur.next = ListNode(key, value)  
+        cur.next = ListNode(key, value)
+
+    def get(self, key: int) -> int:
+#         it make sense to add .next here because we don't want to start at dummy node 
+        cur = self.map[self.hashcode(key)].next
+        while cur and cur.key != key:
+            cur = cur.next
+        if cur:
+            return cur.val
+        return -1  
