@@ -207,6 +207,7 @@ class Solution:
 # EFficient Solution would be getting each str and counting the occurence of it.
 # {["eat" , "tea" , "ate"] all has 1 - a , 1 - t and 1 - e}
 
+from collections import collections
 
 class Solution:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
