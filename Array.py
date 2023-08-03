@@ -649,3 +649,13 @@ class MyHashMap:
 # with the smallest space complexity possible.
 
 # Solution --. we will be using MergeSort whcih is going to be 0(nlog(n)) and Divide and Conquer appraoch
+                              |
+                            [ 5 , 2 , 3 , 1]
+                             /         \
+                            /           \          n/2
+                          [5 , 2]       [3 , 1]
+                           
+                           |             |
+                           5 , 2         3 , 1
+    # we recursively divide the array and use 3 pointer to sort inplace 
+    # i.e no extra space complexity
