@@ -604,3 +604,9 @@ class MyHashSet:
 # Solution --> efficient use a dummyNode to avoid edge cases of pointing to null 
 #   after hasfunction of moding value with 1000 [ index | key : value]
 #    after moding the key to be index we still want to keep tap of the real value of key
+
+class ListNode:
+    def __init__(self, key=-1, val=-1, next=None):
+        self.key = key
+        self.val = val
+        self.next = next
