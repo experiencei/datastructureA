@@ -528,3 +528,10 @@ class Solution:
 # Output: true
 
 # Solution --> more like ISOMORPHIC string we will have pair matching in hashmap
+class Solution:
+    def wordPattern(self, pattern: str, s: str) -> bool:
+        words = s.split(" ")
+        if len(pattern) != len(words):
+            return False
+        charToWord = {}
+        wordToChar = {}
