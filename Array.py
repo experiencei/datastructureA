@@ -635,10 +635,17 @@ class MyHashMap:
         if cur:
             return cur.val
         return -1  
-        
+
     def remove(self, key: int) -> None:
         cur = self.map[self.hashcode(key)]
         while cur.next and cur.next.key != key:
             cur = cur.next
         if cur and cur.next:
             cur.next = cur.next.next
+
+# Sort an Array
+# Question --> Given an array of integers nums, sort the array in ascending order and return it.
+# You must solve the problem without using any built-in functions in O(nlog(n)) time complexity and 
+# with the smallest space complexity possible.
+
+# Solution --. we will be using MergeSort whcih is going to be 0(nlog(n)) and Divide and Conquer appraoch
