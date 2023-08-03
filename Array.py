@@ -635,3 +635,10 @@ class MyHashMap:
         if cur:
             return cur.val
         return -1  
+        
+    def remove(self, key: int) -> None:
+        cur = self.map[self.hashcode(key)]
+        while cur.next and cur.next.key != key:
+            cur = cur.next
+        if cur and cur.next:
+            cur.next = cur.next.next
