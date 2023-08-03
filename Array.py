@@ -618,4 +618,11 @@ class MyHashMap:
     def hashcode(self, key):
         return key % len(self.map)
 
-    
+    def put(self, key: int, value: int) -> None:
+        cur = self.map[self.hashcode(key)]
+        while cur.next:
+            if cur.next.key == key:
+                cur.next.val = value
+                return
+            cur = cur.next
+        cur.next = ListNode(key, value)  
