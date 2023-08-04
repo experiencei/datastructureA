@@ -702,6 +702,7 @@ class Solution:
 # Input: nums = [1,1,1,2,2,3], k = 2
 # Output: [1,2]
 
-Solution : will be using hashmap and counting number of occurences of val
-  i.e [ 1 --> 3] which means 1 occur 3 times
-      [2 --> 2]
+# Solution : will be using hashmap and counting number of occurences of val
+#   i.e [ 1 --> 3] which means 1 occur 3 times
+#       [2 --> 2]
+#    which is definitely ineffecient
