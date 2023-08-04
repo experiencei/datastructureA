@@ -713,3 +713,9 @@ class Solution:
 
     # which means the maximum sizes of the bucket is bounded by number of the array
     # and keep loop from the back to check top K frequent element
+
+class Solution:
+    def topKFrequent(self, nums: list[int], k : int) -> list[int] :
+        count = {}
+        freq = [[] for i in range(nums) + 1]
+
