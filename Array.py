@@ -745,3 +745,10 @@ class Solution:
 # Output: [24,12,8,6]
 
 # Solution : we will be using prefix and postfix approach to solve this problem
+#  and inittailize 1 at the beginning and end of the array
+               
+    #  pre = 1 , 1 , 2 , 6         post = 1 , 4 , 12 , 24
+                #    --------------->
+                #    <--------------
+                #   [ 1 , 2 , 3 , 4 ] 
+    # output =  [ 1  -> 24 , 1 -> 12 , 2 -> 8 , 6 ]
