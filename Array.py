@@ -707,8 +707,9 @@ class Solution:
 #       [2 --> 2]
 #    which is definitely ineffecient
     #    ----> Another Solution is to use heapity / max heap
-    Efficient --> i ( count) 0 , 1 , 2 , 3 , 4 , 5 , 6
-                  values        [3] [2] [1]
+                      (Bucket Sort)
+    # Efficient--> i ( count) 0 , 1 , 2 , 3 , 4 , 5 , 6
+    #               values        [3] [2] [1]
 
-    which means the maximum sizes of the bucket is bounded by number of the array
-    and keep loop from the back to check
+    # which means the maximum sizes of the bucket is bounded by number of the array
+    # and keep loop from the back to check top K frequent element
