@@ -743,3 +743,5 @@ class Solution:
 
 # Input: nums = [1,2,3,4]
 # Output: [24,12,8,6]
+
+# Solution : we will be using prefix and postfix approach to solve this problem
