@@ -699,7 +699,7 @@ class Solution:
 # You may return the answer in any order.
 
 # Example 1:
-# Input: nums = [1,1,1,2,2,3], k = 2
+# Input: nums = [1,1,1,2,2,3 , 6], k = 2
 # Output: [1,2]
 
 # Solution : will be using hashmap and counting number of occurences of val
@@ -707,9 +707,9 @@ class Solution:
 #       [2 --> 2]
 #    which is definitely ineffecient
     #    ----> Another Solution is to use heapity / max heap
-                      (Bucket Sort)
+                    #   (Bucket Sort)
     # Efficient--> i ( count) 0 , 1 , 2 , 3 , 4 , 5 , 6
-    #               values        [3] [2] [1]
+    #               values       [3,6] [2] [1]
 
     # which means the maximum sizes of the bucket is bounded by number of the array
     # and keep loop from the back to check top K frequent element
