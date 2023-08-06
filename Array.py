@@ -800,3 +800,6 @@ class Solution:
 
 #   to get the co-ordinate of 9 [6 / 3 row , 6  / 3 column]  3 is the number sub-boxes
 # remember to round it down 
+
+# key = (r / 3 , c / 3)
+# val = hashset to avoid duplicate
