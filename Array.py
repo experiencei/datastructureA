@@ -779,3 +779,24 @@ class Solution:
 
 # A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 # Only the filled cells need to be validated according to the mentioned rules.
+
+
+# Solution : to validate any duplicate in row an column we're going to use hashset
+#    and Timecomplexity and Spacecomplexity == 0(9^2)
+
+#       0      1         2
+#     0 1 2   3 4 5   6 7 8
+#   0
+# 0 1
+#   2
+
+#   3
+# 1 4
+#   5
+
+#   6                  9 
+# 2 7
+#   8
+
+#   to get the co-ordinate of 9 [6 / 3 row , 6  / 3 column]  3 is the number sub-boxes
+# remember to round it down 
