@@ -846,4 +846,15 @@ class Solution:
 # iterate through the array of set check if they have left neighbours if yes then
 # they are start of the sequence and we check the right neighbours as well to keep increasing the left neigbours
 
-class Solution
+class Solution:
+    def longestConsecutive(self, nums : list[int]) -> int:
+        numsSet = set(nums)
+        longest = 0
+
+        for n in nums:
+            if (n - 1) not in numsSet:
+                length = 1
+                while( n + 1) in numsSet:
+                    length += 1
+                longest = max(length , longest)
+        return longest
