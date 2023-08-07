@@ -837,3 +837,8 @@ class Solution:
 # Input: nums = [100,4,200,1,3,2]
 # Output: 4
 # Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+# Solution :     1,2,3,4      100    200
+   #             1            2      3 
+# to get the start of each sequence of set we need to check 
+# if it doesn't have a neighbour i.e 1 doesn't have which 0 and 100 which is 99 & 200 which is 199
