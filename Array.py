@@ -845,3 +845,5 @@ class Solution:
 
 # iterate through the array of set check if they have left neighbours if yes then
 # they are start of the sequence and we check the right neighbours as well to keep increasing the left neigbours
+
+class Solution
