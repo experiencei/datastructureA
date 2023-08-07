@@ -843,5 +843,5 @@ class Solution:
 # to get the start of each sequence of set we need to check 
 # if it doesn't have a neighbour i.e 1 doesn't have which 0 and 100 which is 99 & 200 which is 199
 
-iterate through the array of set check if they have left neighbours if yes then
-they are start of the sequence and we check the right neighbours as well to keep in
+# iterate through the array of set check if they have left neighbours if yes then
+# they are start of the sequence and we check the right neighbours as well to keep increasing the left neigbours
