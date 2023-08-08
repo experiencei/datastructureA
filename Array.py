@@ -876,3 +876,27 @@ class Solution:
 # Solution: 
     # Efficient is Quicksort with 2 pointer , with 1 pointer will be 2pass algorithms.
     # we are going to have left and right pointer and i pointer & if i == 1 we don't want to swap
+
+class Solutions:
+    def sortColors(self , nums: list[int]) -> None :
+        """
+        do  not return anything , modify nums in-place instead.
+        """
+        l , r = 0 , len(nums) - 1
+        i = 0
+        def swap( i , j):
+            tmp = nums[i]
+            nums[i] = nums[j]
+            nums[j] = tmp
+
+        while i <= r:
+            if nums[i] == 0:
+                swap(l , i)
+                i += 1
+            elif nums[i] == 2:
+                swap(i , r)
+                r -= 1
+                i -= 1
+            i += 1
+
+           
