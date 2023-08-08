@@ -873,4 +873,6 @@ class Solution:
 # Input: nums = [2,0,2,1,1,0]
 # Output: [0,0,1,1,2,2]
 
-# Solution: Efficient is Quicksort with 2 pointer , with 1 pointer will be 2pass algorithms
+# Solution: 
+    # Efficient is Quicksort with 2 pointer , with 1 pointer will be 2pass algorithms.
+    # we are going to have left and right pointer and i pointer & if i == 1 we don't want to swap
