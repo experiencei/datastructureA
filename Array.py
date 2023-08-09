@@ -877,7 +877,7 @@ class Solution:
     # Efficient is Quicksort with 2 pointer , with 1 pointer will be 2pass algorithms.
     # we are going to have left and right pointer and i pointer & if i == 1 we don't want to swap
 
-class Solutions:
+class Solution:
     def sortColors(self , nums: list[int]) -> None :
         """
         do  not return anything , modify nums in-place instead.
@@ -898,5 +898,12 @@ class Solutions:
                 r -= 1
                 i -= 1
             i += 1
+
+
+# Encode and Decode TinyURL
+
+
+
+
 
            
