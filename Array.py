@@ -924,5 +924,5 @@ class Solution:
 
 # Solution : we are having 2 hashmap 1 for encode and other for decode 
 #  and we're encoding with figure which is efficient and Time complexity of 0(1)
-
-
+class Solution:
+    
