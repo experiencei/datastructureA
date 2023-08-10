@@ -922,3 +922,4 @@ class Solution:
 
 
 
+Solution : we are having 2 hashmap 1 for encode and other for decode 
