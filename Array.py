@@ -944,3 +944,4 @@ class Codec:
         """
         return self.decodeMap[shortUrl]
 
+# Solid wall
