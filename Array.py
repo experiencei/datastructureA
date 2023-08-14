@@ -968,6 +968,7 @@ class Solution:
 
         for r in wall:
             total = 0   # Position
+            # [:-1] we don't want to count the last most edge of the brick
             for b in r[:-1]:
                 total += b
                 countGap[total] = 1 + countGap.get(total, 0)
