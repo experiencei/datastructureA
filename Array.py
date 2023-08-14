@@ -967,7 +967,7 @@ class Solution:
         countGap = { 0 : 0 }    # { Position : Gap count }
 
         for r in wall:
-            total = 0   # Position
+            total = 0   # Position we at in the row
             # [:-1] we don't want to count the last most edge of the brick
             for b in r[:-1]:
                 total += b
