@@ -994,3 +994,11 @@ class Solution:
 #            that means buy low and sell high
 
 
+class Solution:
+    def maxProfit(self, prices: list[int]) -> int:
+        max_profit = 0
+        # we're going to be skipping the first index since we can't compare it to any previous position
+        for i in range(1, len(prices)):
+            if prices[i] > prices[i-1]:
+                max_profit += prices[i] - prices[i-1]
+        return max_profit
