@@ -962,6 +962,8 @@ class Codec:
 
 # Note i.e the maximum number of value(space we have) = min number of cut through
 #        result = Total rows - max(gaps)
+# the main reason we initializecountGap = { 0 : 0 } is because when we're taking our max(countGap.values())
+# if there's no value there it will throw an error
 class Solution:
     def leastBricks(self, wall: list[list[int]]) -> int:
         countGap = { 0 : 0 }    # { Position : Gap count }
