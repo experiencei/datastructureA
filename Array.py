@@ -953,3 +953,22 @@ class Codec:
 # If your line goes through the edge of a brick, then the brick is not considered as crossed.
 #  You cannot draw a line just along one of the two vertical edges of the wall, in which case the line will obviously cross no bricks.
 # Given the 2D array wall that contains the information about the wall, return the minimum number of crossed bricks after drawing such a vertical line.
+
+# Solution : we will be counting the number of space in each brick horizontally instead of vertically
+     we're are going to use a hashmap instead 
+     
+     key = number of rows 
+     value = how many space we're going to
+
+
+class Solution:
+    def leastBricks(self, wall: list[list[int]]) -> int:
+        countGap = { 0 : 0 }    # { Position : Gap count }
+
+        for r in wall:
+            total = 0   # Position
+            for b in r[:-1]:
+                total += b
+                countGap[total] = 1 + countGap.get(total, 0)
+
+        return len(wall) - max(countGap.values())    # Total number of rows - Max gap
