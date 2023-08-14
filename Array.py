@@ -960,6 +960,7 @@ class Codec:
     #  key = number of rows 
     #  value = how many space we're going to
 
+# Note i.e the maximum number of value(space we have) = min number of cut through
 
 class Solution:
     def leastBricks(self, wall: list[list[int]]) -> int:
