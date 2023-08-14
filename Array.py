@@ -961,7 +961,7 @@ class Codec:
     #  value = how many space we're going to
 
 # Note i.e the maximum number of value(space we have) = min number of cut through
-
+ result = Total rows - max(gaps)
 class Solution:
     def leastBricks(self, wall: list[list[int]]) -> int:
         countGap = { 0 : 0 }    # { Position : Gap count }
