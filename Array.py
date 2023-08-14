@@ -955,10 +955,10 @@ class Codec:
 # Given the 2D array wall that contains the information about the wall, return the minimum number of crossed bricks after drawing such a vertical line.
 
 # Solution : we will be counting the number of space in each brick horizontally instead of vertically
-     we're are going to use a hashmap instead 
-     
-     key = number of rows 
-     value = how many space we're going to
+    #  we're are going to use a hashmap instead 
+
+    #  key = number of rows 
+    #  value = how many space we're going to
 
 
 class Solution:
