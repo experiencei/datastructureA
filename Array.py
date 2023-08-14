@@ -976,3 +976,6 @@ class Solution:
                 countGap[total] = 1 + countGap.get(total, 0)
 
         return len(wall) - max(countGap.values())    # Total number of rows - Max gap
+
+
+# Best Time to Buy and Sell Stock II
