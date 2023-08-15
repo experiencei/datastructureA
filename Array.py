@@ -1002,3 +1002,6 @@ class Solution:
             if prices[i] > prices[i-1]:
                 max_profit += prices[i] - prices[i-1]
         return max_profit
+
+
+# Subarray Sum Equals K
