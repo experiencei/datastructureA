@@ -1013,5 +1013,5 @@ class Solution:
 # Input: nums = [1,1,1], k = 2
 # Output: 2
 
-Solution --> 
+# Solution --> 
 #   sliding window is ineffective because it is 0(n^2)
