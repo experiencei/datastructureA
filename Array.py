@@ -1016,10 +1016,10 @@ class Solution:
 # Solution --> 
 #   sliding window is ineffective because it is 0(n^2)
 #    Efficient : 
-      prefixSum | count
+    #   prefixSum | count
 
 
-result = number of counts of prefixSum gather
+# result = number of counts of prefixSum gather
 
 class Solution:
     def subarraySum(self, nums: list[int], k: int) -> int:
