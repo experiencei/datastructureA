@@ -1021,19 +1021,7 @@ class Solution:
 
 # result = number of counts of prefixSum gather
 
-class Solution:
-    def subarraySum(self, nums: list[int], k: int) -> int:
-        count = 0
-        sum = 0
-        dic = {}
-        # we're initializing the first one to be 1
-        dic[0] = 1
-        for i in range(len(nums)):
-            sum += nums[i]
-            if sum-k in dic:
-                count += dic[sum-k]
-            dic[sum] = dic.get(sum, 0)+1
-        return count
+
 
 # Time Complexity :
 #     O(N) -> Where N is the size of the array and we are iterating over the array once
