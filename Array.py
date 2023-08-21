@@ -1016,10 +1016,10 @@ class Solution:
 # Solution --> 
 #   sliding window is ineffective because it is 0(n^2)
 #    Efficient : 
-    #   prefixSum | count
+      prefixSum | count
 
 
-# result = number of counts of prefixSum gather
+result = number of counts of prefixSum gather
 
 class Solution:
     def subarraySum(self, nums: list[int], k: int) -> int:
@@ -1034,11 +1034,4 @@ class Solution:
                 count += dic[sum-k]
             dic[sum] = dic.get(sum, 0)+1
         return count
-
-# Time Complexity :
-#     O(N) -> Where N is the size of the array and we are iterating over the array once
-
-# Space Complexity:
-#     O(N) -> Creating a hashmap/dictionary
-
 
