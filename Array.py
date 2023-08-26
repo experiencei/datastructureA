@@ -1060,7 +1060,7 @@ class Solution:
   #  first rule is that we don't want to have more closing bracket "]" than opening "["
 #  we want to keep track of extraclosing bracket cause that what determine if we need to swap or not
 #  we count for extraclose= -1 -2 +1 +2 = [[]] = 0 , no swap to perform
-
+# and we want to keep track of maxExtraclosingbracket so far
 class Solution:
     def minSwaps(self, s: str) -> int:
         extraClose, maxClose = 0, 0
