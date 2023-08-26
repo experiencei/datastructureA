@@ -1057,6 +1057,8 @@ class Solution:
 # Return the minimum number of swaps to make s balanced.
 
 # Solution : 
+  #  first rule is that we don't want to have more closing bracket "]" than opening "["
+
  
 
 class Solution:
