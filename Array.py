@@ -1058,7 +1058,7 @@ class Solution:
 
 # Solution : 
   #  first rule is that we don't want to have more closing bracket "]" than opening "["
-
+#  we want to keep track of extraclosing bracket cause that what determine if we need to swap or not
  
 
 class Solution:
