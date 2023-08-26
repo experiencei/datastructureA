@@ -1055,3 +1055,5 @@ class Solution:
 # You may swap the brackets at any two indices any number of times.
 
 # Return the minimum number of swaps to make s balanced.
+
+# Solution
