@@ -1057,7 +1057,7 @@ class Solution:
 # Return the minimum number of swaps to make s balanced.
 
 # Solution : 
-
+ 
 
 class Solution:
     def minSwaps(self, s: str) -> int:
