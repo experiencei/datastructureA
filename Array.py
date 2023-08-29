@@ -1097,3 +1097,4 @@ class Solution:
 
 
 # Solution: within the example what 4/8 == 3/6 means is that 0.2 = 0.2
+#  we want to create a **combination** from the rectangles size which is 4 and divide it by 2 to get rid of permutation(duplicate) 
