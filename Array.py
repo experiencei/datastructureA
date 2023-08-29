@@ -1076,3 +1076,4 @@ class Solution:
         return (maxClose + 1) // 2  # Or math.ceil(maxClose / 2)
 
 
+# Number of Pairs of Interchangeable Rectangle
