@@ -1074,3 +1074,5 @@ class Solution:
             maxClose = max(maxClose, extraClose)
 
         return (maxClose + 1) // 2  # Or math.ceil(maxClose / 2)
+
+
