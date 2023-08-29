@@ -1094,3 +1094,6 @@ class Solution:
 # - Rectangle 1 with rectangle 2: 3/6 == 10/20.
 # - Rectangle 1 with rectangle 3: 3/6 == 15/30.
 # - Rectangle 2 with rectangle 3: 10/20 == 15/30
+
+
+# Solution: within the example what 4/8 == 3/6 means is that 0.2 = 0.2
