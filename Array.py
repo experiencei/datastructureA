@@ -1133,3 +1133,7 @@ class Solution:
 
 # we are keeping track of bitmasks and value of palindrome in hashmap
 # hashmap[key=bitmask] = value = 3
+
+class Solution:
+    def maxProduct(self , s: str) -> int :
+        
