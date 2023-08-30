@@ -1139,3 +1139,9 @@ class Solution:
         N , pali = len(s) , {}
 
         for mask in range(1 , 1 << N): # 1 << N == 2 ** N 
+            subseq = ""
+            for i in range(N):
+                if mask & ( 1 << i):
+                    subseq += s[i]
+                if subseq == subseq[::-1]:
+                    pali[mask] = len(subseq)
