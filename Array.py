@@ -1131,5 +1131,5 @@ class Solution:
 
 # as long as they are disjoint we never going to have 1 in the results of & operation
 
-we are keeping track of bitmasks and value of palindrome in hashmap
-hashmap[key=bitmask] = value = 3
+# we are keeping track of bitmasks and value of palindrome in hashmap
+# hashmap[key=bitmask] = value = 3
