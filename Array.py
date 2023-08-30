@@ -1122,3 +1122,11 @@ class Solution:
 #     Return the maximum possible product of the lengths of the two palindromic subsequences.
 # A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters. 
 # A string is palindromic if it reads the same forward and backward.
+
+# Solution :  to get the disjoint we need to used a Bitmask
+leetcodecom
+00000000000
+01010001000 ete
+00001001010 cdc
+
+as long as they are disjoint we never going to have 1 in the results of & operator
