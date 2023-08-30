@@ -1136,4 +1136,6 @@ class Solution:
 
 class Solution:
     def maxProduct(self , s: str) -> int :
-        
+        N , pali = len(s) , {}
+
+        for mask in range(1 , 1 << N): # 1 << N == 2 ** N 
