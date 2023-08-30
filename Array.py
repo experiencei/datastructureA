@@ -1099,3 +1099,17 @@ class Solution:
 # Solution: within the example what 4/8 == 3/6 means is that 0.2 = 0.2
 #  we want to create a **combination** from the rectangles size which is 4 and divide it by 2 to get rid of permutation(duplicate) 
 # n!/(n-k)!k!
+
+class Solution:
+    def interchangeableRectangles(self, rectangles: list[list[int]]) -> int:
+        count = {} # w/h : count
+        
+        for w , h in rectangles:
+            count[w / h] = 1 + count.get( w/h , 0) 
+            
+        res = 0
+        for c in count.values():
+            if c > 1:
+                # dividing it by 2 make it to get rid of duplicate from combination
+                res += (c * ( c - 1)) // 2
+        return res
