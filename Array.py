@@ -1113,3 +1113,6 @@ class Solution:
                 # dividing it by 2 make it to get rid of duplicate from combination
                 res += (c * ( c - 1)) // 2
         return res
+
+
+# Maximum Product of the Length of Two Palindromic Subsequences
