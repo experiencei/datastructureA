@@ -1182,3 +1182,8 @@ class Solution:
 
         res = float("inf")
         for i in range(N):
+            top = preRow1[-1] - preRow1[i]
+            bottom = preRow2[i]
+            secondRobot = max(top , bottom)
+            res = min(res , secondRobot)
+        return res
