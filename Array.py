@@ -1179,3 +1179,6 @@ class Solution:
         for i in range(1 , N):
             preRow1[1] += preRow1[i -1]
             preRow2[1] += preRow2[i -1]
+
+        res = float("inf")
+        for i in range(N):
