@@ -1165,3 +1165,7 @@ class Solution:
 # Then, the second robot moves from (0, 0) to (1, n-1), collecting the points on its path. Note that their paths may intersect with one another.
 # The first robot wants to minimize the number of points collected by the second robot. 
 # In contrast, the second robot wants to maximize the number of points it collects. If both robots play optimally, return the number of points collected by the second robot.
+
+
+# Solution: both the robot we play optimally i.e they both want to maximize what they will accumulate 
+#  the grid1 --> what is left for the second robot is the prefixSum up on till index i the first robot decide to move down
