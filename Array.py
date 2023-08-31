@@ -1170,3 +1170,10 @@ class Solution:
 # Solution: both the robot we play optimally i.e they both want to maximize what they will accumulate 
 #  the grid1 --> what is left for the second robot is the prefixSum up on till index i the first robot decide to move down
 #  the grid2 --> what is left for second robot at the bottom is the prefixSum up on till index i the but not including index i
+
+class Solution:
+    def gridGame(self , grid: list[list[int]]) -> int:
+        N = len(grid[0])
+        preRow1, preRow2 = grid[0].copy() , grid[1].copy()
+
+        
