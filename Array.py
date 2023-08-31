@@ -1183,7 +1183,7 @@ class Solution:
         res = float("inf")
         for i in range(N):
             top = preRow1[-1] - preRow1[i]
-            bottom = preRow2[i -1]
+            bottom = preRow2[i -1] if i > 0 else 0
             secondRobot = max(top , bottom)
             res = min(res , secondRobot)
         return res
