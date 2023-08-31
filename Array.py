@@ -1153,3 +1153,6 @@ class Solution:
                     res = max(res , pali[m1] * pali[m2])
 
         return res
+
+
+# Grid Game
