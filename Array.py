@@ -1223,4 +1223,5 @@ class Solution(object):
 # we will be using a hashmap for the count of p and S count.
 
  s = "cbaebabacd", p = "abc"
- s = { c : 1 , b : 1 ,}
+ s = { c : 1 , b : 1 , a : 1}       p = { a : 1 , b : 1 , c : 1} 
+
