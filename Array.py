@@ -1219,3 +1219,8 @@ class Solution(object):
 
 # solution : we are going to be using a sliding window technique with 2 pointers
 #  adding and removing elements on end and front respectively.
+
+# we will be using a hashmap for the count of p and S count.
+
+ s = "cbaebabacd", p = "abc"
+ s = { c : 1 , b : 1 ,}
