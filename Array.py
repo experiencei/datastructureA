@@ -1200,3 +1200,6 @@ class Solution(object):
             result = min(result, max(left, right))
             left += b
         return result
+
+
+Find All Anagrams in a String
