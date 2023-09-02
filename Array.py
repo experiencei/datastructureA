@@ -1227,23 +1227,52 @@ class Solution(object):
 #  s2 (loop 2)=  { c : 0 , b : 1 , a : 1 , e : 1}
 
 
+# class Solution:
+#     def findAnagrams(self , s : str , p : str) -> list[int]:
+#         if len(p) > len(s) : return []
+#         pCount , sCount = {} , {}
+#         for i in range(len(p)):
+#             pCount[p[i]] = 1 + pCount.get(p[i], 0)
+#             sCount[p[i]] = 1 + sCount.get(s[i], 0)
+
+#         res = [0] if sCount == pCount else []
+#         l = 0
+#         for r in range(len(p) , len(s)):
+#             sCount[s[r]] = 1 + sCount.get(s[r] , 0)
+#             sCount[s[l]] -= 1
+
+#             if sCount[s[l]] == 0:
+#                 sCount.pop(s[l])
+#             l += 1
+#             if sCount[l] == pCount:
+#                 res.append(l)
+#         return res
+
+
+
+
 class Solution:
-    def findAnagrams(self , s : str , p : str) -> list[int]:
-        if len(p) > len(s) : return []
-        pCount , sCount = {} , {}
-        for i in range(len(p)):
-            pCount[p[i]] = 1 + pCount.get(p[i], 0)
-            sCount[p[i]] = 1 + sCount.get(s[i], 0)
+    def findAnagrams(self, s: str, p: str) -> list[int]:
+        
+        startIndex = 0
+        pMap, sMap = {}, {}
+        res = []
+        
+        for char in p:
+            pMap[char] = 1 + pMap.get(char, 0)
+        
+        for i in range(len(s)):
+            sMap[s[i]] = 1 + sMap.get(s[i], 0)
 
-        res = [0] if sCount == pCount else []
-        l = 0
-        for r in range(len(p) , len(s)):
-            sCount[s[r]] = 1 + sCount.get(s[r] , 0)
-            sCount[s[l]] -= 1
-
-            if sCount[s[l]] == 0:
-                sCount.pop(s[l])
-            l += 1
-            if sCount[l] == pCount:
-                res.append(l)
+            if i >= len(p) - 1:
+                if sMap == pMap:
+                    res.append(startIndex)
+                
+                # If current character is in sMap, remove it and re-update the map.
+                if s[startIndex] in sMap:
+                    sMap[s[startIndex]] -= 1
+                    if sMap[s[startIndex]] == 0:
+                        del sMap[s[startIndex]]
+                startIndex += 1
+        
         return res
