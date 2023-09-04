@@ -1294,3 +1294,11 @@ class Solution:
         for i , n in enumerate(nums):
             # we are converting each number to strings before making the comparison
             nums[i] = str(n)
+
+        def compare(n1 , n2):
+            if n1 + n2 > n2 + n1:
+                return -1
+            else:
+                return 1
+        # sorting the nums based on comapre function
+        nums = sorted(nums , key=cmp_to_key(compare))
