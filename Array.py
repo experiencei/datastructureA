@@ -1284,7 +1284,11 @@ class Solution:
 #   arrange them such that they form the largest number and return it.
 # Since the result may be very large, so you need to return a string instead of an integer.
 
-Example 1:
+# Example 1:
 
-Input: nums = [10,2]
-Output: "210"
+# Input: nums = [10,2]
+# Output: "210"
+
+class Solution:
+    def largestNumber(self, nums: list[int]) -> str:
+        for i , n in enumerate(nums)
