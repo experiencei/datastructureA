@@ -1291,4 +1291,6 @@ class Solution:
 
 class Solution:
     def largestNumber(self, nums: list[int]) -> str:
-        for i , n in enumerate(nums)
+        for i , n in enumerate(nums):
+            # we are converting each number to strings before making the comparison
+            nums[i] = str(n)
