@@ -1302,3 +1302,7 @@ class Solution:
                 return 1
         # sorting the nums based on comapre function
         nums = sorted(nums , key=cmp_to_key(compare))
+        # returning a single strings
+        # [0, 0 ,0] = "000" should be "0" instead , we can change this by converting it to integer first
+        return str(int("".join(nums)))
+
