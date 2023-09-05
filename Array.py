@@ -1341,8 +1341,8 @@ class Solution:
 #    5         | 0
 #    1         | 1
 #    5         | 2
-     0         | -1   we are initializing 0 to -1 bcos we want to make sure the length is at least 2 in the first case.
-                      if the first value is 24 which means will be having 0 remainder 
+    #  0         | -1   we are initializing 0 to -1 bcos we want to make sure the length is at least 2 in the first case.
+                    #   if the first value is 24 which means will be having 0 remainder 
 
 #    we have five occur twice as remainder which means we have multiplier of k
 
