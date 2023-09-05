@@ -1335,7 +1335,9 @@ class Solution:
 # Explanation: [2, 4] is a continuous subarray of size 2 whose elements sum up to 6.
 
 # Solution : 
-   efficient --> will be having a hashmap
+   efficient --> will be having a hashmap with key=remainder and value=index
+   loop and mod i by k to get the remainder and we keep adding it to hashmap
+   
 
 #We are basically storing sum%k and storing it in the hashmap and checking it.
 #Math logic is that the overall sum will get cancelled out because of modulo
