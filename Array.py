@@ -1314,7 +1314,7 @@ class Solution:
         # [0, 0 ,0] = "000" should be "0" instead , we can change this by converting it to integer first
         return str(int("".join(nums)))
 
-        
+
 
 # Continuous Subarray Sum
 
@@ -1333,3 +1333,5 @@ class Solution:
 # Input: nums = [23,2,4,6,7], k = 6
 # Output: true
 # Explanation: [2, 4] is a continuous subarray of size 2 whose elements sum up to 6.
+
+Solution : 
