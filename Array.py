@@ -731,7 +731,7 @@ class Solution:
                 if len(res) == k:
                     return res
 
-            t
+            
 # Product of Array Except Self
 # Question --> Given an integer array nums, return an array answer such that answer[i] 
 # is equal to the product of all the elements of nums except nums[i].
@@ -1003,7 +1003,7 @@ class Solution:
                 max_profit += prices[i] - prices[i-1]
         return max_profit
 
-  t
+  
 # Subarray Sum Equals K
 # Question --> 
 # Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
@@ -1306,4 +1306,4 @@ class Solution:
         # [0, 0 ,0] = "000" should be "0" instead , we can change this by converting it to integer first
         return str(int("".join(nums)))
 
-Continuous Subarray SumContinuous Subarray Sum
+# Continuous Subarray Sum
