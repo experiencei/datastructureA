@@ -973,6 +973,7 @@ class Solution:
             # [:-1] we don't want to count the last most edge of the brick
             for b in r[:-1]:
                 total += b
+                # key of the hashmap = position we are at
                 countGap[total] = 1 + countGap.get(total, 0)
 
         return len(wall) - max(countGap.values())    # Total number of rows - Max gap
