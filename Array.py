@@ -1015,7 +1015,8 @@ class Solution:
 # Output: 2
 
 # Solution --> 
-#   sliding window is ineffective because it is 0(n^2)
+#   sliding window is ineffective because it is 0(n^2) and 
+#   mostly because we can have a negative value & adding value doesn't mean we're incrementing the size
 #    Efficient : 
 #       prefixSum | count
 
