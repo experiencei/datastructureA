@@ -1341,7 +1341,7 @@ class Solution:
 #Math logic is that the overall sum will get cancelled out because of modulo
 
 class Solution:
-    def checkSubarraySum(self, nums: List[int], k: int) -> bool:
+    def checkSubarraySum(self, nums: list[int], k: int) -> bool:
         hashmap = {}
         hashmap[0]=-1
         summ=0
