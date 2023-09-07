@@ -1368,14 +1368,12 @@ class Solution:
             
 # Push Dominoes
 
-Question --> There are n dominoes in a line, and we place each domino vertically upright. In the beginning, we simultaneously push some of the dominoes either to the left or to the right.
-
-After each second, each domino that is falling to the left pushes the adjacent domino on the left. Similarly, the dominoes falling to the right push their adjacent dominoes standing on the right.
-
+Question --> There are n dominoes in a line, and we place each domino vertically upright. 
+In the beginning, we simultaneously push some of the dominoes either to the left or to the right.
+After each second, each domino that is falling to the left pushes the adjacent domino on the left. 
+Similarly, the dominoes falling to the right push their adjacent dominoes standing on the right.
 When a vertical domino has dominoes falling on it from both sides, it stays still due to the balance of the forces.
-
 For the purposes of this question, we will consider that a falling domino expends no additional force to a falling or already fallen domino.
-
 You are given a string dominoes representing the initial state where:
 
 dominoes[i] = 'L', if the ith domino has been pushed to the left,
@@ -1415,3 +1413,34 @@ class Solution:
                         dom[i + 1] = 'R'
 
         return ''.join(dom)
+
+
+
+
+187. Repeated DNA Sequences
+Medium
+
+3082
+
+500
+
+Add to List
+
+Share
+The DNA sequence is composed of a series of nucleotides abbreviated as 'A', 'C', 'G', and 'T'.
+
+For example, "ACGAATTCCG" is a DNA sequence.
+When studying DNA, it is useful to identify repeated sequences within the DNA.
+
+Given a string s that represents a DNA sequence, return all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. You may return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+Output: ["AAAAACCCCC","CCCCCAAAAA"]
+Example 2:
+
+Input: s = "AAAAAAAAAAAAA"
+Output: ["AAAAAAAAAA"]
