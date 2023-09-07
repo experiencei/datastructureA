@@ -1441,7 +1441,7 @@ class Solution:
 # Input: s = "AAAAAAAAAAAAA"
 # Output: ["AAAAAAAAAA"]
 
-
+# solution : using sliding window technique and adding to hashset if we've seen it before
 class Solution:
     def findRepeatedDnaSequences(self, s: str) -> list[str]:
         result = set()
