@@ -1396,11 +1396,13 @@ class Solution:
     def pushDominoes(self, dominoes: str) -> str:
         dom = list(dominoes)
         q = collections.deque()
+        # if dominoes isn't straigth add to queue
         for i, d in enumerate(dom):
             if d != '.':
                 q.append((i, d))
         
         while q:
+            # we want to keep popping from the left
             i, d = q.popleft()
 
             if d == 'L' and i > 0 and dom[i - 1] == '.':
