@@ -1387,7 +1387,9 @@ class Solution:
 # Output: "RR.L"
 # Explanation: The first domino expends no additional force on the second domino.
 
-
+Solution:
+  we are converting the string to list so we can modify it (cause we can modify str inplace)
+  
 class Solution:
     def pushDominoes(self, dominoes: str) -> str:
         dom = list(dominoes)
