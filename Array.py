@@ -1389,7 +1389,8 @@ class Solution:
 
 Solution:
   we are converting the string to list so we can modify it (cause we can modify str inplace)
-  
+  every given dominoes will be added to queue and perform the operation on each iteration
+  added the outcome of the previous iteration to the queue
 class Solution:
     def pushDominoes(self, dominoes: str) -> str:
         dom = list(dominoes)
