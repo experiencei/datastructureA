@@ -1453,3 +1453,6 @@ class Solution:
                 result.add(current)
             previous_sequences.add(current)
         return list(result)
+
+
+# Insert Delete GetRandom O(1)
