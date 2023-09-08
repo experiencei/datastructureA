@@ -1467,10 +1467,10 @@ class Solution:
 #  Each element must have the same probability of being returned.
 # You must implement the functions of the class such that each function works in average O(1) time complexity.
 
-Example 1:
+# Example 1:
 
-Input
-["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"]
-[[], [1], [2], [2], [], [1], [2], []]
-Output
-[null, true, false, true, 2, true, false, 2]
+# Input
+# ["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"]
+# [[], [1], [2], [2], [], [1], [2], []]
+# Output
+# [null, true, false, true, 2, true, false, 2]
