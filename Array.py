@@ -1527,3 +1527,9 @@ class RandomizedSet:
 # Output: true
 # Explanation: The binary codes of length 2 are "00", "01", "10" and "11". 
 # They can be all found as substrings at indices 0, 1, 3 and 2 respectively.
+
+# solution 
+
+class Solution:
+    def hasAllCodes(self, s: str, k: int) -> bool:
+        return len(set(s[i : i + k] for i in range(len(s) - k + 1))) == 2**k
