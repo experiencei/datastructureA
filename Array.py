@@ -1529,6 +1529,8 @@ class RandomizedSet:
 # They can be all found as substrings at indices 0, 1, 3 and 2 respectively.
 
 # solution 
+     # effiecient : go through our string and get how many unique substring are there
+     and add
 
 class Solution:
     def hasAllCodes(self, s: str, k: int) -> bool:
