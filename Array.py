@@ -1532,6 +1532,8 @@ class RandomizedSet:
      # effiecient : go through our string and get how many unique substring are there
      #  and add it to hashset
 
+
+# len(s) - k + 1 : we want to make sure starting i we can create the substring of number of k
 class Solution:
     def hasAllCodes(self, s: str, k: int) -> bool:
         return len(set(s[i : i + k] for i in range(len(s) - k + 1))) == 2**k
