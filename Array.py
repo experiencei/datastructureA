@@ -1544,7 +1544,6 @@ class Solution:
 
 #  Range Sum Query 2D - Immutable
 
-Add to List
 
 Share
 Given a 2D matrix matrix, handle multiple queries of the following type:
