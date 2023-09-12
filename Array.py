@@ -1631,6 +1631,7 @@ class Solution:
 #   if we've visited / have it in our index we want to change the value to negative
 
 #   fisrt loop is to change all the negative value to zero since we don't care about it
+#   second loop is to modify array value in place instead of using hashset
     class Solution:
         def firstMissingPositive(self, nums: list[int]) -> int:
             A = nums
