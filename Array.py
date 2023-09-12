@@ -1607,9 +1607,11 @@ class Solution:
             # if we've already changed it we want to return false
             if changed:
                 return False
+                # [3 , 2 , 4] we want to favor the RHS as long as n + 1 > n - 1
             if i == 0 or nums[i + 1] >= nums[i - 1]:
                 nums[i] = nums[i + 1]
             else:
+                # [5 , 2 , 4] we want to favor the LHS as long as n - 1 > n + 1
                 nums[i + 1] = nums[i]
             changed = True
         return True
