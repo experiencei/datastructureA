@@ -1592,12 +1592,16 @@ class NumMatrix:
 # Output: true
 # Explanation: You could modify the first 4 to 1 to get a non-decreasing array.
 
+# solution : 
+#    efficient --> we want to keep track of a variable of boolean to know wether we've changed or not.
+
 class Solution:
     def checkPossibility(self, nums):
         if len(nums) <= 2:
             return True
         changed = False
         for i, num in enumerate(nums):
+            # this is the good case we want to continue as long next value is < i
             if i == len(nums) - 1 or num <= nums[i + 1]:
                 continue
             if changed:
