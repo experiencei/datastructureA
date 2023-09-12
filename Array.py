@@ -1604,6 +1604,7 @@ class Solution:
             # this is the good case we want to continue as long next value is < i
             if i == len(nums) - 1 or num <= nums[i + 1]:
                 continue
+            # if we've already changed it we want to return false
             if changed:
                 return False
             if i == 0 or nums[i + 1] >= nums[i - 1]:
