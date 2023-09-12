@@ -1627,7 +1627,7 @@ class Solution:
 # Output: 3
 # Explanation: The numbers in the range [1,2] are all in the array.
 
-# Solution --> there's always one to one mapping (len(A) + 1)
+# Solution --> there's always "one to one mapping" (len(A) + 1)
 #   if we've visited / have it in our index we want to change the value to negative
 
 #   fisrt loop is to change all the negative value to zero since we don't care about it
@@ -1642,6 +1642,7 @@ class Solution:
             for i in range(len(A)):
                 val = abs(A[i])
                 if 1 <= val <= len(A):
+                    # if  value is positive assign value to -
                     if A[val - 1] > 0:
                         A[val - 1] *= -1
                         # if val at index i is already zero since we cant put negative on 0 , 
