@@ -1578,3 +1578,6 @@ class NumMatrix:
         sum_col2 = self.sum_[row2 + 1][col2 + 1] - self.sum_[row1][col2 + 1]
         sum_col1 = self.sum_[row2 + 1][col1] - self.sum_[row1][col1]
         return sum_col2 - sum_col1
+
+
+# Non-decreasing Array
