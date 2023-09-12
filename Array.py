@@ -1627,10 +1627,14 @@ class Solution:
 # Output: 3
 # Explanation: The numbers in the range [1,2] are all in the array.
 
-# Solution -->
+# Solution --> there's always one to one mapping (len(A) + 1)
+  if we've visited / have it in our index we want to change the value to negative
+
+  fisrt loop is to change all the negative value to zero since we don't care about it
     class Solution:
         def firstMissingPositive(self, nums: list[int]) -> int:
             A = nums
+            # neutralize negative value
             for i in range(len(A)):
                 if A[i] < 0:
                     A[i] = 0
