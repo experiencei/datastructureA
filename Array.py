@@ -1650,7 +1650,7 @@ class Solution:
                         # so we will be using out of balance value --> (len(A) + 1)
                     elif A[val - 1] == 0:
                         A[val - 1] = -1 * (len(A) + 1)
-            
+            # if value still appear positive after modification it means it doesn't show up in the array
             for i in range( 1, len(A)+ 1):
                 if A[i -1] >= 0:
                     return i
