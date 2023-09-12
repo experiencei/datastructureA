@@ -1566,6 +1566,7 @@ class Solution:
 
 class NumMatrix:
     def __init__(self, matrix):
+        # aim is to compute the prefix sum with the init function
         self.sum_ = [[0] * (len(matrix[0]) + 1) for _ in range(len(matrix) + 1)]
         for i, line in enumerate(matrix):
             previous = 0
