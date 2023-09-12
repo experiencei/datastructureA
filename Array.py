@@ -1654,7 +1654,7 @@ class Solution:
             for i in range( 1, len(A)+ 1):
                 if A[i -1] >= 0:
                     return i
-            
+            # if the entire loop runs and we never see any positve interger we want to retutn the worst case scenario
             return len(A) + 1
             
         def firstMissingPositive_2(self, nums: list[int]) -> int:
