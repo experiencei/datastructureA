@@ -38,8 +38,8 @@ class Solution:
 # Question --> 
 #     Given a string s, return true if the s can be palindrome after deleting at most one character from it.
 
-Example 2:
+# Example 2:
 
-Input: s = "abca"
-Output: true
-Explanation: You could delete the character 'c'.
+# Input: s = "abca"
+# Output: true
+# Explanation: You could delete the character 'c'.
