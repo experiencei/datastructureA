@@ -43,3 +43,37 @@ class Solution:
 # Input: s = "abca"
 # Output: true
 # Explanation: You could delete the character 'c'.
+
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
+        
+        # if empty return True
+        if not s:
+            return True
+        
+        start = 0
+        end = len(s)-1
+        
+        #starts scanning from both ends inwards break at unmatched characters
+        while start <= end and s[start]==s[end]:
+            start += 1
+            end -= 1
+        
+        #if no unmatched characters found
+        if end <= start:
+            return True
+        
+        # function to check if string is palindrome
+        def isPalindrome(start,end):
+            while start <= end:
+                if s[start] != s[end]:
+                    return False
+                start += 1
+                end   -=1
+            return True
+        
+        #deleting either characters can result in palindrome hence checking both
+        if isPalindrome(start+1,end) or isPalindrome(start,end-1):
+            return True
+        
+        return False 
