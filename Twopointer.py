@@ -104,7 +104,7 @@ class Solution:
 
 
 
-# class Solution:
+class Solution:
     def minimumDifference(self, nums: List[int], k: int) -> int:
         nums.sort()
         l, r = 0, k - 1
