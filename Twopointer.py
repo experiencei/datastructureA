@@ -106,7 +106,9 @@ class Solution:
 
 class Solution:
     def minimumDifference(self, nums: list[int], k: int) -> int:
+        # [1,4,7,9] we have to sort it to get the optimum difference between the value
         nums.sort()
+        # to get size k of sliding window
         l, r = 0, k - 1
         res = float("inf")
         
