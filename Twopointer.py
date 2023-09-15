@@ -77,3 +77,85 @@ class Solution:
             return True
         
         return False 
+
+
+
+
+
+
+
+
+
+
+
+ Minimum Difference Between Highest and Lowest of K Scores
+
+# Add to List
+
+# Share
+# You are given a 0-indexed integer array nums, where nums[i] represents the score of the ith student. You are also given an integer k.
+
+# Pick the scores of any k students from the array so that the difference between the highest and the lowest of the k scores is minimized.
+
+# Return the minimum possible difference.
+
+ 
+
+# Example 1:
+
+# Input: nums = [90], k = 1
+# Output: 0
+# Explanation: There is one way to pick score(s) of one student:
+# - [90]. The difference between the highest and lowest score is 90 - 90 = 0.
+# The minimum possible difference is 0.
+
+
+
+
+# class Solution:
+    def minimumDifference(self, nums: List[int], k: int) -> int:
+        nums.sort()
+        l, r = 0, k - 1
+        res = float("inf")
+        
+        while r < len(nums):
+            res = min(res, nums[r] - nums[l])
+            l, r = l + 1, r + 1
+        return res
+
+
+
+# 344. Reverse String
+# Easy
+
+# 7852
+
+# 1122
+
+# Add to List
+
+# Share
+# Write a function that reverses a string. The input string is given as an array of characters s.
+# 6
+# You must do this by modifying the input array in-place with O(1) extra memory.
+
+ 
+
+# Example 1:
+
+# Input: s = ["h","e","l","l","o"]
+# Output: ["o","l","l","e","h"]
+
+
+
+# class Solution:
+#     def reverseString(self, s: List[str]) -> None:
+#         """
+#         Do not return anything, modify s in-place instead.
+#         """
+#         l = 0
+#         r = len(s) - 1
+#         while l < r:
+#             s[l],s[r] = s[r],s[l]
+#             l += 1
+#             r -= 1
