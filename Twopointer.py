@@ -120,11 +120,6 @@ class Solution:
 
 
 # 344. Reverse String
-# Easy
-
-# 7852
-
-# 1122
 
 # Add to List
 
