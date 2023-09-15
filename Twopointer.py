@@ -121,9 +121,8 @@ class Solution:
 
 # 344. Reverse String
 
-# Add to List
 
-# Share
+
 # Write a function that reverses a string. The input string is given as an array of characters s.
 # 6
 # You must do this by modifying the input array in-place with O(1) extra memory.
