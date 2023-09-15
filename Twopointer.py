@@ -98,7 +98,8 @@ class Solution:
 # Return the minimum possible difference.
 
  
-
+# Input: nums = [9,4,1,7], k = 2
+# Output: 2
 
 
 
