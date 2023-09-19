@@ -136,7 +136,6 @@ class Solution:
         while l < r:
             s[l],s[r] = s[r],s[l]
             l += 1
-<<<<<<< HEAD
             r -= 1
 
 # Merge Sorted Array
@@ -372,6 +371,3 @@ class Solution:
                 l += 1
             else:
                 return [l + 1, r + 1]
-=======
-            r -= 1
->>>>>>> 7392fbb59cffd3c89dafd1a63049a4120ebe4892
