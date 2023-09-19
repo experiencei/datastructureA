@@ -350,12 +350,12 @@ class Solution:
 
 
 
-Solution : --> [ 1 , 3 , 4 , 5 , 7 , 11]
-                 |                         |
-since we know the array is already sorted 
-we will be using 2 pointer 1 to the left and 1 to the right
-1 + 11 > 9 we will reduce the right pointer 
-1 + 7 < 8 we will increasing the left pointer since it lesser than the value
+# Solution : --> [ 1 , 3 , 4 , 5 , 7 , 11]
+#                  |                         |
+# since we know the array is already sorted 
+# we will be using 2 pointer 1 to the left and 1 to the right
+# 1 + 11 > 9 we will reduce the right pointer 
+# 1 + 7 < 8 we will increasing the left pointer since it lesser than the value
 
 
 class Solution:
