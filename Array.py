@@ -189,7 +189,11 @@ class Solution:
         res =""
         for i in range(len(strs[0])):
             for str in strs:
+<<<<<<< HEAD
                 if i == len(str) or str[i] != strs[0][i]:
+=======
+                if i == len(str) and str[i] != strs[0][i]:
+>>>>>>> 7392fbb59cffd3c89dafd1a63049a4120ebe4892
                  return res
             res += strs[0][i]
         return res
@@ -211,6 +215,7 @@ from collections import collections
 
 class Solution:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+<<<<<<< HEAD
         #default dictionary to avoid edge cases 
         ans = collections.defaultdict(list) #mapping charcount to list of anagram
 
@@ -221,6 +226,16 @@ class Solution:
                 # assigning every characters to acsii value of it and the increment to count them(0 - 25)
                 count[ord(c) - ord("a")] += 1
                 #tuple because we can't have list as keys
+=======
+        ans = collections.defaultdict(list)
+
+        for s in strs:
+            #initializing coumt with 0
+            count = [0] * 26
+            for c in s:
+                # assigning every characters to acsii value of it and the increment to count them
+                count[ord(c) - ord("a")] += 1
+>>>>>>> 7392fbb59cffd3c89dafd1a63049a4120ebe4892
             ans[tuple(count)].append(s)
         return ans.values()
 
