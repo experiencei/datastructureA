@@ -414,6 +414,8 @@ class Solution:
                     break
         return res
 
+# we can also solve it efficiently with monothonic decreasing stack
+
 
 # Range Sum Query - Immutable
 # Question ---> Given an integer array nums, handle multiple queries of the following type:
