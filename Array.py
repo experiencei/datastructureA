@@ -394,7 +394,7 @@ class Solution:
 
 class Solution:
    def nextGreaterElement(self, nums1: list[int], nums2: list[int]) -> list[int]:
-        # assigning hashmap with value --- index
+        # assigning hashmap with value --- index so as to know where to places it in results array
         nums1Idx  = { n : i for  i , n in enumerate(nums1)}
         # initailizing res to -1
         res = [-1] * len(nums1)
