@@ -470,4 +470,5 @@ class Solution:
 #  In this case, the max area of water (blue section) the container can contain is 49.
 
 Solution : we are going to have left and right pointer
-and keep adjusting based on height of the container which is going to give area
+and keep adjusting based on height of the container which is going to give maximum area
+
