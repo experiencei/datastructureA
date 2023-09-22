@@ -469,6 +469,23 @@ class Solution:
 # Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7].
 #  In this case, the max area of water (blue section) the container can contain is 49.
 
-Solution : we are going to have left and right pointer
-and keep adjusting based on height of the container which is going to give maximum area
+# Solution : we are going to have left and right pointer
+# and keep adjusting based on height of the container which is going to give maximum area
+
+class Solution:
+    def maxArea(self, height: list[int]) -> int:
+        l, r = 0, len(height) - 1
+        res = 0
+
+        while l < r:
+            # getting the minimum height which is going to be bottle neck and difference btw the pointer
+            res = max(res, min(height[l], height[r]) * (r - l))
+            #adjusting the pointer
+            if height[l] < height[r]:
+                l += 1
+            elif height[r] <= height[l]:
+                r -= 1
+            
+        return res
+
 
