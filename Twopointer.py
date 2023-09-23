@@ -510,7 +510,7 @@ class Solution:
 # Space Complexity - O(1)
 
 class Solution:
-    def numSubseq(self, nums: List[int], target: int) -> int:
+    def numSubseq(self, nums: list[int], target: int) -> int:
         nums.sort()
 
         res, mod = 0, (10**9 + 7)
