@@ -523,3 +523,6 @@ class Solution:
                 res += 1 << (right - left)
                 left += 1
         return res % mod
+
+
+Rotate Array
