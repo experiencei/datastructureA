@@ -542,6 +542,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        #K can be greater than the length of the array , so we have to mod it 
         k = k % len(nums)
         l, r = 0, len(nums) - 1
         while l < r:
