@@ -537,6 +537,11 @@ class Solution:
 # rotate 2 steps to the right: [6,7,1,2,3,4,5]
 # rotate 3 steps to the right: [5,6,7,1,2,3,4]
 
+#  Solution is we are going to reverse it 3 times , 
+#  1,2,3,4,5,6,7
+#  7,6,5,4,3,2,1 reverse whole of the array
+#  5,6,7,1,2,3,4 split by K and reverse again
+
 class Solution:
     def rotate(self, nums: list[int], k: int) -> None:
         """
