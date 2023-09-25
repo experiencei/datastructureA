@@ -1035,7 +1035,7 @@ class Solution:
 # [1 , -1 , 1 , 1 , 1 , 1 , 1]
 #  so far we can have so many prefix of 0ne
 #   intituion =  sum - k = value
-#   do we have the "value" in prefix sum we can remove to give us the "k"
+#   do we have the "value" in prefix sum "we can remove to give us the "k"
 #   then we update our prefixsum hashmap with "sum" as the prefixSum.
 
 # result = number of counts of prefixSum gather
