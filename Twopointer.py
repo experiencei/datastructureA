@@ -566,19 +566,6 @@ class Solution:
 
 
 
-class Solution(object):
-    def numRescueBoats(self, people: list[int], limit: int) -> int:
-        people.sort()
-        right = len(people) - 1
-        left = res = 0
-        while left <= right:
-            if people[left] + people[right] <= limit:
-                left += 1
-            right -= 1
-            res += 1
-        return res
-
-
 
 # Boats to Save People
 # Question --> You are given an array people where people[i] is the weight of the ith person, 
@@ -592,3 +579,15 @@ class Solution(object):
 # Input: people = [3,2,2,1], limit = 3
 # Output: 3
 # Explanation: 3 boats (1, 2), (2) and (3)
+
+class Solution(object):
+    def numRescueBoats(self, people: list[int], limit: int) -> int:
+        people.sort()
+        right = len(people) - 1
+        left = res = 0
+        while left <= right:
+            if people[left] + people[right] <= limit:
+                left += 1
+            right -= 1
+            res += 1
+        return res
