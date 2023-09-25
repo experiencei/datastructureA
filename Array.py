@@ -1195,11 +1195,13 @@ class Solution:
 class Solution:
     def gridGame(self , grid: list[list[int]]) -> int:
         N = len(grid[0])
+        # initialize the prefixSum with copy of grid
         preRow1, preRow2 = grid[0].copy() , grid[1].copy()
 
+        # calculate the prefixSum by adding the prefix value to current one
         for i in range(1 , N):
-            preRow1[1] += preRow1[i -1]
-            preRow2[1] += preRow2[i -1]
+            preRow1[i] += preRow1[i -1]
+            preRow2[i] += preRow2[i -1]
 
         res = float("inf")
         for i in range(N):
