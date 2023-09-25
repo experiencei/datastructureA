@@ -1129,8 +1129,9 @@ class Solution:
             
         res = 0
         for c in count.values():
+            # we want to make sure the count is greater than 1 ( so as to make pairs)
             if c > 1:
-                # dividing it by 2 make it to get rid of duplicate from combination
+                # dividing it by 2 make it to get rid of duplicate from "combination"
                 res += (c * ( c - 1)) // 2
         return res
 
