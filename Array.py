@@ -1205,6 +1205,7 @@ class Solution:
 
         res = float("inf")
         for i in range(N):
+            # remaining of top - where the i turn down
             top = preRow1[-1] - preRow1[i]
             bottom = preRow2[i -1] if i > 0 else 0
             secondRobot = max(top , bottom)
@@ -1256,7 +1257,7 @@ class Solution(object):
 #         pCount , sCount = {} , {}
 #         for i in range(len(p)):
 #             pCount[p[i]] = 1 + pCount.get(p[i], 0)
-#             sCount[p[i]] = 1 + sCount.get(s[i], 0)
+#             sCount[s[i]] = 1 + sCount.get(s[i], 0)
 
 #         res = [0] if sCount == pCount else []
 #         l = 0
