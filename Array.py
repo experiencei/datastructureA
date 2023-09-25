@@ -1092,6 +1092,7 @@ class Solution:
 
             maxClose = max(maxClose, extraClose)
 
+#division by 2 because ]]][[[[] in 2 swap can balance it and we have 3 Maxextraclosing
         return (maxClose + 1) // 2  # Or math.ceil(maxClose / 2)
 
 
