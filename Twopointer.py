@@ -586,3 +586,9 @@ class Solution(object):
 # Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most limit.
 
 # Return the minimum number of boats to carry every given person.
+
+# Example 2:
+
+# Input: people = [3,2,2,1], limit = 3
+# Output: 3
+# Explanation: 3 boats (1, 2), (2) and (3)
