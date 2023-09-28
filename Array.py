@@ -1411,6 +1411,7 @@ class Solution:
 
 class Solution:
     def pushDominoes(self, dominoes: str) -> str:
+        # we are converting it to a list bcos we can't update a string
         dom = list(dominoes)
         q = collections.deque()
         # if dominoes isn't straigth add to queue
@@ -1419,7 +1420,7 @@ class Solution:
                 q.append((i, d))
         
         while q:
-            # we want to keep popping from the left
+            # we want to keep popping from the left (since we are starting from left)
             i, d = q.popleft()
 
             if d == 'L' and i > 0 and dom[i - 1] == '.':
