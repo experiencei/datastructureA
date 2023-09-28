@@ -1425,7 +1425,9 @@ class Solution:
 
             # if i is more than 1 and left index is standing dominoes
             if d == 'L' and i > 0 and dom[i - 1] == '.':
+                # tips it to Left and append to queue
                 q.append((i - 1, 'L'))
+                # asign the tips dominoes into left
                 dom[i - 1] = 'L'
             elif d == 'R':
                 if i + 1 < len(dom) and dom[i + 1] == '.':
