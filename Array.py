@@ -1423,6 +1423,7 @@ class Solution:
             # we want to keep popping from the left (since we are starting from left)
             i, d = q.popleft()
 
+            # if i is more than 1 and left index is standing dominoes
             if d == 'L' and i > 0 and dom[i - 1] == '.':
                 q.append((i - 1, 'L'))
                 dom[i - 1] = 'L'
