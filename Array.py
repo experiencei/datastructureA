@@ -1469,6 +1469,7 @@ class Solution:
         previous_sequences = set()
         # we want to make sure it remains 9 left i.e len(s) - 9
         for i in range(len(s) - 9):
+            # not including i itself
             current = s[i:i+10]
             if current in previous_sequences:
                 result.add(current)
