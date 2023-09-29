@@ -86,7 +86,7 @@ Explanation: Sub-arrays [2,5,5],[5,5,5] and [5,5,8] have averages 4, 5 and 6 res
 
 
 class Solution:
-    def numOfSubarrays(self, arr: List[int], k: int, threshold: int) -> int:
+    def numOfSubarrays(self, arr: list[int], k: int, threshold: int) -> int:
         res = 0
         curSum = sum(arr[:k-1])
 
