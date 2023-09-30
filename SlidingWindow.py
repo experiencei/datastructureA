@@ -65,9 +65,7 @@ class Solution:
 # Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
 
 
-# Add to List
 
-# Share
 # Given an array of integers arr and two integers k and threshold, return the number of sub-arrays of size k and average greater than or equal to threshold.
 
  
