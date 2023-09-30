@@ -78,7 +78,6 @@ class Solution:
 
 
 
-
 class Solution:
     def numOfSubarrays(self, arr: list[int], k: int, threshold: int) -> int:
         res = 0
@@ -90,3 +89,6 @@ class Solution:
                 res += 1
             curSum -= arr[L]
         return res
+
+
+# Longest Substring Without Repeating Characters
