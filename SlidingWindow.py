@@ -62,7 +62,7 @@ class Solution:
 
 
 
-1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
 Medium
 
 1423
