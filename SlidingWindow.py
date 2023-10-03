@@ -86,7 +86,7 @@ class Solution:
         curSum = sum(arr[:k-1])
 
         for L in range(len(arr) - k + 1):
-          
+            # L + k - 1 --> getting the right index
             curSum += arr[L + k - 1]
             if (curSum / k) >= threshold:
                 res += 1
