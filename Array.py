@@ -1633,6 +1633,8 @@ class Solution:
             if changed:
                 return False
                 # [3 , 2 , 4] we want to favor the RHS as long as n + 1 > n - 1
+                # i == 0 when we have just 2 value in an array i.e no [i - 1] in it
+
             if i == 0 or nums[i + 1] >= nums[i - 1]:
                 nums[i] = nums[i + 1]
             else:
