@@ -80,13 +80,17 @@ class Solution:
 
 class Solution:
     def numOfSubarrays(self, arr: list[int], k: int, threshold: int) -> int:
+        #initializing res to count the number of results we have.
         res = 0
+        # summing up the value up until k without k inclusive
         curSum = sum(arr[:k-1])
 
         for L in range(len(arr) - k + 1):
+          
             curSum += arr[L + k - 1]
             if (curSum / k) >= threshold:
                 res += 1
+                # we are subtracting the left index from array
             curSum -= arr[L]
         return res
 
