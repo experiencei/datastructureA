@@ -1595,7 +1595,9 @@ class NumMatrix:
             previous = 0
             for j, num in enumerate(line):
                 previous += num
+                #value above it , is by offset the row (i) by due zero value we added at both row and col
                 above = self.sum_[i][j + 1]
+                #getting the sum for particular spot = previous sum + above sum
                 self.sum_[i + 1][j + 1] = previous + above
 
     def sumRegion(self, row1, col1, row2, col2):
