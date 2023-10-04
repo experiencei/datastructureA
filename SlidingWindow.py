@@ -156,7 +156,7 @@ class Solution:
             # track the maximum value 
             maxf = max(maxf, count[s[r]])
 
-
+            # shift the left pointer if the number of replacement is greater than K
             if (r - l + 1) - maxf > k:
                 count[s[l]] -= 1
                 l += 1
