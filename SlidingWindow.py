@@ -145,9 +145,11 @@ class Solution:
 # Solution -->
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
+      #hashmap for maintaining the count of character
         count = {}
         
         l = 0
+        maxF to keep track of maximum value we've encounter
         maxf = 0
         for r in range(len(s)):
             count[s[r]] = 1 + count.get(s[r], 0)
