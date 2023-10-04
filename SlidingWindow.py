@@ -149,7 +149,7 @@ class Solution:
         count = {}
         
         l = 0
-        maxF to keep track of maximum value we've encounter
+        # maxF to keep track of maximum value we've encounter
         maxf = 0
         for r in range(len(s)):
             count[s[r]] = 1 + count.get(s[r], 0)
