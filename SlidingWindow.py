@@ -137,6 +137,9 @@ class Solution:
 # Output: 4
 # Explanation: Replace the two 'A's with two 'B's or vice versa.
 
+# solution : we're going to be having a hashmap counting the number of letter
+#  difference btw windowLen - length of max char is "Number of replacement to be made"
+# windowLen - length of Max character <= k
 
 
 # Solution -->
