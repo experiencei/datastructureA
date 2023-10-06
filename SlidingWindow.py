@@ -213,6 +213,7 @@ class Solution:
             # if by incrementing s2Count the array/hashmap are equal then we want to increment the matches
             if s1Count[index] == s2Count[index]:
                 matches += 1
+            # if by incrementing s2Count the array/hashmap of s2count **over** increment then we want to reduce the matches 
             elif s1Count[index] + 1 == s2Count[index]:
                 matches -= 1
 
