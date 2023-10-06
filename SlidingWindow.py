@@ -174,7 +174,7 @@ class Solution:
 # In other words, return true if one of s1's permutations is the substring of s2.
 
  #solution -->  permutaion is also like anagram , we will be using to hashmap or array
- 
+#  to compute the value and compare it , we will keep adjusting the window and compare
 
 # Example 1:
 
