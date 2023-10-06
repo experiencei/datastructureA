@@ -185,9 +185,11 @@ class Solution:
 
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
+        # if the length of s1 is greater than s2 will be returning false 
         if len(s1) > len(s2):
             return False
 
+        #initailize the array to empty zero and assign the letter in it
         s1Count, s2Count = [0] * 26, [0] * 26
         for i in range(len(s1)):
             s1Count[ord(s1[i]) - ord("a")] += 1
