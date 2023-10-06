@@ -231,13 +231,7 @@ class Solution:
 
 
 #  Frequency of the Most Frequent Element
-# Medium
 
-# 2979
-
-# 81
-
-# Add to List
 
 # Share
 # The frequency of an element is the number of times it occurs in an array.
