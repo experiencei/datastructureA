@@ -253,7 +253,8 @@ class Solution:
 
 # Solution :  we have to sort cause it is easier to change (increment) value on the left side of it than random value in the array
 #  the formular is expand the window while (num[r] * windowLength < totalSumInWindow + k)
-
+# while because [ 1 , 1 , 1 , 2 , 2 , 4 ] k = 2
+# total sum of the window + k (what we have) is greater than num[r] (number we are trying to make most frequent) * windowLength(all what are trying to make frequent)
 
 class Solution:
     def maxFrequency(self, nums: list[int], k: int) -> int:
@@ -263,13 +264,16 @@ class Solution:
         res , total = 0 , 0
         
         while r < len(nums):
+            # we want to keep adding to total
             total += nums[r]
             
-            
+            # while the condition is not met
             while nums[r] * ( r - l + 1) > total + k:
+                # we want to decrement total by left point in nums 
                 total -= nums[l]
                 l += 1
                 
+            # maximum window we have as long as condition is met 
             res = max(res , r - l + 1)
             r += 1
             
