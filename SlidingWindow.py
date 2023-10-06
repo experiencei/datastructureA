@@ -251,7 +251,8 @@ class Solution:
 
 
 
-# Solution : 
+# Solution :  we have to sort cause it is easier to change (increment) value on the left side of it than random value in the array
+
 
 
 class Solution:
