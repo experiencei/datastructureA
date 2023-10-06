@@ -192,6 +192,7 @@ class Solution:
         #initailize the array to empty zero and assign the letter in it
         s1Count, s2Count = [0] * 26, [0] * 26
         for i in range(len(s1)):
+            # Ascii value as index and +1 if it's present
             s1Count[ord(s1[i]) - ord("a")] += 1
             s2Count[ord(s2[i]) - ord("a")] += 1
 
