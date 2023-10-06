@@ -230,7 +230,7 @@ class Solution:
 
 
 
-# 1838. Frequency of the Most Frequent Element
+#  Frequency of the Most Frequent Element
 # Medium
 
 # 2979
