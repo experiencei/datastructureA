@@ -210,6 +210,7 @@ class Solution:
 
             index = ord(s2[r]) - ord("a")
             s2Count[index] += 1
+            # if by incrementing s2Count the array/hashmap are equal then we want to increment the matches
             if s1Count[index] == s2Count[index]:
                 matches += 1
             elif s1Count[index] + 1 == s2Count[index]:
