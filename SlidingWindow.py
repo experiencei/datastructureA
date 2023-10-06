@@ -168,15 +168,7 @@ class Solution:
 
 
 # 567. Permutation in String
-# Medium
 
-# 10705
-
-# 352
-
-# Add to List
-
-# Share
 # Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
 
 # In other words, return true if one of s1's permutations is the substring of s2.
@@ -228,32 +220,30 @@ class Solution:
 
 
 
-1838. Frequency of the Most Frequent Element
-Medium
+# 1838. Frequency of the Most Frequent Element
+# Medium
 
-2979
+# 2979
 
-81
+# 81
 
-Add to List
+# Add to List
 
-Share
-The frequency of an element is the number of times it occurs in an array.
+# Share
+# The frequency of an element is the number of times it occurs in an array.
 
-You are given an integer array nums and an integer k. In one operation, you can choose an index of nums and increment the element at that index by 1.
+# You are given an integer array nums and an integer k. In one operation, you can choose an index of nums and increment the element at that index by 1.
 
-Return the maximum possible frequency of an element after performing at most k operations.
+# Return the maximum possible frequency of an element after performing at most k operations.
 
  
 
-Example 1:
+# Example 1:
 
-Input: nums = [1,2,4], k = 5
-Output: 3
-Explanation: Increment the first element three times and the second element two times to make nums = [4,4,4].
-4 has a frequency of 3.
-
-
+# Input: nums = [1,2,4], k = 5
+# Output: 3
+# Explanation: Increment the first element three times and the second element two times to make nums = [4,4,4].
+# 4 has a frequency of 3.
 
 
 
@@ -261,25 +251,27 @@ Explanation: Increment the first element three times and the second element two 
 
 
 
-class Solution:
-    def maxFrequency(self, nums: List[int], k: int) -> int:
+
+
+# class Solution:
+#     def maxFrequency(self, nums: List[int], k: int) -> int:
         
-        nums.sort()
+#         nums.sort()
         
-        start=0
-        sm=0
-        ans=1
+#         start=0
+#         sm=0
+#         ans=1
         
-        for i,val in enumerate(nums):
+#         for i,val in enumerate(nums):
             
-            op=val*(i-start)-sm
+#             op=val*(i-start)-sm
             
-            while op>k:
-                op-=val-nums[start]
-                sm-=nums[start]
-                start+=1
+#             while op>k:
+#                 op-=val-nums[start]
+#                 sm-=nums[start]
+#                 start+=1
             
-            sm+=val
-            ans=max(ans,i-start+1)
+#             sm+=val
+#             ans=max(ans,i-start+1)
                     
-        return ans
+#         return ans
