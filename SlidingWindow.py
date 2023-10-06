@@ -252,7 +252,7 @@ class Solution:
 
 
 # Solution :  we have to sort cause it is easier to change (increment) value on the left side of it than random value in the array
-
+#  the formular is expand the window while (num[r] * windowLength < totalSumInWindow + k)
 
 
 class Solution:
