@@ -318,3 +318,10 @@ class Solution:
 # Starting from any tree of your choice, you must pick exactly one fruit from every tree (including the start tree) while moving to the right. The picked fruits must fit in one of your baskets.
 # Once you reach a tree with fruit that cannot fit in your baskets, you must stop.
 # Given the integer array fruits, return the maximum number of fruits you can pick.
+
+
+# Example 1:
+
+# Input: fruits = [1,2,1]
+# Output: 3
+# Explanation: We can pick from all 3 trees.
