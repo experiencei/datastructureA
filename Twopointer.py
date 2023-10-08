@@ -364,6 +364,7 @@ class Solution:
             elif curSum < target:
                 l += 1
             else:
+                #plus 1 due to zero based index
                 return [l + 1, r + 1]
 
 
