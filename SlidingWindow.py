@@ -331,7 +331,7 @@ class Solution:
         count = collections.defaultdict(int) #fruitType -> countInBasket
         l , total , res = 0 , 0 , 0
         for r in range(len(fruits)):
-            count[fruit[r]] += 1
+            count[fruits[r]] += 1
             total += 1
 
             while len(count) > 2:
