@@ -336,4 +336,13 @@ class Solution:
 
             while len(count) > 2:
                 f = fruits[l]
+                count[f] -= 1
+                total -= 1
+                l += 1
+                if not count[f]:
+                    count.pop(f)
+
+            res = max(res , total)
+
+            return res
 
