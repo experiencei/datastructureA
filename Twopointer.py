@@ -387,6 +387,7 @@ class Solution:
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         res = []
+        #we are sorting to avoid duplicate
         nums.sort()
 
         for i, a in enumerate(nums):
@@ -409,7 +410,7 @@ class Solution:
                 else:
                     res.append([a, nums[l], nums[r]])
                     l += 1
-                    r -= 1
+                
                     # [-2 , -2 , 0 , 0 , 2 , 2] we want to increment the left pointer as long as it equal to previous
                     while nums[l] == nums[l - 1] and l < r:
                         l += 1
