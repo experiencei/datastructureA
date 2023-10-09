@@ -346,3 +346,25 @@ class Solution:
 
             return res
 
+
+
+# class Solution:
+#     def totalFruit(self, fruits: list[int]) -> int:
+#         max_length = 0
+#         window_start = 0
+#         fruit_frequencies = {}
+
+#         for window_end in range(len(fruits)):
+#             right_fruit = fruits[window_end]
+#             if right_fruit not in fruit_frequencies:
+#                 fruit_frequencies[right_fruit] = 0
+#             fruit_frequencies[right_fruit] += 1
+
+#             while len(fruit_frequencies) > 2:
+#                 left_fruit = fruits[window_start]
+#                 fruit_frequencies[left_fruit] -= 1
+#                 if fruit_frequencies[left_fruit] == 0:
+#                     del fruit_frequencies[left_fruit]
+#                 window_start += 1
+#             max_length = max(max_length, window_end - window_start + 1)
+#         return max_length
