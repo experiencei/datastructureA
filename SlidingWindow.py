@@ -329,3 +329,5 @@ class Solution:
 class Solution:
     def totalFruit(self , fruits: list[int]) -> int:
         count = collections.defaultdict(int) #fruitType -> countInBasket
+        l , total , res = 0 , 0 , 0
+        for r in range(len(fruits)):
