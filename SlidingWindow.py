@@ -325,3 +325,7 @@ class Solution:
 # Input: fruits = [1,2,1]
 # Output: 3
 # Explanation: We can pick from all 3 trees.
+
+class Solution:
+    def totalFruit(self , fruits: list[int]) -> int:
+        count = collections.defaultdict(int) #fruitType -> countInBasket
