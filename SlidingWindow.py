@@ -389,7 +389,7 @@ class Solution:
 # Log(n) + k
 # More code but also more intuitive
 class Solution:
-    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+    def findClosestElements(self, arr: list[int], k: int, x: int) -> list[int]:
         l, r = 0, len(arr) - 1
 
         # Find index of x or the closest val to x
@@ -421,7 +421,7 @@ class Solution:
 # Log(n-k) + k
 # Elegant but very difficult to understand
 class Solution:
-    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+    def findClosestElements(self, arr: list[int], k: int, x: int) -> list[int]:
         l, r = 0, len(arr) - k
 
         while l < r:
