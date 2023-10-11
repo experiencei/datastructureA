@@ -338,7 +338,7 @@ class Solution:
             count[fruits[r]] += 1
             total += 1
             
-            
+            # if the count is more than 2 since we are allow to 
             while len(count) > 2:
                 f = fruits[l]
                 count[f] -= 1
