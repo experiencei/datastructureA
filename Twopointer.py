@@ -512,7 +512,8 @@ class Solution:
 # Time Complexity - O(nlogn)
 # Space Complexity - O(1)
 
-# Solution : we can use something like a backtracking since it's sorted can we 
+# Solution : we can use something like a backtracking since it's sorted 
+  = 2^2 + 2^1
 
 class Solution:
     def numSubseq(self, nums: list[int], target: int) -> int:
