@@ -326,7 +326,8 @@ class Solution:
 # Output: 3
 # Explanation: We can pick from all 3 trees.
 
-# Solution : 
+# Solution : we want a consecutive of subsequence of the 2 different fruit.
+# we need an hashmap to count the fruit and its occurences  
 
 class Solution:
     def totalFruit(self , fruits: list[int]) -> int:
