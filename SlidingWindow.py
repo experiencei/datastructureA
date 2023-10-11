@@ -341,9 +341,12 @@ class Solution:
             # if the count is more than 2 , since we're only allow to pick 2 fruits
             while len(count) > 2:
                 f = fruits[l]
+                # reduce the count and deduct from the total
                 count[f] -= 1
                 total -= 1
                 l += 1
+
+                #
                 if not count[f]:
                     count.pop(f)
 
