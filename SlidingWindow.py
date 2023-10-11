@@ -346,7 +346,7 @@ class Solution:
                 total -= 1
                 l += 1
 
-                #
+                # we need to pop if the count reduces to nothing / 0
                 if not count[f]:
                     count.pop(f)
 
