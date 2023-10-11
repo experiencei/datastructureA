@@ -527,7 +527,7 @@ class Solution:
             if (nums[left] + nums[right]) > target:
                 right -= 1
             else:
-                res += 1 << (right - left)
+                res += 1 << (right - left)  # (2 ** (r - i))
                 left += 1
         return res % mod
 
