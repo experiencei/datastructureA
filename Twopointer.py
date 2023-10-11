@@ -514,6 +514,7 @@ class Solution:
 
 # Solution : we can use something like a backtracking since it's sorted 
 #   = 2^2 + 2^1
+#   we are allow to sort the input array because  , no matter how our result is still the same regardless
 
 class Solution:
     def numSubseq(self, nums: list[int], target: int) -> int:
