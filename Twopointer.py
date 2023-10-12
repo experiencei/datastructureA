@@ -631,6 +631,7 @@ class Solution:
         leftMax, rightMax = height[l], height[r]
         res = 0
         while l < r:
+            #left was smaller than right that's why we shift it
             if leftMax < rightMax:
                 l += 1
                 leftMax = max(leftMax, height[l])
