@@ -464,9 +464,12 @@ class Solution:
         max_vowel = curr_vowel
         for i in range(k , len(s)) :
             if s[i - k] in lib :
+                curr_vowel -= 1
             if s[i] in lib :
                 curr_vowel += 1
             max_vowel = max(curr_vowel , max_vowel )
         return max_vowel 
 
 
+
+git
