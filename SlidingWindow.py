@@ -486,7 +486,8 @@ class Solution:
 # Output: 2
 # Explanation: The subarray [4,3] has the minimal length under the problem constraint.
 
-Solution : we are using a sliding window technique to calculate the total
+# Solution : we are using a sliding window technique to calculate the total value and if the total is greater
+# than k we want to shrink the window and if less than k we want extend the window 
 class Solution:
 	def minSubArrayLen(self, target: int, nums: list[int]) -> int:
 		result = float('inf')
