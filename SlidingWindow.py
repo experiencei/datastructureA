@@ -486,12 +486,11 @@ class Solution:
 # Output: 2
 # Explanation: The subarray [4,3] has the minimal length under the problem constraint.
 
+Solution : we are using a sliding window technique to calculate the total
 class Solution:
 	def minSubArrayLen(self, target: int, nums: list[int]) -> int:
-
 		result = float('inf')
 		start = 0
-
 		current_window_sum = 0
 
 		for index in range(len(nums)):
