@@ -504,10 +504,11 @@ class Solution:
             #as long as current window total is greater than target we want to keep running the loop
 			while current_window_sum >= target:
 
+                # index - start + 1 (getting the minimum index btw the window length Right - left)
 				result = min(result , index - start + 1)
-
+               
 				current_window_sum = current_window_sum - nums[start]
-
+                # we want to increment our left pointer by finding a smaller window 
 				start = start + 1
 
 		if result == float('inf'):
