@@ -506,7 +506,7 @@ class Solution:
 
                 # index - start + 1 (getting the minimum index btw the window length Right - left)
 				result = min(result , index - start + 1)
-               
+                #updating the total length by reducing the sum
 				current_window_sum = current_window_sum - nums[start]
                 # we want to increment our left pointer by finding a smaller window 
 				start = start + 1
