@@ -490,7 +490,6 @@ class Solution:
 	def minSubArrayLen(self, target: int, nums: list[int]) -> int:
 
 		result = float('inf')
-
 		start = 0
 
 		current_window_sum = 0
