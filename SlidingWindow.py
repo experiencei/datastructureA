@@ -52,12 +52,15 @@ class Solution:
         L = 0
 
         for R in range(len(nums)):
+            #validate if window isn't to large than k
             if R - L > k:
+                #remove it if it is to large by shrinking the window
                 window.remove(nums[L])
                 L += 1
             #if we nums[r] alraedy in window(set) then we found a duplicate
             if nums[R] in window:
                 return True
+            #otherwise we need to add it
             window.add(nums[R])
         return False
 
