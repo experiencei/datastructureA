@@ -498,9 +498,10 @@ class Solution:
 		current_window_sum = 0
 
 		for index in range(len(nums)):
-
+            #we're calculating the total value of the current window
 			current_window_sum = current_window_sum + nums[index]
 
+            #as long as current window total is greater than target we want to keep running the loop
 			while current_window_sum >= target:
 
 				result = min(result , index - start + 1)
