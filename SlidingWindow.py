@@ -486,3 +486,28 @@ class Solution:
 # Output: 2
 # Explanation: The subarray [4,3] has the minimal length under the problem constraint.
 
+class Solution:
+	def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+
+		result = float('inf')
+
+		start = 0
+
+		current_window_sum = 0
+
+		for index in range(len(nums)):
+
+			current_window_sum = current_window_sum + nums[index]
+
+			while current_window_sum >= target:
+
+				result = min(result , index - start + 1)
+
+				current_window_sum = current_window_sum - nums[start]
+
+				start = start + 1
+
+		if result == float('inf'):
+			return 0
+		else:
+			return result
