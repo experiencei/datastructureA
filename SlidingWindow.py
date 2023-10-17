@@ -149,7 +149,7 @@ class Solution:
 # Solution -->
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-      #hashmap for maintaining the count of character
+        #hashmap for maintaining the count of character
         count = {}
         
         l = 0
@@ -515,3 +515,5 @@ class Solution:
 			return 0
 		else:
 			return result
+
+
