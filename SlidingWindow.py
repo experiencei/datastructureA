@@ -290,7 +290,7 @@ class Solution:
 
 
 class Solution:
-    def maxFrequency(self, nums: List[int], k: int) -> int:
+    def maxFrequency(self, nums: list[int], k: int) -> int:
         
         nums.sort()
         
