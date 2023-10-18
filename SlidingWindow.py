@@ -296,8 +296,7 @@ class Solution:
         
 #         start=0
 #         sm=0
-#         ans=1
-        
+#         ans=1      
 #         for i,val in enumerate(nums):
             
 #             op=val*(i-start)-sm
