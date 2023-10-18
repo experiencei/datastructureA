@@ -289,28 +289,28 @@ class Solution:
 
 
 
-class Solution:
-    def maxFrequency(self, nums: list[int], k: int) -> int:
+# class Solution:
+#     def maxFrequency(self, nums: list[int], k: int) -> int:
         
-        nums.sort()
+#         nums.sort()
         
-        start=0
-        sm=0
-        ans=1
+#         start=0
+#         sm=0
+#         ans=1
         
-        for i,val in enumerate(nums):
+#         for i,val in enumerate(nums):
             
-            op=val*(i-start)-sm
+#             op=val*(i-start)-sm
             
-            while op>k:
-                op-=val-nums[start]
-                sm-=nums[start]
-                start+=1
+#             while op>k:
+#                 op-=val-nums[start]
+#                 sm-=nums[start]
+#                 start+=1
             
-            sm+=val
-            ans=max(ans,i-start+1)
+#             sm+=val
+#             ans=max(ans,i-start+1)
                     
-        return ans
+#         return ans
 
 
 #Fruit Into Baskets
