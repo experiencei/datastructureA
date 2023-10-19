@@ -537,4 +537,4 @@ class Solution:
 # Then, use the second operation on the third and sixth elements to make s = "101010".
 
 
-# Solution --> 
+# Solution --> first is we want to get a target(possible result for the string given)
