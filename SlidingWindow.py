@@ -559,6 +559,7 @@ class Solution:
       l = 0
       res = len(s)
       for r in range(len(s)):#iterate
+        # check the differences in the strings and alternating one and count the diff
         if s[r]!=alt1[r]:#condition
             diff1 = diff1+1#count
         if s[r]!=alt2[r]:#condition
