@@ -539,3 +539,4 @@ class Solution:
 
 # Solution --> first is we want to get a target(possible result for the string given)
 # target of s = "101010" and "010101" will use a sliding window technique to compare the diffs to know the minimum no of flips.
+# because of the Type-1 operation to take places we need to extend the string and target by itself
