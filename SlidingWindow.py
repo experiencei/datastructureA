@@ -546,6 +546,7 @@ class Solution:
 class Solution:
     def minFlips(self, s: str) -> int:
       n = len(s)
+      #   s will be twice the length bcos of the Type-1 operation
       s = s+s
       alt1=""
       alt2 =""
