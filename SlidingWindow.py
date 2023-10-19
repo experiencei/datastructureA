@@ -542,3 +542,30 @@ class Solution:
 # because of the Type-1 operation to take places we need to extend the string and target by itself
 # s="111000111000"
 # target = "010101010101" and "101010101010"
+
+class Solution:
+    def minFlips(self, s: str) -> int:
+      n = len(s)
+      s = s+s
+      alt1=""
+      alt2 =""
+      for i in range(len(s)):#store
+        alt1 += "0" if i%2==0 else "1"
+        alt2 += "1" if i%2==0 else "0"
+      diff1,diff2 = 0,0
+      l = 0
+      res = len(s)
+      for r in range(len(s)):#iterate
+        if s[r]!=alt1[r]:#condition
+            diff1 = diff1+1#count
+        if s[r]!=alt2[r]:#condition
+          diff2 = diff2+1#count
+        if (r-l+1)>n:#count
+          if s[l]!=alt1[l]:
+            diff1 = diff1-1#count
+          if s[l]!=alt2[l]:
+            diff2 = diff2-1#count
+          l = l+1#contract
+        if (r-l+1)==n:
+          res = min(res,diff1,diff2)#store
+      return res
