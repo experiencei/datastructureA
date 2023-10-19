@@ -551,6 +551,7 @@ class Solution:
       alt1=""
       alt2 =""
       for i in range(len(s)):#store
+        # creating the alternating strings for both target starting with 1 & 0
         alt1 += "0" if i%2==0 else "1"
         alt2 += "1" if i%2==0 else "0"
       diff1,diff2 = 0,0
