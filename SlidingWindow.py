@@ -528,3 +528,10 @@ class Solution:
 # The string is called alternating if no two adjacent characters are equal.
 # For example, the strings "010" and "1010" are alternating, while the string "0100" is not.
 
+
+# Example 1:
+
+# Input: s = "111000"
+# Output: 2
+# Explanation: Use the first operation two times to make s = "100011".
+# Then, use the second operation on the third and sixth elements to make s = "101010".
