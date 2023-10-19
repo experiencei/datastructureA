@@ -570,8 +570,9 @@ class Solution:
             diff1 = diff1-1#count
           if s[l]!=alt2[l]:
             diff2 = diff2-1#count
-          contract left pointer and reduce the windwow
+          #   contract left pointer and reduce the window
           l = l+1#contract
+        # we only want the result when the length of window is == n
         if (r-l+1)==n:
           res = min(res,diff1,diff2)#store
       return res
