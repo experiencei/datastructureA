@@ -517,3 +517,6 @@ class Solution:
 			return result
 
 
+# Minimum Number of Flips to Make the Binary String Alternating
+
+Question 
