@@ -564,6 +564,7 @@ class Solution:
             diff1 = diff1+1#count
         if s[r]!=alt2[r]:#condition
           diff2 = diff2+1#count
+        # if by any chances the window length is greater than n we want contract the left pointer and remove the differences
         if (r-l+1)>n:#count
           if s[l]!=alt1[l]:
             diff1 = diff1-1#count
