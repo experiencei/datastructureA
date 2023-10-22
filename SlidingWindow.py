@@ -618,7 +618,7 @@ class Solution:
             while have == need:
                 # update our result
                 if (r - l + 1) < resLen:
-                    res = [l, r]
+                    # res = [l, r]
                     resLen = r - l + 1
                 # pop from the left of our window
                 window[s[l]] -= 1
