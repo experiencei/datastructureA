@@ -647,6 +647,7 @@ class Solution:
                 window[s[l]] -= 1
                 if s[l] in countT and window[s[l]] < countT[s[l]]:
                     have -= 1
+                    # we have to shift left by 1 if we are removing character from the window
                 l += 1
         l, r = res
         return s[l : r + 1] if resLen != float("infinity") else ""
