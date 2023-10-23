@@ -91,6 +91,7 @@ class Solution:
             # L + k - 1 --> getting the right index
             curSum += arr[L + k - 1]
             if (curSum / k) >= threshold:
+                #we want to add to result
                 res += 1
                 # we are subtracting the left index from array
             curSum -= arr[L]
