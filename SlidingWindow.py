@@ -612,7 +612,9 @@ class Solution:
         if t == "":
             return ""
 
+        # initalize the hashmap of both T and window
         countT, window = {}, {}
+        
         for c in t:
             countT[c] = 1 + countT.get(c, 0)
 
