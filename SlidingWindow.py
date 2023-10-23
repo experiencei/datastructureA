@@ -645,6 +645,8 @@ class Solution:
                 # pop from the left of our window (we want to shrink the window as lowest as it can possibly be)
                 # and it's possible our condition is no longer met
                 window[s[l]] -= 1
+                
+                # if what we "NEED" is greater than have
                 if s[l] in countT and window[s[l]] < countT[s[l]]:
                     have -= 1
                     # we have to shift left by 1 if we are removing character from the window
