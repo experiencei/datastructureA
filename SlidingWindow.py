@@ -604,6 +604,7 @@ class Solution:
 
 # Solution : we will be needing to hashsamp for comparison of what we "NEED" to what we "HAVE"
 # with the hashmap of each containing  "character | count" 
+# maintain the length of the result Res[0 , 5]  len = 6
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
