@@ -602,6 +602,9 @@ class Solution:
 # Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
 
 
+# Solution : we will be needing to hashsamp for comparison of what we "NEED" to what we "HAVE"
+# with the hashmap of each containing  "character | count" 
+
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if t == "":
