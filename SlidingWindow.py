@@ -127,6 +127,7 @@ class Solution:
                 l += 1
                 #add the right most character to the window 
             charSet.add(s[r])
+            # take the maximum window without repeating a characters
             res = max(res, r - l + 1)
         return res
 
