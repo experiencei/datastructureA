@@ -626,6 +626,7 @@ class Solution:
             c = s[r]
             window[c] = 1 + window.get(c, 0)
 
+            # if window and count of T are equal and c is present in Count T we want to increment our "HAVE"
             if c in countT and window[c] == countT[c]:
                 have += 1
 
