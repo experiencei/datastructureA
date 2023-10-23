@@ -621,7 +621,7 @@ class Solution:
         have, need = 0, len(countT)
         res, resLen = [-1, -1], float("infinity")
         l = 0
-        we are updating our window here and counting every characters in s and 
+        # we are updating our window here and counting every characters in s 
         for r in range(len(s)):
             c = s[r]
             window[c] = 1 + window.get(c, 0)
