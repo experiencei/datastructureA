@@ -625,7 +625,7 @@ class Solution:
         # initialize res to [-1 , -1] since we know it's going to be [l , r]
         res, resLen = [-1, -1], float("infinity")
         # initialize our left pointer
-        
+
         l = 0
         # we are updating our window here and counting every characters in s 
         for r in range(len(s)):
@@ -636,6 +636,7 @@ class Solution:
             if c in countT and window[c] == countT[c]:
                 have += 1
 
+            # while have == need we wan to check if the current window is less than already have window
             while have == need:
                 # update our result
                 if (r - l + 1) < resLen:
