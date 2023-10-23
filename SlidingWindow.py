@@ -119,7 +119,9 @@ class Solution:
         res = 0
 
         for r in range(len(s)):
+            # if we find duplicate in our set that is when we want to shrink the window
             while s[r] in charSet:
+                # remove the left most element in the set
                 charSet.remove(s[l])
                 l += 1
             charSet.add(s[r])
