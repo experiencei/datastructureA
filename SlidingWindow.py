@@ -619,7 +619,9 @@ class Solution:
             countT[c] = 1 + countT.get(c, 0)
         # have = 0 (cause we don't have anything yet) and need is length of countT
         have, need = 0, len(countT)
+        # initialize res to [-1 , -1] since we know it's going to be [l , r]
         res, resLen = [-1, -1], float("infinity")
+        # initialize our left pointer
         l = 0
         # we are updating our window here and counting every characters in s 
         for r in range(len(s)):
