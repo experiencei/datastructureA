@@ -125,6 +125,7 @@ class Solution:
                 charSet.remove(s[l])
                 # increment the pointer as well
                 l += 1
+                #add the right most character to the window 
             charSet.add(s[r])
             res = max(res, r - l + 1)
         return res
