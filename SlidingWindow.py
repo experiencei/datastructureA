@@ -608,6 +608,7 @@ class Solution:
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
+        # if t is empty we want to return empty string ""
         if t == "":
             return ""
 
