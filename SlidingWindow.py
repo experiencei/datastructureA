@@ -614,7 +614,7 @@ class Solution:
 
         # initalize the hashmap of both T and window
         countT, window = {}, {}
-        
+        # count the t into the hashmap since it is not going to be changing
         for c in t:
             countT[c] = 1 + countT.get(c, 0)
 
