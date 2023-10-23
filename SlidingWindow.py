@@ -123,6 +123,7 @@ class Solution:
             while s[r] in charSet:
                 # remove the left most element in the set
                 charSet.remove(s[l])
+                # increment the pointer as well
                 l += 1
             charSet.add(s[r])
             res = max(res, r - l + 1)
