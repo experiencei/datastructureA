@@ -643,6 +643,7 @@ class Solution:
                     res = [l, r]
                     resLen = r - l + 1
                 # pop from the left of our window (we want to shrink the window as lowest as it can possibly be)
+                # and it's possible our condition is no longer met
                 window[s[l]] -= 1
                 if s[l] in countT and window[s[l]] < countT[s[l]]:
                     have -= 1
