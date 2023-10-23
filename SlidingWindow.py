@@ -617,7 +617,7 @@ class Solution:
         # count the t into the hashmap since it is not going to be changing
         for c in t:
             countT[c] = 1 + countT.get(c, 0)
-
+        # have = 0 (cause we don't have anything yet) and need is length of countT
         have, need = 0, len(countT)
         res, resLen = [-1, -1], float("infinity")
         l = 0
