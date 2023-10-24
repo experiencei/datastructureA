@@ -690,8 +690,10 @@ class Solution:
 
 class Solution:
     def maxSlidingWindow(self, nums: list[int], k: int) -> list[int]:
+        # create output array
         output = []
         q = collections.deque()  # index
+        # initailize right and left pointer
         l = r = 0
         # O(n) O(n)
         while r < len(nums):
