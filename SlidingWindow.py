@@ -716,6 +716,7 @@ class Solution:
             if (r + 1) >= k:
                 # append the left most value in the queue (it is going to be the maximum)
                 output.append(nums[q[0]])
+                # increment the left pointer only when the window is size K
                 l += 1
             r += 1
 
