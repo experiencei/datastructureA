@@ -685,3 +685,16 @@ class Solution:
 # works.
 # [8 , 7 , 6 , 9]  K=2
 # before we add to output array will be making comparison between the top value in queue and next element to add.
+
+
+class Solution:
+    def maxSlidingWindow(self, nums: list[int], k: int) -> list[int]:
+        output = []
+        q = collections.deque()  # index
+        l = r = 0
+        # O(n) O(n)
+        while r < len(nums):
+            # pop smaller values from q
+            while q and nums[q[-1]] < nums[r]:
+                q.pop()
+            q.append(r)
