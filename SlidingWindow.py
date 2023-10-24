@@ -655,6 +655,8 @@ class Solution:
 
         #extract ou the left and rigth pointer
         l, r = res
-        
+
         # return the string only if result length is not == infinity
         return s[l : r + 1] if resLen != float("infinity") else ""
+
+Sliding Window Maximum
