@@ -706,3 +706,9 @@ class Solution:
             # append the index into the queue
             q.append(r)
 
+
+            # remove left val from window as long it's inbalance i.e when the left most value in the queue
+            # is less than the left index popleft
+            if l > q[0]:
+                q.popleft()
+
