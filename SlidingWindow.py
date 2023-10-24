@@ -679,3 +679,9 @@ class Solution:
 #  1  3  -1 [-3  5  3] 6  7       5
 #  1  3  -1  -3 [5  3  6] 7       6
 #  1  3  -1  -3  5 [3  6  7]      7
+
+
+# Solution : we will be using deque (monotically decreasing queue) to cut of repeated 
+# works.
+# [8 , 7 , 6 , 9]  K=2
+# before we add to output array will be making comparison between the top value in queue and next element to add.
