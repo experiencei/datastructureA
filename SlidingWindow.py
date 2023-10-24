@@ -699,9 +699,10 @@ class Solution:
         while r < len(nums):
             # pop smaller values from q
             # before we could append value (r - index) to queue we want to make sure we remove smaller value from it
-            # and as long as there's value there
+            # and as long as there's value there.   q[-1] (right most value)
             while q and nums[q[-1]] < nums[r]:
                 # pop the smaller value 
                 q.pop()
             # append the index into the queue
             q.append(r)
+
