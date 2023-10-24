@@ -712,3 +712,12 @@ class Solution:
             if l > q[0]:
                 q.popleft()
 
+            #if the window is of size k that when we want to add to our output
+            if (r + 1) >= k:
+                
+                output.append(nums[q[0]])
+                l += 1
+            r += 1
+
+        return output
+
