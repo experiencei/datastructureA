@@ -714,7 +714,7 @@ class Solution:
 
             #if the window is of size k that when we want to add to our output
             if (r + 1) >= k:
-                
+                # append the left most value in the queue (it is going to be the maximum)
                 output.append(nums[q[0]])
                 l += 1
             r += 1
