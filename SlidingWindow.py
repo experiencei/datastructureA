@@ -659,4 +659,10 @@ class Solution:
         # return the string only if result length is not == infinity
         return s[l : r + 1] if resLen != float("infinity") else ""
 
-Sliding Window Maximum
+# Sliding Window Maximum
+
+# Question --> You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right.
+#  You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+
+# Return the max sliding window.
+
