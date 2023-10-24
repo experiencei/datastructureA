@@ -701,5 +701,7 @@ class Solution:
             # before we could append value (r - index) to queue we want to make sure we remove smaller value from it
             # and as long as there's value there
             while q and nums[q[-1]] < nums[r]:
+                # pop the smaller value 
                 q.pop()
+            # append the index into the queue
             q.append(r)
