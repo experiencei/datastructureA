@@ -19,9 +19,12 @@ class Solution:
         stack = []
 
         for c in s:
+            #means if the parentheses is not a key(closing bracket) we want to add to stack
             if c not in Map:
+                #adding it to stack
                 stack.append(c)
                 continue
+            if the top of the stack is not equal to closing bracket then return false or nothing in stack
             if not stack or stack[-1] != Map[c]:
                 return False
             stack.pop()
