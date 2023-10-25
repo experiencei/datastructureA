@@ -7,3 +7,6 @@
 # Open brackets must be closed by the same type of brackets.
 # Open brackets must be closed in the correct order.
 # Every close bracket has a corresponding open bracket of the same type.
+
+Solution : we can only have as many as open bracket to begin with {{[()]}} we can start with close )]}}{{[(
+  
