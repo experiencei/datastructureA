@@ -29,5 +29,5 @@ class Solution:
                 return False
             # else we want to pop if reverse is the case
             stack.pop()
-
+        # return True if stack is empty
         return not stack
