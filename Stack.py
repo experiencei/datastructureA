@@ -14,6 +14,7 @@
 
 class Solution:
     def isValid(self, s: str) -> bool:
+        #hashmap to check for key of parentheses
         Map = {")": "(", "]": "[", "}": "{"}
         stack = []
 
