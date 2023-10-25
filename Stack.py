@@ -27,6 +27,7 @@ class Solution:
             # if the top of the stack is not equal to closing bracket then return false or nothing in stack
             if not stack or stack[-1] != Map[c]:
                 return False
+            # else we want to pop if reverse is the case
             stack.pop()
 
         return not stack
