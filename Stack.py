@@ -131,7 +131,7 @@ class MyStack:
     def pop(self) -> int:
         # loop through everything apart from the last value
         for i in range(len(self.q) - 1):
-          add 
+            # add everything in the queue again by push the popleft value
             self.push(self.q.popleft())
         return self.q.popleft()
 
