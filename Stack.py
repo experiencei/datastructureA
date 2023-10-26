@@ -120,3 +120,27 @@ class Solution:
 
 # Solution --> we want use queue to build stack, with queue we can only pop from the left(FIFO) unlike stacks(LIFO)
 #  so to pop we need to loop through every value apart from the last value in the queue and add it back in the queue
+
+class MyStack:
+    def __init__(self):
+        self.q = deque()
+
+    def push(self, x: int) -> None:
+        self.q.append(x)
+
+    def pop(self) -> int:
+        # loop through everything apart from the last value
+        for i in range(len(self.q) - 1):
+          add 
+            self.push(self.q.popleft())
+        return self.q.popleft()
+
+    def top(self) -> int:
+        for i in range(len(self.q) - 1):
+            self.push(self.q.popleft())
+        res = self.q[0]
+        self.push(self.q.popleft())
+        return res
+
+    def empty(self) -> bool:
+        return len(self.q) == 0
