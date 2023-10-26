@@ -88,3 +88,6 @@ class Solution:
                 score_stack.append(int(o))
 
         return sum(score_stack)
+
+
+Implement Stack using Queues
