@@ -144,3 +144,6 @@ class MyStack:
 
     def empty(self) -> bool:
         return len(self.q) == 0
+
+
+# Min Stack
