@@ -188,6 +188,7 @@ class MinStack:
 
     def push(self, val: int) -> None:
         self.stack.append(val)
+        # take the top of the minstack if present and else minimum of val and new val
         val = min(val, self.minStack[-1] if self.minStack else val)
         self.minStack.append(val)
 
