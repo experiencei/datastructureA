@@ -116,3 +116,7 @@ class Solution:
 # myStack.top(); // return 2
 # myStack.pop(); // return 2
 # myStack.empty(); // return False
+
+
+# Solution --> we want use queue to build stack, with queue we can only pop from the left(FIFO) unlike stacks(LIFO)
+#  so to pop we need to loop through every value apart from the last value in the queue and add it back in the queue
