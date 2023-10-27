@@ -233,11 +233,13 @@ class Solution:
                 stack.append(stack.pop() + stack.pop())
             elif c == "-":
                 a, b = stack.pop(), stack.pop()
+                # subtracting the second value in stack from the first
                 stack.append(b - a)
             elif c == "*":
                 stack.append(stack.pop() * stack.pop())
             elif c == "/":
                 a, b = stack.pop(), stack.pop()
+                # dividing the second value in stack from the first and to interger division instead of decimal
                 stack.append(int(float(b) / a))
             else:
                 stack.append(int(c))
