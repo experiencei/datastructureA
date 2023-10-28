@@ -219,6 +219,7 @@ class MinStack:
 
 # Example 1:
 
+
 # Input: tokens = ["2","1","+","3","*"]
 # Output: 9
 # Explanation: ((2 + 1) * 3) = 9
@@ -242,5 +243,8 @@ class Solution:
                 # dividing the second value in stack from the first and to interger division instead of decimal
                 stack.append(int(float(b) / a))
             else:
+                # convert to interger and append to stack if it is number
                 stack.append(int(c))
         return stack[0]
+
+  
