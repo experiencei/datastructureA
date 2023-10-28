@@ -243,7 +243,7 @@ class Solution:
                 # dividing the second value in stack from the first and to interger division instead of decimal
                 stack.append(int(float(b) / a))
             else:
-                # convert to interger and append to stack if it is number
+                # convert to interger and append to stack if it is numbers
                 stack.append(int(c))
         return stack[0]
 
