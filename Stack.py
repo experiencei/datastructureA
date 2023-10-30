@@ -270,7 +270,7 @@ class Solution:
         def backtrack(openN, closedN):
              # this is the base case 
             if openN == closedN == n:
-              # we want to join everything in the stack and append it to result
+                # we want to join everything in the stack and append it to result
                 res.append("".join(stack))
                 return
 
