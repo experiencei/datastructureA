@@ -256,7 +256,7 @@ class Solution:
 # Input: n = 3
 # Output: ["((()))","(()())","(())()","()(())","()()()"]
 
-# Solution --> 
+# Solution --> we are going to be using backtracking 
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
         stack = []
