@@ -256,7 +256,11 @@ class Solution:
 # Input: n = 3
 # Output: ["((()))","(()())","(())()","()(())","()()()"]
 
-# Solution --> we are going to be using backtracking 
+# Solution --> we are going to be using backtracking and the condition which needed 
+# to be hold 
+#only add open parenthesis if open < n
+#only add a closing parenthesis if close < open
+#valid IIF open == closed == n , then we will stop adding 
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
         stack = []
