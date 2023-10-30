@@ -275,6 +275,7 @@ class Solution:
                 return
 
             if openN < n:
+                # if openStack is less than n we want to add open parentheses to the stack
                 stack.append("(")
                 backtrack(openN + 1, closedN)
                 stack.pop()
