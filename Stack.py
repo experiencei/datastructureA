@@ -258,7 +258,7 @@ class Solution:
 
 # Solution --> 
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
+    def generateParenthesis(self, n: int) -> list[str]:
         stack = []
         res = []
 
