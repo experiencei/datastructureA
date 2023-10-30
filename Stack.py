@@ -277,6 +277,7 @@ class Solution:
             if openN < n:
                 # if openStack is less than n we want to add open parentheses to the stack
                 stack.append("(")
+                # we want to increase our open count by 1 and closed count remain the same
                 backtrack(openN + 1, closedN)
                 stack.pop()
             if closedN < openN:
