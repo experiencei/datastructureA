@@ -289,6 +289,6 @@ class Solution:
                 backtrack(openN, closedN + 1)
                 # cleanup as well
                 stack.pop()
-
+        # call the backtrack function and start with initial zero
         backtrack(0, 0)
         return res
