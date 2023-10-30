@@ -281,9 +281,13 @@ class Solution:
                 backtrack(openN + 1, closedN)
                 # we have to pop the single character we have from the stack after backtracking
                 stack.pop()
+
             if closedN < openN:
+                # if closeStack is less than openStack we want to add close parentheses to the stack
                 stack.append(")")
+                # we want to increase our closed count by 1 and open count remain the same
                 backtrack(openN, closedN + 1)
+                # cleanup as well
                 stack.pop()
 
         backtrack(0, 0)
