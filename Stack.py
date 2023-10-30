@@ -263,6 +263,7 @@ class Solution:
 #valid IIF open == closed == n , then we will stop adding 
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
+        # stack which is going to hold the parenthesis
         stack = []
         res = []
 
