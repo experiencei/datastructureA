@@ -279,6 +279,7 @@ class Solution:
                 stack.append("(")
                 # we want to increase our open count by 1 and closed count remain the same
                 backtrack(openN + 1, closedN)
+                # we have to pop the single character we have from the stack after backtracking
                 stack.pop()
             if closedN < openN:
                 stack.append(")")
