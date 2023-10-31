@@ -285,7 +285,7 @@ class Solution:
                 total -= nums[l]
                 l += 1
                 
-            # maximum window we have as long as condition is met 
+            # maximum window we have as long as condition is met and the loops stops executing
             res = max(res , r - l + 1)
             r += 1
             
