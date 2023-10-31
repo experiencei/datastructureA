@@ -264,7 +264,7 @@ class Solution:
 
 
 # Solution :  we have to sort cause it is easier to change (increment) value on the left side of it than random value in the array
-#  the formular is expand the window while (num[r] * windowLength < totalSumInWindow + k)
+#  the formular is expand the window while (num[r] * windowLength <= totalSumInWindow + k)
 # while because [ 1 , 1 , 1 , 2 , 2 , 4 ] k = 2
 # total sum of the window + k (what we have) is greater than num[r] (number we are trying to make most frequent) * windowLength(all what are trying to make frequent)
 
