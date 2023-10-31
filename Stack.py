@@ -318,3 +318,15 @@ class Solution:
 # There are no more stars, so we return "lecoe".
 
 # Solution --> a stack will be efficient for the solution since will be poping from left
+
+class Solution:
+    def removeStar(self, s: str) -> str:
+        stack = []
+
+        for c in s:
+            # if the character is star we want to pop the last character from the stack
+            if c == "*":
+                stack and stack.pop()
+            else:
+                stack.append(c)
+        return "".join(stack)
