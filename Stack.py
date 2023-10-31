@@ -316,3 +316,5 @@ class Solution:
 # - The closest character to the 2nd star is 'e' in "lee*cod*e". s becomes "lecod*e".
 # - The closest character to the 3rd star is 'd' in "lecod*e". s becomes "lecoe".
 # There are no more stars, so we return "lecoe".
+
+# Solution --> a stack will be efficient for the solution since will be poping from left
