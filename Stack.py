@@ -293,3 +293,5 @@ class Solution:
         # call the backtrack function and start with initial zero
         backtrack(0, 0)
         return res
+
+# Removing Stars From a String
