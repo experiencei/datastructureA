@@ -329,5 +329,7 @@ class Solution:
                 stack and stack.pop()
             else:
                 stack.append(c)
-                
+
         return "".join(stack)
+
+# Validate Stack Sequences
