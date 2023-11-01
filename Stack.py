@@ -346,3 +346,17 @@ class Solution:
 # pop() -> 4,
 # push(5),
 # pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
+
+
+class Solution:
+    def validateStackSequences(self, popped : list[int] , pushed : list[int]) -> bool:
+        stack = []
+        i = 0
+        for n in pushed : 
+            stack.append(n)
+               if popped at index of i is the same as the top of the stack we wan to pop it.
+               it is possible to pop consecutively so we will change if to **while**
+               edge cases
+
+            if stack[-1] == popped[i]:
+                stack.pop()
