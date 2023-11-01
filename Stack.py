@@ -360,3 +360,6 @@ class Solution:
             #               if stack is empty it will throw an error as well ( sta)
             if i < len(popped) and stack and stack[-1] == popped[i]:
                 stack.pop()
+                i += 1
+
+        return not stack
