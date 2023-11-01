@@ -358,5 +358,5 @@ class Solution:
             #it is possible to pop consecutively so we will change if to **while** .
             #edge cases --> if by incrementing i it goes out of balance ( i < len(popped)).
             #               if stack is empty it will throw an error as well ( sta)
-            if stack[-1] == popped[i]:
+            if i < len(popped) and stack and stack[-1] == popped[i]:
                 stack.pop()
