@@ -382,7 +382,7 @@ class Solution:
 
 
 class Solution:
-    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+    def asteroidCollision(self, asteroids: list[int]) -> list[int]:
         stack = []
 
         for a in asteroids:
