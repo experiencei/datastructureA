@@ -374,7 +374,7 @@ class Solution:
 # Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode.
 # If both are the same size, both will explode. Two asteroids moving in the same direction will never meet.
 
-# Example 3:
+# Example 1:
 
 # Input: asteroids = [10,2,-5]
 # Output: [10]
