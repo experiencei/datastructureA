@@ -398,10 +398,11 @@ class Solution:
                 # if it's negative (it means the asteroid win and we set the top of the stack to zero)
                 elif diff < 0:
                     stack.pop()
-                # if both are equal we set it to zero
+                # if both are equal , we set it to zero (top of the stack and asteroids)
                 else:
                     a = 0
                     stack.pop()
+            # append the remaining a if there are remaining
             if a:
                 stack.append(a)
 
