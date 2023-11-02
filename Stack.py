@@ -390,6 +390,7 @@ class Solution:
         for a in asteroids:
             # while there's asteroid n stack and a < 0 ( meaning negative) and top of the stack > 0 ( meaning positive)
             while stack and a < 0 and stack[-1] > 0:
+                # we want to know the difference between the top of the stack and the the asteroids
                 diff = a + stack[-1]
                 if diff > 0:
                     a = 0
