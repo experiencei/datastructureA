@@ -379,3 +379,23 @@ class Solution:
 # Input: asteroids = [10,2,-5]
 # Output: [10]
 # Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
+
+
+class Solution:
+    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+        stack = []
+
+        for a in asteroids:
+            while stack and a < 0 and stack[-1] > 0:
+                diff = a + stack[-1]
+                if diff > 0:
+                    a = 0
+                elif diff < 0:
+                    stack.pop()
+                else:
+                    a = 0
+                    stack.pop()
+            if a:
+                stack.append(a)
+
+        return stack
