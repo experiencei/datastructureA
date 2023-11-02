@@ -395,6 +395,7 @@ class Solution:
                 # if it's positive (it means the top of the stack win and we set asteroid to zero)
                 if diff > 0:
                     a = 0
+                # if it's negative (it means the asteroid win and we set the top of the stack to zero)
                 elif diff < 0:
                     stack.pop()
                 else:
