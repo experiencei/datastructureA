@@ -392,6 +392,7 @@ class Solution:
             while stack and a < 0 and stack[-1] > 0:
                 # we want to know the difference between the top of the stack and the the asteroids
                 diff = a + stack[-1]
+                # if it's positive (it means the top of the stack win and we set asteroid to zero)
                 if diff > 0:
                     a = 0
                 elif diff < 0:
