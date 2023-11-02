@@ -381,11 +381,14 @@ class Solution:
 # Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
 
 
+# solution
+
 class Solution:
     def asteroidCollision(self, asteroids: list[int]) -> list[int]:
         stack = []
 
         for a in asteroids:
+            # while there's asteroid n stack and a < 0 ( meaning negative) and top of the stack > 0 ( meaning positive)
             while stack and a < 0 and stack[-1] > 0:
                 diff = a + stack[-1]
                 if diff > 0:
