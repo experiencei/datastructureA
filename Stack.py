@@ -433,8 +433,10 @@ class Solution:
             # as long a s there's value in stack and the top of the stack value is less than temps
             # we wan to pop it (monothonic decreasing stack)
             while stack and t > stack[-1][0]:
-                get the stackIndex and s
+                # get the stackIndex and stackTemp pop
                 stackT, stackInd = stack.pop()
+                # current I - pop stackInd (the differences between them inicate the next greater temperatures)
                 res[stackInd] = i - stackInd
+            ap
             stack.append((t, i))
         return res
