@@ -437,6 +437,6 @@ class Solution:
                 stackT, stackInd = stack.pop()
                 # current I - pop stackInd (the differences between them inicate the next greater temperatures)
                 res[stackInd] = i - stackInd
-            ap
+            # append to the stack both temp and index
             stack.append((t, i))
         return res
