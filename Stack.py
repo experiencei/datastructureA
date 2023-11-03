@@ -439,4 +439,5 @@ class Solution:
                 res[stackInd] = i - stackInd
             # append to the stack both temp and index
             stack.append((t, i))
+            # return the results
         return res
