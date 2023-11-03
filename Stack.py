@@ -430,7 +430,10 @@ class Solution:
         stack = []  # pair: [temp, index]
         # enumerate through the temperatures to get both the index and temps
         for i, t in enumerate(temperatures):
+            # as long a s there's value in stack and the top of the stack value is less than temps
+            # we wan to pop it (monothonic decreasing stack)
             while stack and t > stack[-1][0]:
+                get the stackIndex and s
                 stackT, stackInd = stack.pop()
                 res[stackInd] = i - stackInd
             stack.append((t, i))
