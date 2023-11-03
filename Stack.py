@@ -426,9 +426,9 @@ class Solution:
     def dailyTemperatures(self, temperatures: list[int]) -> list[int]:
         # initaialize all the array result with zero
         res = [0] * len(temperatures)
-        
-        stack = []  # pair: [temp, index]
 
+        stack = []  # pair: [temp, index]
+        # enumerate through the temperatures to get both the index and temps
         for i, t in enumerate(temperatures):
             while stack and t > stack[-1][0]:
                 stackT, stackInd = stack.pop()
