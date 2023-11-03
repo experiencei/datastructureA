@@ -424,7 +424,9 @@ class Solution:
 
 class Solution:
     def dailyTemperatures(self, temperatures: list[int]) -> list[int]:
+        # initaialize all the array result with zero
         res = [0] * len(temperatures)
+        
         stack = []  # pair: [temp, index]
 
         for i, t in enumerate(temperatures):
