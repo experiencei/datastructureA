@@ -455,3 +455,9 @@ class Solution:
 
 # For example, if the prices of the stock in the last four days is [7,2,1,2] and the price of the stock today is 2, then the span of today is 4 because starting from today, the price of the stock was less than or equal 2 for 4 consecutive days.
 # Also, if the prices of the stock in the last four days is [7,34,1,2] and the price of the stock today is 8, then the span of today is 3 because starting from today, the price of the stock was less than or equal 8 for 3 consecutive days.
+
+
+# Implement the StockSpanner class:
+
+# StockSpanner() Initializes the object of the class.
+# int next(int price) Returns the span of the stock's price given that today's price is price.
