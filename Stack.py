@@ -497,6 +497,7 @@ class StockSpanner:
         while self.stack and self.stack[-1][0] <= price:
             # add to span the already span of top of the stack
             span += self.stack[-1][1]
+            # and pop from the stack or until the price is no longer greater than the top of stack (which makes the loop invalid)
             self.stack.pop()
         self.stack.append((price, span))
         return span
