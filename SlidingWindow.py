@@ -467,19 +467,27 @@ class Solution:
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
         lib = {'a' , 'e' , 'i' , 'o' , 'u'}
-        max_vowel = 0
-        curr_vowel = 0
-        for i in range(k) :
-            if s[i] in lib :
-                curr_vowel += 1
-        max_vowel = curr_vowel
-        for i in range(k , len(s)) :
-            if s[i - k] in lib :
-                curr_vowel -= 1
-            if s[i] in lib :
-                curr_vowel += 1
-            max_vowel = max(curr_vowel , max_vowel )
-        return max_vowel 
+        l , cnt , res =  0 , 0 , 0
+
+        for r in range(len(s)):
+
+            cnt += 1 if s[r] in lib else 0
+            res = max(cnt , res)
+        return res
+
+        # max_vowel = 0
+        # curr_vowel = 0
+        # for i in range(k) :
+        #     if s[i] in lib :
+        #         curr_vowel += 1
+        # max_vowel = curr_vowel
+        # for i in range(k , len(s)) :
+        #     if s[i - k] in lib :
+        #         curr_vowel -= 1
+        #     if s[i] in lib :
+        #         curr_vowel += 1
+        #     max_vowel = max(curr_vowel , max_vowel )
+        # return max_vowel 
 
 
 # Minimum Size Subarray Sum
