@@ -483,7 +483,9 @@ class Solution:
 
 # solution --> 
 #  we will be using monotic decreasing stack for efficiency
-# for stack created we want to have (price and span) and the span will be
+# for stack created we want to have (price and span) and the span will be recorded and only pop
+when 
+
 class StockSpanner:
     def __init__(self):
         self.stack = []  # pair: (price, span)
