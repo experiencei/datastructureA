@@ -491,6 +491,7 @@ class StockSpanner:
         self.stack = []  # pair: (price, span)
 
     def next(self, price: int) -> int:
+        # by default every stack will be 1
         span = 1
         while self.stack and self.stack[-1][0] <= price:
             span += self.stack[-1][1]
