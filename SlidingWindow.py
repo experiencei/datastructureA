@@ -470,10 +470,15 @@ class Solution:
         l , cnt , res =  0 , 0 , 0
 
         for r in range(len(s)):
+            # increment count if it in vowel
             cnt += 1 if s[r] in lib else 0
             
+            # if the size of window is greater than k
             if  r - l + 1 > k:
-                cnt += 1 if s[r] in lib else 0
+                # decrement the count by 1 if it happens to be a vowel
+                cnt -= 1 if s[l] in lib else 0
+                
+                # shrink the window
                 l += 1
             res = max(cnt , res)
         return res
