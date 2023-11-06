@@ -493,6 +493,7 @@ class StockSpanner:
     def next(self, price: int) -> int:
         # by default every span will be 1
         span = 1
+        # we only want to make it bigger if theres stack and the current price is less than the top of the stack
         while self.stack and self.stack[-1][0] <= price:
             span += self.stack[-1][1]
             self.stack.pop()
