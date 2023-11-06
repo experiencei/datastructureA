@@ -481,9 +481,9 @@ class Solution:
 # stockSpanner.next(75);  // return 4, because the last 4 prices (including today's price of 75) were less than or equal to today's price.
 # stockSpanner.next(85);  // return 6
 
-solution --> 
+# solution --> 
 #  we will be using monotic decreasing stack for efficiency
-for stack created we want to have (price and span)
+# for stack created we want to have (price and span) and the span will be
 class StockSpanner:
     def __init__(self):
         self.stack = []  # pair: (price, span)
