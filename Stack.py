@@ -560,3 +560,5 @@ class StockSpanner:
 # if j reaches the destination point before k that means there must be a car fleet
 
 # time = destination - k / speed
+
+# remember we will be iterating through in reverse order(rigth to left)
