@@ -533,8 +533,8 @@ class StockSpanner:
 # Note that no other cars meet these fleets before the destination, so the answer is 3.
 
 
-Solution --> let merge the 2 array together [(position , speed)] and we have a single target
-[(10 , 2),(8 , 4),(0 , 1),(5 , 1),(3 , 3)]  and plot of graph
+# Solution --> let merge the 2 array together [(position , speed)] and we have a single target
+# [(10 , 2),(8 , 4),(0 , 1),(5 , 1),(3 , 3)]  and plot of graph
 
 position
    |
