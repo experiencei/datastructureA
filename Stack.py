@@ -567,11 +567,20 @@ class StockSpanner:
 
 class Solution:
     def carFleet(self, target: int, position: list[int], speed: list[int]) -> int:
+        # zip the position and speed in array 
         pair = [(p, s) for p, s in zip(position, speed)]
+
+        # sort and reverse the array of position and speed
         pair.sort(reverse=True)
+
         stack = []
         for p, s in pair:  # Reverse Sorted Order
+
+            # append the time it tooks to reach the target point into the stack
             stack.append((target - p) / s)
+
+            # if the length of the stack is more than two and the the top of the stack is less than the previous time(meaning there's a collision)
             if len(stack) >= 2 and stack[-1] <= stack[-2]:
                 stack.pop()
+                
         return len(stack)
