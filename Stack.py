@@ -554,3 +554,7 @@ class StockSpanner:
 # 6 position in 1 minutes
 # 9 position in 2 minutes
 # 12 position in 3 minutes
+
+# i j k ------------------> destination
+
+# if j reaches the destination point before k that means there must be a car fleet
