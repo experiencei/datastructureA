@@ -550,7 +550,7 @@ class StockSpanner:
 #  1 |
 #    |_______________________________________>   Time
 
-(3 , 3) means for every one minute of time it reaches 3 point ahead starting at position 3.
+# (3 , 3) means for every one minute of time it reaches 3 point ahead starting at position 3.
 # 6 position in 1 minutes
 # 9 position in 2 minutes
 # 12 position in 3 minutes
