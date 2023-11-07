@@ -562,3 +562,4 @@ class StockSpanner:
 # time = destination - k / speed
 
 # remember we will be iterating through in reverse order(rigth to left)
+# length of the stack is going to tell us the car fleet
