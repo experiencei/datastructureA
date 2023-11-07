@@ -558,3 +558,5 @@ class StockSpanner:
 # i j k ------------------> destination
 
 # if j reaches the destination point before k that means there must be a car fleet
+
+# time = destination - k / speed
