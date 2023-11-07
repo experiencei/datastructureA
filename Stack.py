@@ -534,18 +534,23 @@ class StockSpanner:
 
 
 # Solution --> let merge the 2 array together [(position , speed)] and we have a single target
-# [(10 , 2),(8 , 4),(0 , 1),(5 , 1),(3 , 3)]  and plot of graph
+# [(10 , 2),(8 , 4),(0 , 1),(5 , 1),(3 , 3)] they are just a system of linear equation and plot of graph
 
 position
    |
-   |
-   |
-   |
-   |
-   |
-   |
-   |
-   |
-   |
-   |
+10 |
+ 9 |
+ 8 |
+ 7 |
+ 6 |
+ 5 |
+ 4 |
+ 3 |
+ 2 |
+ 1 |
    |_______________________________________>   Time
+
+(3 , 3) means for every one minute of time it reaches 3 point ahead starting at position 3.
+# 6 position in 1 minutes
+# 9 position in 2 minutes
+# 12 position in 3 minutes
