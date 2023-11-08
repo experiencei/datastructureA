@@ -586,3 +586,4 @@ class Solution:
         return len(stack)
 
 
+# Simplify Path
