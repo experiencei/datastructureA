@@ -608,11 +608,13 @@ class Solution:
 
 # Solution --> because of the .. we will be using stack and carry out each operation on the stack
 
+
 class Solution:
     def simplifyPath(self, path: str) -> str:
 
         stack = []
 
+        # looping through the path and having it seperated by the /
         for i in path.split("/"):
             #  if i == "/" or i == '//', it becomes '' (empty string)
 
