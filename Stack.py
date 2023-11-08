@@ -622,13 +622,15 @@ class Solution:
             if i == "..":
                 if stack:
                     stack.pop()
-                    
+
             # continue the loop if it . or nothing in i
             elif i == "." or i == '':
                 # skip "." or an empty string
                 continue
+
             else:
                 stack.append(i)
-
+                
+        # start the result with / and join value in stack with /
         res = "/" + "/".join(stack)
         return res
