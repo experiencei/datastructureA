@@ -622,7 +622,8 @@ class Solution:
             if i == "..":
                 if stack:
                     stack.pop()
-            continue the loop if it . or nothing in i
+                    
+            # continue the loop if it . or nothing in i
             elif i == "." or i == '':
                 # skip "." or an empty string
                 continue
