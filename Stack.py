@@ -582,5 +582,7 @@ class Solution:
             # if the length of the stack is more than two and the the top of the stack is less than the previous time(meaning there's a collision)
             if len(stack) >= 2 and stack[-1] <= stack[-2]:
                 stack.pop()
-                
+
         return len(stack)
+
+
