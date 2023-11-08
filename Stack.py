@@ -599,3 +599,9 @@ class Solution:
 # The path does not end with a trailing '/'.
 # The path only contains the directories on the path from the root directory to the target file or directory (i.e., no period '.' or double period '..')
 # Return the simplified canonical path.
+
+# Example 1:
+
+# Input: path = "/home/"
+# Output: "/home"
+# Explanation: Note that there is no trailing slash after the last directory name.
