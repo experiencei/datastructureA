@@ -606,6 +606,7 @@ class Solution:
 # Output: "/home"
 # Explanation: Note that there is no trailing slash after the last directory name.
 
+# Solution --> because of the .. we will be using stack and carry out each operation on the stack
 
 class Solution:
     def simplifyPath(self, path: str) -> str:
