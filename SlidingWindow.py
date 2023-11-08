@@ -477,7 +477,7 @@ class Solution:
             if  r - l + 1 > k:
                 # decrement the count by 1 if it happens to be a vowel
                 cnt -= 1 if s[l] in lib else 0
-                
+
                 # shrink the window
                 l += 1
             res = max(cnt , res)
@@ -575,7 +575,9 @@ class Solution:
       alt2 =""
       for i in range(len(s)):#store
         # creating the alternating strings for both target starting with 1 & 0
+        # starting with 0
         alt1 += "0" if i%2==0 else "1"
+        # starting with 1
         alt2 += "1" if i%2==0 else "0"
       diff1,diff2 = 0,0
       #   initialize left pointer
