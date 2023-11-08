@@ -618,9 +618,11 @@ class Solution:
         for i in path.split("/"):
             #  if i == "/" or i == '//', it becomes '' (empty string)
 
+            # if i == .. and there's value in there that whan we want to pop
             if i == "..":
                 if stack:
                     stack.pop()
+            continue the loop if it . or nothing in i
             elif i == "." or i == '':
                 # skip "." or an empty string
                 continue
