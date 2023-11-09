@@ -643,9 +643,10 @@ class Solution:
 
         # initialize res to [-1 , -1] since we know it's going to be [l , r]
         res, resLen = [-1, -1], float("infinity")
-        # initialize our left pointer
 
+        # initialize our left pointer
         l = 0
+        
         # we are updating our window here and counting every characters in s 
         for r in range(len(s)):
             c = s[r]
