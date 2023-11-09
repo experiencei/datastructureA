@@ -646,7 +646,7 @@ class Solution:
 
         # initialize our left pointer
         l = 0
-        
+
         # we are updating our window here and counting every characters in s 
         for r in range(len(s)):
             c = s[r]
@@ -673,7 +673,7 @@ class Solution:
                     # we have to shift left by 1 if we are removing character from the window
                 l += 1
 
-        #extract ou the left and rigth pointer
+        #extract the left and rigth pointer
         l, r = res
 
         # return the string only if result length is not == infinity
