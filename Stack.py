@@ -667,13 +667,15 @@ class Solution:
 
         # looping through s
         for char in s:
-            
+
             # add every character except ]
             if char is not "]":
                 stack.append(char)
 
+            # else is a case where there is every character apart from ]
             else:
                 sub_str = ""
+
                 while stack[-1] is not "[":
                     sub_str = stack.pop() + sub_str
                 stack.pop()
