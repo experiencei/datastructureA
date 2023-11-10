@@ -689,8 +689,12 @@ class Solution:
 
                 # while there's character in stack and the top of the stack is digit
                 while stack and stack[-1].isdigit():
+
+                    # add from the back the digit character
                     multiplier = stack.pop() + multiplier
 
+                # append to the stack the multiplication of int digit and sub_str
                 stack.append(int(multiplier) * sub_str)
 
+        
         return "".join(stack)
