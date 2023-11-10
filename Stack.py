@@ -650,7 +650,7 @@ class Solution:
 
 # The test cases are generated so that the length of the output will never exceed 105
 
-Example 2:
+# Example 2:
 
-Input: s = "3[a2[c]]"
-Output: "accaccacc"
+# Input: s = "3[a2[c]]"
+# Output: "accaccacc"
