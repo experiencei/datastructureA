@@ -678,6 +678,8 @@ class Solution:
 
                 # while the top of the stack is not [
                 while stack[-1] is not "[":
+
+                    # add from the back the pop character
                     sub_str = stack.pop() + sub_str
                 stack.pop()
 
