@@ -656,7 +656,8 @@ class Solution:
 # Output: "accaccacc"
 
 # Solution --> converting this 3[a2[c]] -------> accaccacc  require you to solve inner 
-problem first i.e we want to approach it by looping through the character
+# problem first i.e we want to approach it by looping through the character and appending to stack until we see 
+a ]
 class Solution:
     def decodeString(self, s: str) -> str:
         stack = []
