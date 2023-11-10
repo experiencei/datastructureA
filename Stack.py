@@ -672,10 +672,11 @@ class Solution:
             if char is not "]":
                 stack.append(char)
 
-            # else is a case where there is every character apart from ]
+            # "else" is a case where there is every character apart from ]
             else:
                 sub_str = ""
 
+                # while the top of the stack is not [
                 while stack[-1] is not "[":
                     sub_str = stack.pop() + sub_str
                 stack.pop()
