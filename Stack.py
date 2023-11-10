@@ -667,8 +667,11 @@ class Solution:
 
         # looping through s
         for char in s:
+            
+            # add every character except ]
             if char is not "]":
                 stack.append(char)
+
             else:
                 sub_str = ""
                 while stack[-1] is not "[":
