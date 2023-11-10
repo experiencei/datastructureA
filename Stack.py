@@ -681,9 +681,13 @@ class Solution:
 
                     # add from the back the pop character
                     sub_str = stack.pop() + sub_str
+
+                # and we want to pop the [ itself
                 stack.pop()
 
                 multiplier = ""
+
+                # while there's character in stack and the top of the stack is digit
                 while stack and stack[-1].isdigit():
                     multiplier = stack.pop() + multiplier
 
