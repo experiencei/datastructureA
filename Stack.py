@@ -649,3 +649,8 @@ class Solution:
 # For example, there will not be input like 3a or 2[4].
 
 # The test cases are generated so that the length of the output will never exceed 105
+
+Example 2:
+
+Input: s = "3[a2[c]]"
+Output: "accaccacc"
