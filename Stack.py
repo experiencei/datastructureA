@@ -658,11 +658,14 @@ class Solution:
 # Solution --> converting this 3[a2[c]] -------> accaccacc  require you to solve inner 
 # problem first i.e we want to approach it by looping through the character and appending to stack until we see 
 # a ] --- that when we start popping from stack until we see a [
+#we still want to pop the [ and it is guaranted there will always be a number at the begining of the [
+# and multiply the number with the character
 
 class Solution:
     def decodeString(self, s: str) -> str:
         stack = []
 
+        # looping through s
         for char in s:
             if char is not "]":
                 stack.append(char)
