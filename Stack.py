@@ -655,6 +655,12 @@ class Solution:
 # Input: s = "3[a2[c]]"
 # Output: "accaccacc"
 
+
+Example 3:
+
+Input: s = "2[abc]3[cd]ef"
+Output: "abcabccdcdcdef"
+
 # Solution --> converting this 3[a2[c]] -------> accaccacc  require you to solve inner 
 # problem first i.e we want to approach it by looping through the character and appending to stack until we see 
 # a ] --- that when we start popping from stack until we see a [
@@ -696,5 +702,5 @@ class Solution:
                 # append to the stack the multiplication of int digit and sub_str
                 stack.append(int(multiplier) * sub_str)
 
-        
+
         return "".join(stack)
