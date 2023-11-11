@@ -656,10 +656,10 @@ class Solution:
 # Output: "accaccacc"
 
 
-Example 3:
+# Example 3:
 
-Input: s = "2[abc]3[cd]ef"
-Output: "abcabccdcdcdef"
+# Input: s = "2[abc]3[cd]ef"
+# Output: "abcabccdcdcdef"
 
 # Solution --> converting this 3[a2[c]] -------> accaccacc  require you to solve inner 
 # problem first i.e we want to approach it by looping through the character and appending to stack until we see 
