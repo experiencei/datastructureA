@@ -734,6 +734,8 @@ class Solution:
 
             # if there's value in stack and the top of the stack character == to the current character
             if stack and stack[-1][0] == c:
+
+                we want to increement the stack count by 1
                 stack[-1][1] += 1
             else:
                 stack.append([c, 1])
