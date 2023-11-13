@@ -723,6 +723,7 @@ class Solution:
 # Solution --> we will be removing k consecutive element in the string the ideal way is to use a stack
 # we will be looping through the string and adding to stack [char | count]
 # whenever the count of the top of the stack equivalent to k we will pop it and return the left char or empty string if nothing remain
+
 class Solution:
     def removeDuplicates(self, s: str, k: int) -> str:
         stack = []  # [char, count]
