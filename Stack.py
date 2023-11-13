@@ -737,7 +737,8 @@ class Solution:
 
                 # we want to increement the stack count by 1
                 stack[-1][1] += 1
-                
+
+                # if there's no stack yet or the current character doesn't match the top of the stack
             else:
                 stack.append([c, 1])
 
