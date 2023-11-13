@@ -705,3 +705,6 @@ class Solution:
 
 
         return "".join(stack)
+
+
+# Remove All Adjacent Duplicates in String II
