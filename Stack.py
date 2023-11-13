@@ -732,7 +732,7 @@ class Solution:
         # looping through the strings
         for c in s:
 
-            if there's value in stack and the top of the stack character == to the current character
+            # if there's value in stack and the top of the stack character == to the current character
             if stack and stack[-1][0] == c:
                 stack[-1][1] += 1
             else:
