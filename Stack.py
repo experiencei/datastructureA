@@ -738,10 +738,13 @@ class Solution:
                 # we want to increement the stack count by 1
                 stack[-1][1] += 1
 
-                # if there's no stack yet or the current character doesn't match the top of the stack
+            # if there's no stack yet or the current character doesn't match the top of the stack
             else:
+
+                # append to it the character with the count of 1
                 stack.append([c, 1])
 
+            # if the top of stack ever reches k that when we want to pop from the stack
             if stack[-1][1] == k:
                 stack.pop()
 
