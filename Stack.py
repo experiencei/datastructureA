@@ -726,6 +726,7 @@ class Solution:
 
 class Solution:
     def removeDuplicates(self, s: str, k: int) -> str:
+        # create a stack with char and count
         stack = []  # [char, count]
 
         for c in s:
