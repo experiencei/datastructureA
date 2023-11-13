@@ -729,7 +729,7 @@ class Solution:
         # create a stack with char and count
         stack = []  # [char, count]
 
-        looping through the strings
+        # looping through the strings
         for c in s:
 
 
