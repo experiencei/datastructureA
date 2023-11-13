@@ -729,7 +729,10 @@ class Solution:
         # create a stack with char and count
         stack = []  # [char, count]
 
+        looping through the strings
         for c in s:
+
+
             if stack and stack[-1][0] == c:
                 stack[-1][1] += 1
             else:
