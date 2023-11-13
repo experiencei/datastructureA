@@ -722,7 +722,7 @@ class Solution:
             while q and nums[q[-1]] < nums[r]:
                 # pop the smaller value 
                 q.pop()
-            # append the index into the queue
+            # append the index into the queue because we can easily find the number by nums[r]
             q.append(r)
 
 
