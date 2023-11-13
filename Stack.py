@@ -720,7 +720,7 @@ class Solution:
 # Output: "abcd"
 # Explanation: There's nothing to delete.
 
-
+# Solution
 class Solution:
     def removeDuplicates(self, s: str, k: int) -> str:
         stack = []  # [char, count]
