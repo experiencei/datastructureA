@@ -721,7 +721,7 @@ class Solution:
 # Explanation: There's nothing to delete.
 
 # Solution --> we will be removing k consecutive element in the string the ideal way is to use a stack
-
+we will be looping through the string and adding to stack [char | count]
 class Solution:
     def removeDuplicates(self, s: str, k: int) -> str:
         stack = []  # [char, count]
