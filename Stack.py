@@ -748,6 +748,7 @@ class Solution:
             if stack[-1][1] == k:
                 stack.pop()
 
+        # we want to convert the rest of the char to string and return as result 
         res = ""
         for char, count in stack:
             res += char * count
