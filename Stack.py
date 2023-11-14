@@ -777,3 +777,11 @@ class Solution:
     def removeKdigits(self , num: str , k: int) -> str:
         # create an empty stack 
         stack = []
+
+        for c in num:
+            as long as we still have k left and there's value in our stack and top of the stack is greater than the current char
+            we want to pop it
+            while k > 0 and stack and stack[-1] > c:
+                k -= 1
+                stack.pop()
+                stack.append(c)
