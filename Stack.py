@@ -769,4 +769,4 @@ class Solution:
 
 
 Solution --> i) we want to probably remove the larger digit and ii) we're biased towards left i.e ( removing the larger digit )
-
+iii) if we're in decresing order 54321 we want to remove from the left
