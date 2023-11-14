@@ -787,3 +787,6 @@ class Solution:
                 # pop from the stack
                 stack.pop()
             stack.append(c)
+
+            # what happens if there's still k left which means they are all in increasing order but left with "k value"
+            # then we want to pop from the rigth as condition iii)
