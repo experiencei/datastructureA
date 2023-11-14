@@ -790,3 +790,10 @@ class Solution:
 
             # what happens if there's still k left which means they are all in increasing order but left with "k value"
             # then we want to pop from the rigth as condition iii)
+
+        # slice out the length of the k from stack
+        stack = stack[:len(stack) - k]
+
+        # convert the stack to string before returning it
+        res = "".join(stack)
+
