@@ -779,9 +779,11 @@ class Solution:
         stack = []
 
         for c in num:
-            as long as we still have k left and there's value in our stack and top of the stack is greater than the current char
-            we want to pop it
+            # as long as we still have k left and there's value in our stack and top of the stack is greater than the current char
+            # we want to pop it
             while k > 0 and stack and stack[-1] > c:
+                # decreement the k
                 k -= 1
+                # pop from the stack
                 stack.pop()
-                stack.append(c)
+            stack.append(c)
