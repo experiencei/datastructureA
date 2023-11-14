@@ -768,6 +768,6 @@ class Solution:
 # Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.
 
 
-Solution --> i) we want to probably remove the larger digit and ii) we're biased towards left i.e ( removing the larger digit )
-iii) if we're in decresing order 54321 we want to remove from the left iii) if we're in increasing order 12345 we want to remove the larger value from the right
-MONOTONIC INCREASING ORDER algorithm 
+# Solution --> i) we want to probably remove the larger digit and ii) we're biased towards left i.e ( removing the larger digit )
+# iii) if we're in decresing order 54321 we want to remove from the left iii) if we're in increasing order 12345 we want to remove the larger value from the right
+# MONOTONIC INCREASING ORDER algorithm 
