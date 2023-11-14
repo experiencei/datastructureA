@@ -768,4 +768,5 @@ class Solution:
 # Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.
 
 
-Solution --> 
+Solution --> i) we want to probably remove the larger digit and ii) we're biased towards left i.e ( removing the larger digit )
+
