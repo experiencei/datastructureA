@@ -818,6 +818,7 @@ class Solution:
 # Solution --> to look for 132 pattern efficiently we're going to be using stack
 # monothonic decreasing stack 
 stack [3,1,4,2]
-we're going to be taking minimum of every single value in stack before poping
-the minimum value will be equivalent to 1
-the begining of the stack will be equivalent to 3 because it is bigger
+# we're going to be taking minimum of every single value in stack before poping
+# the minimum value will be equivalent to 1
+# the begining of the stack will be equivalent to 3 because it is bigger
+# and the top of the stack will be equivalent to 2 because it's smaller than 3 and bigger than 1
