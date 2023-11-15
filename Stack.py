@@ -800,3 +800,7 @@ class Solution:
         # if there's result we to remove the leading zero if they are present by converting it to int first and string later
         # and "0" if the stack is empty
         return str(int(res)) if res else "0"
+
+
+
+# 132 Pattern
