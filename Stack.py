@@ -833,10 +833,16 @@ class Solution:
 
         for n in nums:
 
-            as long as there's stack and n is greater than top of stack we want to pop
-            so as to keep our stack in decreasing order
+            # as long as there's stack and n is greater than top of stack we want to pop
+            # so as to keep our stack in decreasing order
             while stack and n >= stack[-1][0]:
                 stack.pop()
+
+
+                assume top of the stack = 3
+                assume n = 2
+
+            as long as there's value in stack and n is less than top of the stack
             if stack and n < stack[-1][0] and n > stack[-1][1]:
                 return True
 
