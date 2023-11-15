@@ -839,13 +839,16 @@ class Solution:
                 stack.pop()
 
 
-                assume top of the stack = 3
-                assume n = 2
+            #     assume top of the stack = 3
+            #     assume n = 2
+            #     assume currentMinimum = 1
 
-            as long as there's value in stack and n is less than top of the stack
+            # as long as there's value in stack and n is less than top of the stack and
+            # n is greater than currentMinimum we want to return true
             if stack and n < stack[-1][0] and n > stack[-1][1]:
                 return True
 
+            # append to n and current minimum to stack in pairs
             stack.append([n, curMin]) 
             curMin = min(n, curMin)
 
