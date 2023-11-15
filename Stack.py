@@ -822,3 +822,23 @@ class Solution:
 # the minimum value will be equivalent to 1
 # the begining of the stack will be equivalent to 3 because it is bigger
 # and the top of the stack will be equivalent to 2 because it's smaller than 3 and bigger than 1
+
+
+class Solution:
+    def find132pattern(self, nums: list[int]) -> bool:
+        stack = [] # pair [num, curLeftMin], mono-decreasing stack
+
+        # assign the current minimum to nums at index 0 or -infinity
+        curMin = nums[0]
+
+        for n in nums:
+            while stack and n >= stack[-1][0]:
+                stack.pop()
+            if stack and n < stack[-1][0] and n > stack[-1][1]:
+                return True
+
+            stack.append([n, curMin]) 
+            curMin = min(n, curMin)
+
+        return False
+
