@@ -832,6 +832,9 @@ class Solution:
         curMin = nums[0]
 
         for n in nums:
+
+            as long as there's stack and n is greater than top of stack we want to pop
+            so as to keep our stack in decreasing order
             while stack and n >= stack[-1][0]:
                 stack.pop()
             if stack and n < stack[-1][0] and n > stack[-1][1]:
