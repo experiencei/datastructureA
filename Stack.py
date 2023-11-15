@@ -815,4 +815,5 @@ class Solution:
 # Output: false
 # Explanation: There is no 132 pattern in the sequence.
 
-Solution --> 
+Solution --> to look for 132 pattern efficiently we're going to be using stack
+monothonic decreasing stack
