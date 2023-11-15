@@ -71,7 +71,7 @@ class Solution:
         
         for o in operations:
             
-            # it is +, D, or C
+            # if it is +, D, or C
             # if stack isn't of sufficient length, then operation is voided
             if o == "+" and len(score_stack) >= 2:
                 summed = score_stack[-2] + score_stack[-1]
