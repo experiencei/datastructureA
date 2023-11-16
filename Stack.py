@@ -909,6 +909,9 @@ class Solution:
 class FreqStack:
 
     def __init__(self):
+        self.cnt = {}
+        self.maxCnt = 0
+        self.stack = {}
         
 
     def push(self, val: int) -> None:
