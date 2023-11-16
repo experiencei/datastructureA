@@ -930,9 +930,14 @@ class FreqStack:
         self.stack[valCnt].append(val)
 
     def pop(self) -> int:
+        # pop from the most frequent stack
         res = self.stack[self.maxCnt].pop()
+
+        # reduce the count of the res from stack
         self.cnt[res] -= 1
-        if not self.stack[self.maxCnt]
+        
+        # if after poppping from the stack it happens to be empty then we want to reduce the count of the maxCount
+        if not self.stack[self.maxCnt]:
             self.maxCnt -= 1
         return res
         
