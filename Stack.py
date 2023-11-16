@@ -134,8 +134,8 @@ class MyStack:
             # add everything in the queue again by push the popleft value
             self.push(self.q.popleft())
         return self.q.popleft()
-
     def top(self) -> int:
+        # loop through everything apart from the last value
         for i in range(len(self.q) - 1):
             self.push(self.q.popleft())
         res = self.q[0]
@@ -854,3 +854,4 @@ class Solution:
 
         return False
 
+# Maximum Frequency Stack
