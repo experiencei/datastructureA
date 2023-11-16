@@ -915,7 +915,13 @@ class FreqStack:
         
 
     def push(self, val: int) -> None:
-        
+        valCnt = 1 + self.cnt.get(val , 0)
+
+        # if the valueCount is greater than the maximum frequency it means we will have a new count and stack
+        if valCnt > self.maxCnt:
+            self.maxCnt = valCnt
+            self.stack[valCnt] = []
+        self.stack[valCnt].append(val)
 
     def pop(self) -> int:
         
