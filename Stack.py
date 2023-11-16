@@ -889,7 +889,11 @@ class Solution:
 # freqStack.pop();   // return 4, as 4, 5 and 7 is the most frequent, but 4 is closest to the top. The stack becomes [5,7].
 
 
-Solution --->  we are going to be having an hashmap to count the frequent value
+# Solution --->  we are going to be having an hashmap to count the frequent value
+#  and maxVal variable to keep track of the frequency
+#   1    2   1   2   1   3    ----> groups of frequency   
+# [5,4],[5],[3],[4],[2],[5]  we are going to be mapping count with values
+# i.e sepparating based on the frequency
 
 
 class FreqStack:
