@@ -930,4 +930,9 @@ class FreqStack:
         self.stack[valCnt].append(val)
 
     def pop(self) -> int:
+        res = self.stack[self.maxCnt].pop()
+        self.cnt[res] -= 1
+        if not self.stack[self.maxCnt]
+            self.maxCnt -= 1
+        return res
         
