@@ -889,4 +889,16 @@ class Solution:
 # freqStack.pop();   // return 4, as 4, 5 and 7 is the most frequent, but 4 is closest to the top. The stack becomes [5,7].
 
 
-Solution ---> 
+Solution --->  we are going to be having an hashmap to count the frequent value
+
+
+class FreqStack:
+
+    def __init__(self):
+        
+
+    def push(self, val: int) -> None:
+        
+
+    def pop(self) -> int:
+        
