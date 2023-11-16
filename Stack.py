@@ -919,8 +919,14 @@ class FreqStack:
 
         # if the valueCount is greater than the maximum frequency it means we will have a new count and stack
         if valCnt > self.maxCnt:
+
+            # update the new value count to the maximum frequency
             self.maxCnt = valCnt
+
+            # add the value count with the array
             self.stack[valCnt] = []
+
+        # append the value now the to the stack created 
         self.stack[valCnt].append(val)
 
     def pop(self) -> int:
