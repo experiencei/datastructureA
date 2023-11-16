@@ -895,6 +895,16 @@ class Solution:
 # [5,4],[5],[3],[4],[2],[5]  we are going to be mapping count with values
 # i.e sepparating based on the frequency
 
+# Count | Group
+# 1      [5 , 4 , 3 , 2 ] 
+
+# 2      [5 , 4 , 3]
+
+# 3      [5]  
+
+
+# if we want to add a 5 to the stack we will be having another group 4 -- > [5]
+# we pop from the most frequent and last value added to stack
 
 class FreqStack:
 
