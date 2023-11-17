@@ -1004,6 +1004,8 @@ class Solution:
                 # areaa = height * distance between the current index from begining
                 maxArea = max(maxArea, height * (i - index))
                 start = index
+
+            # then append the index and height to the stack
             stack.append((start, h))
 
 
