@@ -997,6 +997,8 @@ class Solution:
 
             # as long as there's value in the stack and the top value is grater than current h we want to pop the heigher value
             while stack and stack[-1][1] > h:
+
+                # get the index and height before popping to calculate the maxValue
                 index, height = stack.pop()
                 maxArea = max(maxArea, height * (i - index))
                 start = index
