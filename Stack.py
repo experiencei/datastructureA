@@ -1000,6 +1000,8 @@ class Solution:
 
                 # get the index and height before popping to calculate the maxValue
                 index, height = stack.pop()
+
+                # areaa = height * distance between the current index from begining
                 maxArea = max(maxArea, height * (i - index))
                 start = index
             stack.append((start, h))
