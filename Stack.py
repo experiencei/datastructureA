@@ -984,6 +984,8 @@ class FreqStack:
 
 
 # Solution --> we want to keep the stack in increaing order (because we can create more rectangle for smaller value on the right by doing something so)
+before popping we want to know how many area they covered by multiplying there height * (index - starting point) and keeping track of the maximum value
+
 
 class Solution:
     def largestRectangleArea(self, heights: list[int]) -> int:
