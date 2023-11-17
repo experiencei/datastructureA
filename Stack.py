@@ -983,8 +983,7 @@ class FreqStack:
 
 
 
-# Solution --> Solution
-
+# Solution --> we want to keep the stack in increaing order (because we can create more rectangle for smaller value on the right by doing something so)
 
 class Solution:
     def largestRectangleArea(self, heights: list[int]) -> int:
