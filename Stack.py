@@ -1011,6 +1011,7 @@ class Solution:
 
         # leftover after popping all
         for i, h in stack:
+            
             # calculate the maximum area as well
             maxArea = max(maxArea, h * (len(heights) - i))
         return maxArea
