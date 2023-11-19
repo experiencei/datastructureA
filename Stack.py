@@ -981,8 +981,6 @@ class FreqStack:
 # The largest rectangle is shown in the red area, which has an area = 10 units
 
 
-
-
 # Solution --> we want to keep the stack in increaing order (because we can create more rectangle for smaller value on the right by doing something so)
 # before popping we want to know how many area they covered by multiplying there height * (index - starting point) and keeping track of the maximum value
 # and after looping through the height the remaining value in stack , the area will be calculated as well to know the maximum value
