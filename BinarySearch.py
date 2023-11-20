@@ -23,11 +23,17 @@ class Solution:
 
     # as long as r is greater than l
     while l <= r:
+
       m = l + ((r - l) // 2) 
+
+      # re assign right index if middle value is greater than target
       if nums[m] > target:
         r = m - 1
+
+      # re assign left index if middle value is greater than target
       elif nums[m] < target:
         l = m + 1
+        
       else : 
          return m
 
