@@ -14,3 +14,8 @@
 # solution --> we're going to be using divide and conquer method
 # [-1,0,3,5,9,12], since they are already in sorted order
 # if the target 9 is greater than the middle of the array (then we eliminate the other half of the array)
+
+class Solution:
+  def binarySearch(self, nums : list[int] , target : int) -> int:
+    l , r = 0 , len(nums) - 1
+    
