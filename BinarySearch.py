@@ -25,4 +25,9 @@ class Solution:
         r = m - 1
       elif nums[m] < target:
         l = m + 1
-      else : return m
+      else : 
+         return m
+
+    return -1
+  
+  
