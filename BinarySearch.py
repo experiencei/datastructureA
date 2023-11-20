@@ -17,6 +17,8 @@
 
 class Solution:
   def binarySearch(self, nums : list[int] , target : int) -> int:
+    
+    # initialize the left and right pointer
     l , r = 0 , len(nums) - 1
 
     while l <= r:
