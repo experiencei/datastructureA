@@ -17,10 +17,11 @@
 
 class Solution:
   def binarySearch(self, nums : list[int] , target : int) -> int:
-    
+
     # initialize the left and right pointer
     l , r = 0 , len(nums) - 1
 
+    # as long as r is greater than l
     while l <= r:
       m = l + ((r - l) // 2) 
       if nums[m] > target:
