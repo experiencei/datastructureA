@@ -79,6 +79,6 @@ class Solution:
             else:
                 high = mid
 
-                
+        # left index will always be the fall through index if target not found
         return low
 
