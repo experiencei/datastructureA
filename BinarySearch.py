@@ -80,5 +80,7 @@ class Solution:
                 high = mid
 
         # left index will always be the fall through index if target not found
+        # [2] target = 1 , L will fall to zero and r = 1
+        # [2] target = 3 , L will fall to since we will be searching to right of array
         return low
 
