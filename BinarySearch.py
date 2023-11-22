@@ -60,16 +60,25 @@ class Solution:
 # return the index where it would be if it were inserted in order
  
 class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
-        # O(log n) and O(1)
-        
-        
+    def searchInsert(self, nums: list[int], target: int) -> int:
+        # O(log n) and O(1)   
+        # initialize the left and right pointer
         low, high = 0, len(nums)
+
+        # as long as r is greater than l
         while low<high:
+            
+
             mid = low +(high - low) // 2
+
+            # re assign left index if middle value is greater than target
             if target > nums[mid]:
                 low = mid + 1
+
+            # re assign right index if middle value is greater than target
             else:
                 high = mid
+
+                
         return low
 
