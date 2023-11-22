@@ -55,3 +55,11 @@ class Solution:
 
 # Input: nums = [1,3,5,6], target = 7
 # Output: 4
+
+# Solution --> we want to run a binary search on the array given . if target not found
+# return the index where it would be if it were inserted in order
+ 
+class Solution:
+    def searchInsert(self, nums: list[int], target: int) -> int:
+        # O(log n) and O(1)
+
