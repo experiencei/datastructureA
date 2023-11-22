@@ -50,3 +50,8 @@ class Solution:
 
 # Input: nums = [1,3,5,6], target = 5
 # Output: 2
+
+Example 3:
+
+Input: nums = [1,3,5,6], target = 7
+Output: 4
