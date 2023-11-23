@@ -84,3 +84,6 @@ class Solution:
         # [2] target = 3 , L will fall to since we will be searching to right of array
         return low
 
+
+
+Guess Number Higher or Lower
