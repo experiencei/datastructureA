@@ -100,3 +100,8 @@ class Solution:
 
 
 # Return the number that I picked.
+
+# Example 1:
+
+# Input: n = 10, pick = 6
+# Output: 6
