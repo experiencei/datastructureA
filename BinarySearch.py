@@ -105,3 +105,11 @@ class Solution:
 
 # Input: n = 10, pick = 6
 # Output: 6
+
+class Solution:
+   def guessNumber(self, nums : int) -> int:
+      
+      l , r = 0 , nums
+
+      mid = (r - l) // 2
+      
