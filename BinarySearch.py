@@ -114,12 +114,13 @@ class Solution:
       mid = l + (r - l) // 2
 
       while True:
-        guess = nums(mid)
 
-        if guess == -1:
+        guessNum = guess(mid)
+
+        if guessNum == -1:
            r = mid - 1
-        elif guess == 1:
+        elif guessNum == 1:
            l = mid + 1
         else:
-           return guess
-      
+           return mid
+
