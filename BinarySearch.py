@@ -107,8 +107,9 @@ class Solution:
 # Output: 6
 
 
-Solution ---> we are going to be using a binary search to find the guess number according to the rules and
-              API given
+# Solution ---> we are going to be using a binary search to find the guess number according to the rules and
+#               API given
+
 class Solution:
    def guessNumber(self, nums : int) -> int:
       
