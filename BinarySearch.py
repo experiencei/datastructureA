@@ -111,7 +111,7 @@ class Solution:
 #               API given
 
 class Solution:
-   def guessNumber(self, nums : int) -> int:
+   def guessNumber(self, nums : int , guess) -> int:
       
       l , r = 0 , nums
 
