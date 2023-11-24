@@ -111,5 +111,15 @@ class Solution:
       
       l , r = 0 , nums
 
-      mid = (r - l) // 2
+      mid = l + (r - l) // 2
+
+      while True:
+        guess = nums(mid)
+
+        if guess == -1:
+           r = mid - 1
+        elif guess == 1:
+           l = mid + 1
+        else:
+           return guess
       
