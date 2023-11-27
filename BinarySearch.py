@@ -126,5 +126,5 @@ class Solution:
         elif guessNum == 1:
            l = mid + 1
         else:
-           return mid
+           return mid    
 
