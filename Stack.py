@@ -354,11 +354,11 @@ class Solution:
         i = 0
         for n in pushed : 
             stack.append(n)
-            #if popped at index of i is the same as the top of the stack we wan to pop it.
+            #if popped at index of i is the same as the top of the stack we want to pop it.
             #it is possible to pop consecutively so we will change if to **while** .
             #edge cases --> if by incrementing i it goes out of balance ( i < len(popped)).
             #               if stack is empty it will throw an error as well ( sta)
-            if i < len(popped) and stack and stack[-1] == popped[i]:
+            while i < len(popped) and stack and stack[-1] == popped[i]:
                 stack.pop()
                 i += 1
 
