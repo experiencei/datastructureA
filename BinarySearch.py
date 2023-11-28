@@ -138,6 +138,9 @@ class Solution:
 # The last row of the staircase may be incomplete.
 # Given the integer n, return the number of complete rows of the staircase you will build.
 
+# Esample 1 : Input: n = 5
+# Output: 2
+# Explanation: Because the 3rd row is incomplete, we return 2.
 
 # Solution --> we can sequencially add up everything together which will be 0(n)
 # 10 - 1 = 9 - 2 = 7 - 3 = 4 - 4 = 0 which means with 10 we can make 4 steps of coins ---> bruteForce
@@ -151,10 +154,12 @@ class Solution:
 # left boundary = 1 ----> we're guaranted to have 1
 # right boundary = n ----> this is going to be our upper boundaries
 
-suppose we have 1,2,3,4,5
+# suppose we have 1,2,3,4,5
 
-mid = n = 3
+# mid = n = 3
 
-how many coins do we need to complete n
-1 + n * (n/2) = 6 and we have 5 , so we cross out everything to the right of it.
-reassign r = 2 and n = 1 
+# how many coins do we need to complete n
+# 1 + n * (n/2) = 6 and we have 5 , so we cross out everything to the right of it.
+# reassign r = 2 and n = 1 
+
+
