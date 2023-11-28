@@ -147,3 +147,6 @@ class Solution:
 # 100 + 1 = 101
 # 99 + 2 = 101
 # meaning -----> lowest + n * (n/2)
+
+left boundary = 1 ----> we're guaranted to have 1
+right boundary = n ----> this is going to be our upper boundaries
