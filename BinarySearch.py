@@ -142,8 +142,8 @@ class Solution:
 # Solution --> we can sequencially add up everything together which will be 0(n)
 # 10 - 1 = 9 - 2 = 7 - 3 = 4 - 4 = 0 which means with 10 we can make 4 steps of coins ---> bruteForce
 
-we can use gauss formular of suming up a large value in 0(log n) 
-1.............100 
-100 + 1 = 101
-99 + 2 = 101
+# we can use gauss formular of suming up a large value in 0(log n) 
+# 1.............100 
+# 100 + 1 = 101
+# 99 + 2 = 101
 # meaning -----> lowest + n * (n/2)
