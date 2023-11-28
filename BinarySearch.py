@@ -176,12 +176,19 @@ class Solution:
             # getting the mid number
             mid = (l+r)//2
 
-            number of coins needed to complete the mid value (with our formular)
+            # number of coins needed to complete the mid value (with our formular)
             coins = (mid /2) * (mid+1)
+
+            # if coins is greater than n adjust the right pointer
             if coins > n:
                 r = mid - 1
+
+            # if coins is lesser than n adjust the left pointer
             else:
                 l = mid + 1
+
+                # maximum of result and mid value the coins can completed is taking
                 res = max(mid, res)
+                
         return res
 
