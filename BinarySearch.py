@@ -162,4 +162,26 @@ class Solution:
 # 1 + n * (n/2) = 6 and we have 5 , so we cross out everything to the right of it.
 # reassign r = 2 and n = 1 
 
+class Solution:
+    def arrangeCoins(self, n: int) -> int:
+        # assign pointers
+        l, r = 1, n
+
+        # assign results
+        res = 0
+
+        # while right pointer is greater than left pointer
+        while l <=r:
+            
+            # getting the mid number
+            mid = (l+r)//2
+
+            number of coins needed to complete the mid value (with our formular)
+            coins = (mid /2) * (mid+1)
+            if coins > n:
+                r = mid - 1
+            else:
+                l = mid + 1
+                res = max(mid, res)
+        return res
 
