@@ -137,3 +137,7 @@ class Solution:
 # The staircase consists of k rows where the ith row has exactly i coins. 
 # The last row of the staircase may be incomplete.
 # Given the integer n, return the number of complete rows of the staircase you will build.
+
+
+Solution --> we can sequencially add up everything together which will be 0(n)
+10 - 1 = 9 - 2 = 7 - 3 = 4 - 4 = 0 which means with 10 we can make 4 steps of coins ---> bruteForce
