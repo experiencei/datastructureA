@@ -148,5 +148,13 @@ class Solution:
 # 99 + 2 = 101
 # meaning -----> lowest + n * (n/2)
 
-left boundary = 1 ----> we're guaranted to have 1
-right boundary = n ----> this is going to be our upper boundaries
+# left boundary = 1 ----> we're guaranted to have 1
+# right boundary = n ----> this is going to be our upper boundaries
+
+suppose we have 1,2,3,4,5
+
+mid = n = 3
+
+how many coins do we need to complete n
+1 + n * (n/2) = 6 and we have 5 , so we cross out everything to the right of it.
+reassign r = 2 and n = 1 
