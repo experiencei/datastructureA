@@ -362,6 +362,7 @@ class Solution:
                 stack.pop()
                 i += 1
 
+        # return true if stack is empty
         return not stack
 
 
