@@ -206,6 +206,6 @@ class Solution:
 
 
 
-Solution --> we will be using binary search on the array to get efficient algorithm 0(n)
-we will have left and right pointer and have result array . we will be comparing the square of right and left pointers together
-and building the result in reverse order i.e from largest ---> lowest and later reverse the array back to non-decreasing element
+# Solution --> we will be using binary search on the array to get efficient algorithm 0(n)
+# we will have left and right pointer and have result array . we will be comparing the square of right and left pointers together
+# and building the result in reverse order i.e from largest ---> lowest and later reverse the array back to non-decreasing element
