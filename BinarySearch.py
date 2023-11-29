@@ -194,5 +194,5 @@ class Solution:
 
 # Squares of a Sorted Array
 
-Question ----> Given an integer array nums sorted in non-decreasing order, 
-return an array of the squares of each number sorted in non-decreasing order.
+# Question ----> Given an integer array nums sorted in non-decreasing order, 
+# return an array of the squares of each number sorted in non-decreasing order.
