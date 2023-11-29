@@ -189,6 +189,7 @@ class Solution:
 
                 # maximum of result and mid value the coins can completed is taking
                 res = max(mid, res)
-                
+
         return res
 
+# Squares of a Sorted Array
