@@ -212,18 +212,25 @@ class Solution:
 
 class Solution:
    def sortedSquares(self, nums : list[int]) -> list[int]:
+      # assign result array
       res = []
 
+      # assign left and right pointer
       l , r = 0 , len(nums) - 1
 
       while l <r:
+            
+            # if square of left pointer is greater than square of right pointer
             if nums[l] * nums[l] > nums[r] * nums[r]:
                 res.append(nums[l] * nums[l])
                 l += 1
-
+            
+            # if square of right pointer is greater than square of left pointer
             else:
                res.append(nums[r] * nums[r])
                r += 1
+
+      # reverse the array back
       return res[::-1]
 
       
