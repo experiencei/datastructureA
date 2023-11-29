@@ -205,7 +205,34 @@ class Solution:
 # After sorting, it becomes [0,1,9,16,100].
 
 
-
 # Solution --> we will be using binary search on the array to get efficient algorithm 0(n)
 # we will have left and right pointer and have result array . we will be comparing the square of right and left pointers together
 # and building the result in reverse order i.e from largest ---> lowest and later reverse the array back to non-decreasing element
+
+
+class Solution:
+   def sortedSquares(self, nums : list[int]) -> list[int]:
+      res = []
+
+      l , r = 0 , len(nums) - 1
+
+      while l <r:
+            if nums[l] * nums[l] > nums[r] * nums[r]:
+                res.append(nums[l] * nums[l])
+                l += 1
+
+            else:
+               res.append(nums[r] * nums[r])
+               r += 1
+      return res[::-1]
+
+      
+
+
+     
+         
+         
+
+
+       
+           
