@@ -267,6 +267,8 @@ class Solution:
             # if Square of mid is less than nums readjust the left pointer
             elif mid * mid < num:
                 l = mid + 1
+              
+            # else if it doesn't fall into the two categories return true
             else:
                 return True
         return False
