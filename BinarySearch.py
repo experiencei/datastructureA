@@ -260,9 +260,11 @@ class Solution:
 
             mid = (l +r) // 2
 
-            # if Square of mid is greater than r readjust the right pointer
+            # if Square of mid is greater than nums readjust the right pointer
             if mid * mid > num:
                 r = mid - 1
+              
+            # if Square of mid is less than nums readjust the left pointer
             elif mid * mid < num:
                 l = mid + 1
             else:
