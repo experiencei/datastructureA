@@ -254,6 +254,8 @@ class Solution:
      def isPerfectSquare(self, num: int) -> bool:
         # initializing the left and right pointer
         l ,r = 1, num
+
+        # as long as right pointer is not less than left
         while l <= r:
             mid = (l +r) // 2
             if mid * mid > num:
