@@ -257,7 +257,10 @@ class Solution:
 
         # as long as right pointer is not less than left
         while l <= r:
+
             mid = (l +r) // 2
+
+            # if Square of mid is greater than r readjust the right pointer
             if mid * mid > num:
                 r = mid - 1
             elif mid * mid < num:
