@@ -271,5 +271,7 @@ class Solution:
             # else if it doesn't fall into the two categories return true
             else:
                 return True
+            
+        # return false if it exist the while loops without returning true
         return False
            
