@@ -243,11 +243,11 @@ class Solution:
 # You must not use any built-in library function, such as sqrt.
 
 
-Example 1:
+# Example 1:
 
-Input: num = 16
-Output: true
-Explanation: We return true because 4 * 4 = 16 and 4 is an integer
+# Input: num = 16
+# Output: true
+# Explanation: We return true because 4 * 4 = 16 and 4 is an integer
 
        
            
