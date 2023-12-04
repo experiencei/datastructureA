@@ -291,7 +291,8 @@ class Solution:
 # Explanation: The square root of 4 is 2, so we return 2.
 
 
-solution ---> we will be using binary search on it
+solution ---> we will be using binary search on it which is more efficient than
+0(sqrt(n)) ... log n > 0(sqrt(n))
 
 class Solution(object):
     def mySqrt(self, x):
