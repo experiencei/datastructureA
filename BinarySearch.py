@@ -319,3 +319,5 @@ class Solution(object):
 
 # Input: nums = [1,1,2,3,3,4,4,8,8]
 # Output: 2
+
+Solution ---> we are going to be using binary search on it , to get the single element
