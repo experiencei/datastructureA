@@ -305,3 +305,6 @@ class Solution(object):
                 r = mid - 1
             else:
                 l = mid + 1
+
+
+Single Element in a Sorted Array
