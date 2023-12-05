@@ -339,3 +339,17 @@ class Solution(object):
 # Using this knowledge, we can use binary search to find the unique element.
 
 # We just have to make sure that our pivot index is always even, so we can use mid = 2 * ((lo + hi) // 4) instead of the usual mid = (lo + hi) // 2.
+
+
+
+class Solution:
+    def singleNonDuplicate(self, nums: list[int]) -> int:
+        l=0
+        h=len(nums)-1
+        while l<h:
+            m=2*((l+h)//4)
+            if nums[m]==nums[m+1]:
+                l=m+2
+            else:
+                h=m
+        return nums[l]        
