@@ -320,4 +320,5 @@ class Solution(object):
 # Input: nums = [1,1,2,3,3,4,4,8,8]
 # Output: 2
 
-Solution ---> we are going to be using binary search on it , to get the single element
+Solution ---> we are going to be using binary search on it , to get the single element both side are not going to be the same
+[1,1,2,3,3,4,4,8,8] like the both side of 2 is totally different and to know the side we need to search for
