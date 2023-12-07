@@ -340,8 +340,6 @@ class Solution(object):
 
 # We just have to make sure that our pivot index is always even, so we can use mid = 2 * ((lo + hi) // 4) instead of the usual mid = (lo + hi) // 2.
 
-
-
 class Solution:
     def singleNonDuplicate(self, nums: list[int]) -> int:
         l=0
