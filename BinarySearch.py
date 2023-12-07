@@ -371,4 +371,5 @@ class Solution:
 # 4th day: 9
 # 5th day: 10
 
-# Note that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed.
+# Note that the cargo must be shipped in the order given, 
+# so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed.
