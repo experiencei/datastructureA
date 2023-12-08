@@ -382,3 +382,15 @@ class Solution:
 
 class Solution:
     def shipWithinDays(self, weights: list[int], days: int) -> int:
+        l , r = max(weights) , sum(weights)
+        res = r
+
+
+        while l <= r:
+            cap = l + ((r - l) // 2)
+            if canShip(cap):
+                res = min(res, cap)
+                r = m - 1 
+
+            else
+
