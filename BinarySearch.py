@@ -390,7 +390,8 @@ class Solution:
             cap = l + ((r - l) // 2)
             if canShip(cap):
                 res = min(res, cap)
-                r = m - 1 
+                r = cap - 1 
 
-            else
+            else:
+                l = cap + 1
 
