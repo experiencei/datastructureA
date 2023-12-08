@@ -389,7 +389,7 @@ class Solution:
         res = r
 
         def canShip(cap):
-
+            # initialize the ships to 1 and the current capacity to cap passed in
             ships , currCap = 1 , cap
             for w in weights:
                 if currCap - w < 0:
