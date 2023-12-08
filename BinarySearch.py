@@ -374,5 +374,5 @@ class Solution:
 # Note that the cargo must be shipped in the order given, 
 # so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed.
 
-Solution --> let assumes days to be number of ships
-we want a minimum numbers of capacity that can carry the weights in that number of ships
+# Solution --> let assumes days to be number of ships
+# we want a minimum numbers of capacity that can carry the weights in that number of ships
