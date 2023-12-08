@@ -389,6 +389,7 @@ class Solution:
         res = r
 
         def canShip(cap):
+
             ships , currCap = 1 , cap
             for w in weights:
                 if currCap - w < 0:
@@ -398,6 +399,7 @@ class Solution:
             return ships <= days
 
 
+        # running a normal binary search with helper function
         while l <= r:
             cap = l + ((r - l) // 2)
             if canShip(cap):
