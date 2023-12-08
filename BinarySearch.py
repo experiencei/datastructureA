@@ -382,7 +382,10 @@ class Solution:
 
 class Solution:
     def shipWithinDays(self, weights: list[int], days: int) -> int:
+        # initialize the left and right pointer
         l , r = max(weights) , sum(weights)
+
+        # result initialize to right pointer
         res = r
 
         def canShip(cap):
