@@ -392,6 +392,7 @@ class Solution:
             # initialize the ships to 1 and the current capacity to cap passed in
             ships , currCap = 1 , cap
             for w in weights:
+                # if capacity trips to - , it means we need to increment the ships
                 if currCap - w < 0:
                     ships += 1
                     currCap = cap
