@@ -427,5 +427,5 @@ class Solution:
 # Explanation: 3 is a peak element and your function should return the index number 2.
 
 
-Solution ---> it's always guaranted we are going to be having a greater neighbour
-and we can run our modify binary search o
+# Solution ---> it's always guaranted we are going to be having a greater neighbour
+# and we can run our modify binary search on it to get the index of the peak element
