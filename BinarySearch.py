@@ -425,3 +425,7 @@ class Solution:
 # Input: nums = [1,2,3,1]
 # Output: 2
 # Explanation: 3 is a peak element and your function should return the index number 2.
+
+
+Solution ---> it's always guaranted we are going to be having a greater neighbour
+and we can run our modify binary search o
