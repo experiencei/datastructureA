@@ -376,3 +376,5 @@ class Solution:
 
 # Solution --> let assumes days to be number of ships
 # we want a minimum numbers of capacity that can carry the weights in that number of ships
+
+# so we will run a binary search on the weights ( which the lower boundary is the highest value of weights)
