@@ -378,5 +378,7 @@ class Solution:
 # we want a minimum numbers of capacity that can carry the weights in that number of ships
 
 # so we will run a binary search on the weights ( which the lower boundary is the highest value of weights) and the upper boundaries is the sum of all weights
-our binary search will give us the minimun number of capacity 
+# our binary search will give us the minimun number of capacity 
 
+class Solution:
+    def shipWithinDays(self, weights: list[int], days: int) -> int:
