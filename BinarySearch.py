@@ -447,4 +447,4 @@ class Solution:
 # Successful Pairs of Spells and Potions
 
 # Question ---> You are given two positive integer arrays spells and potions, of length n and m respectively, 
-where spells[i] represents the strength of the ith spell and potions[j] represents the strength of the jth potion.
+# where spells[i] represents the strength of the ith spell and potions[j] represents the strength of the jth potion.
