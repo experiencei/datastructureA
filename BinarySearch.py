@@ -448,3 +448,25 @@ class Solution:
 
 # Question ---> You are given two positive integer arrays spells and potions, of length n and m respectively, 
 # where spells[i] represents the strength of the ith spell and potions[j] represents the strength of the jth potion.
+
+
+
+def successfulPairs(self, spells: List[int], potions: List[int], s: int) -> List[int]:
+    q=[]
+    potions.sort()                                      #Sort the potion array
+    a=len(potions)
+    for i in spells:
+        count=0
+        l=0                                   #We have to find a value which is less than (success/i) in sorted array  
+         r=len(potions)                # binary seach will give index of that point and onwards that index all are 
+        x=s/i                                #greater values 
+        while l<r:
+            mid=l+(r-l)//2
+            if potions[mid]>=x:
+                r=mid
+            else:
+                l=mid+1
+        
+        count=(a-l)                                      #Last - index that came with binary search
+        q.append(count)
+    return q
