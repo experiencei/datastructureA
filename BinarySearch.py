@@ -459,8 +459,12 @@ class Solution:
 class Solution:
     def successfulPairs(self, spells: list[int], potions: list[int], s: int) -> list[int]:
         q=[]
-        potions.sort()                                      #Sort the potion array
+        potions.sort()  
+        
+        # assigning the len(potions)  so as not to get highvalue if we are doing subtraction in end                                #Sort the potion array
         a=len(potions)
+
+        
         for i in spells:
             count=0
             l=0                                   #We have to find a value which is less than (success/i) in sorted array  
