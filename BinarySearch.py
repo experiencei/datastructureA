@@ -452,22 +452,25 @@ class Solution:
 # You are also given an integer success. A spell and potion pair is considered successful if the product of their strengths is at least success.
 # Return an integer array pairs of length n where pairs[i] is the number of potions that will form a successful pair with the ith spell.
 
-def successfulPairs(self, spells: list[int], potions: list[int], s: int) -> list[int]:
-    q=[]
-    potions.sort()                                      #Sort the potion array
-    a=len(potions)
-    for i in spells:
-        count=0
-        l=0                                   #We have to find a value which is less than (success/i) in sorted array  
-        r=len(potions)                # binary seach will give index of that point and onwards that index all are 
-        x=s/i                                #greater values 
-        while l<r:
-            mid=l+(r-l)//2
-            if potions[mid]>=x:
-                r=mid
-            else:
-                l=mid+1
-        
-        count=(a-l)                                      #Last - index that came with binary search
-        q.append(count)
-    return q
+
+
+class Solution:
+    def successfulPairs(self, spells: list[int], potions: list[int], s: int) -> list[int]:
+        q=[]
+        potions.sort()                                      #Sort the potion array
+        a=len(potions)
+        for i in spells:
+            count=0
+            l=0                                   #We have to find a value which is less than (success/i) in sorted array  
+            r=len(potions)                # binary seach will give index of that point and onwards that index all are 
+            x=s/i                                #greater values 
+            while l<r:
+                mid=l+(r-l)//2
+                if potions[mid]>=x:
+                    r=mid
+                else:
+                    l=mid+1
+            
+            count=(a-l)                                      #Last - index that came with binary search
+            q.append(count)
+        return q
