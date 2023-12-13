@@ -458,7 +458,7 @@ def successfulPairs(self, spells: list[int], potions: list[int], s: int) -> list
     for i in spells:
         count=0
         l=0                                   #We have to find a value which is less than (success/i) in sorted array  
-         r=len(potions)                # binary seach will give index of that point and onwards that index all are 
+        r=len(potions)                # binary seach will give index of that point and onwards that index all are 
         x=s/i                                #greater values 
         while l<r:
             mid=l+(r-l)//2
