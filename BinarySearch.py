@@ -451,7 +451,7 @@ class Solution:
 
 
 
-def successfulPairs(self, spells: List[int], potions: List[int], s: int) -> List[int]:
+def successfulPairs(self, spells: list[int], potions: list[int], s: int) -> list[int]:
     q=[]
     potions.sort()                                      #Sort the potion array
     a=len(potions)
