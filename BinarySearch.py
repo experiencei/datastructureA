@@ -464,7 +464,7 @@ class Solution:
         # assigning the len(potions)  so as not to get highvalue if we are doing subtraction in end                                #Sort the potion array
         a=len(potions)
 
-        
+
         for i in spells:
             count=0
             l=0                                   #We have to find a value which is less than (success/i) in sorted array  
@@ -477,6 +477,7 @@ class Solution:
                 else:
                     l=mid+1
             
-            count=(a-l)                                      #Last - index that came with binary search
+            count=(a-l)  
+                                                #Last - index that came with binary search
             q.append(count)
         return q
