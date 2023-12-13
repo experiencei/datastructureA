@@ -453,7 +453,7 @@ class Solution:
 # Return an integer array pairs of length n where pairs[i] is the number of potions that will form a successful pair with the ith spell.
 
 
-
+# Solution --> we will be running a binary search on the potions to know where it will be least than the success number
 class Solution:
     def successfulPairs(self, spells: list[int], potions: list[int], s: int) -> list[int]:
         q=[]
