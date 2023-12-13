@@ -454,7 +454,7 @@ class Solution:
 
 
 # Solution --> we will be running a binary search on the potions to know where it will be least than the success number
-which will mlogn Time complexity
+# which will mlogn Time complexity
 
 class Solution:
     def successfulPairs(self, spells: list[int], potions: list[int], s: int) -> list[int]:
