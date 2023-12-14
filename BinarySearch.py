@@ -509,7 +509,7 @@ class Solution:
 
         top, bot = 0, ROWS - 1
 
-        # running the first binary search on the matrix
+        #running the first binary search on the matrix
         while top <= bot:
             row = (top + bot) // 2
             if target > matrix[row][-1]: 
