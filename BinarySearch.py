@@ -497,6 +497,6 @@ class Solution:
 # Output: true
 
 
-Solution ---> run a binary search on the matrix since it is non decreasing order to
-to get the actual row the target can fall into
-and run another binary search on the exact row to get the target value
+# Solution ---> run a binary search on the matrix since it is non decreasing order to
+# to get the actual row the target can fall into
+# and run another binary search on the exact row to get the target value
