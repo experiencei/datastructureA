@@ -502,3 +502,19 @@ class Solution:
 # and run another binary search on the exact row to get the target value
 
 # Time Complexity == mlogN + nlogN
+
+class Solution:
+    def searchMatrix(self, matrix: list[list[int]], target: int) -> bool:
+        ROWS, COLS = len(matrix), len(matrix[0])
+
+        top, bot = 0, ROWS - 1
+
+        running the first binary search on the matrix
+        while top <= bot:
+            row = (top + bot) // 2
+            if target > matrix[row][-1]: 
+                top = row + 1
+            elif target < matrix[row][0]:
+                bot = row - 1
+            else:
+                break
