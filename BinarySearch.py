@@ -495,3 +495,8 @@ class Solution:
 
 # Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
 # Output: true
+
+
+Solution ---> run a binary search on the matrix since it is non decreasing order to
+to get the actual row the target can fall into
+and run another binary search on the exact row to get the target value
