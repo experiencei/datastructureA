@@ -521,6 +521,8 @@ class Solution:
 
         if not (top <= bot):
             return False
+        
+        #running the second binary search on the row found
         row = (top + bot) // 2
         l, r = 0, COLS - 1
         while l <= r:
