@@ -553,4 +553,22 @@ class Solution:
 
 # Solution ---> we want to minimize what koko can consume in specific amount of time
 # the lowest k can can be is 1 and the highest it can be is (highest value in piles)
-# then run a binary search on it
+# then run a binary search on it and middle value of the [lowest , highest] is K
+import math
+class Solution:
+    def minEatingSpeed(self, piles: list[int], h: int) -> int:
+        l, r = 1, max(piles)
+        res = r
+
+        while l <= r:
+            k = (l + r) // 2
+
+            totalTime = 0
+            for p in piles:
+                totalTime += math.ceil(float(p) / k)
+            if totalTime <= h:
+                res = k
+                r = k - 1
+            else:
+                l = k + 1
+        return res
