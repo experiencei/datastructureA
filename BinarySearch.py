@@ -569,7 +569,7 @@ class Solution:
             for p in piles:
                 totalTime += math.ceil(float(p) / k)
             if totalTime <= h:
-                res = k
+                res = min(k , res)
                 r = k - 1
             else:
                 l = k + 1
