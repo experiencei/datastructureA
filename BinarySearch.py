@@ -552,3 +552,5 @@ class Solution:
 # Output: 4
 
 # Solution ---> we want to minimize what koko can consume in specific amount of time
+# the lowest k can can be is 1 and the highest it can be is (highest value in piles)
+# then run a binary search on it
