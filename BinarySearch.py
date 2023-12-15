@@ -551,4 +551,4 @@ class Solution:
 # Input: piles = [3,6,7,11], h = 8
 # Output: 4
 
-Solution ---> 
+# Solution ---> we want to minimize what koko can consume in specific amount of time
