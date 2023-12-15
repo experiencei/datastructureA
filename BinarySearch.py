@@ -558,6 +558,8 @@ import math
 class Solution:
     def minEatingSpeed(self, piles: list[int], h: int) -> int:
         l, r = 1, max(piles)
+
+        # initialize result to be r (since we will be minimizing it)
         res = r
 
         while l <= r:
