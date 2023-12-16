@@ -575,4 +575,8 @@ class Solution:
                 l = k + 1
         return res
 
-Find Minimum in Rotated Sorted Array
+# Find Minimum in Rotated Sorted Array
+Question --> Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+
+[4,5,6,7,0,1,2] if it was rotated 4 times.
+[0,1,2,4,5,6,7] if it was rotated 7 times.
