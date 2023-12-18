@@ -588,8 +588,8 @@ class Solution:
 
 # You must write an algorithm that runs in O(log n) time.
 
-Example 1:
+# Example 1:
 
-Input: nums = [3,4,5,1,2]
-Output: 1
-Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+# Input: nums = [3,4,5,1,2]
+# Output: 1
+# Explanation: The original array was [1,2,3,4,5] rotated 3 times.
