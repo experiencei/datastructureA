@@ -597,4 +597,4 @@ class Solution:
 
 
 solution ---> we are having two sorted array [3,4,5,1,2] one from 3 -> 5 and second from 1 -> 2
-if the m
+if the middle index is 5 then we know we are searching to right of it (if left most index is < 5)
