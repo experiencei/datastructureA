@@ -602,7 +602,7 @@ class Solution:
 # and if reverse is the case we have to search to the left of it
 
 class Solution:
-    def findMin(self, nums: List[int]) -> int:
+    def findMin(self, nums: list[int]) -> int:
         start , end = 0, len(nums) - 1 
         curr_min = float("inf")
         
