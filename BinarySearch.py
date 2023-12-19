@@ -593,3 +593,8 @@ class Solution:
 # Input: nums = [3,4,5,1,2]
 # Output: 1
 # Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+
+
+
+solution ---> we are having two sorted array [3,4,5,1,2] one from 3 -> 5 and second from 1 -> 2
+if the m
