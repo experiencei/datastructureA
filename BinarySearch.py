@@ -600,3 +600,22 @@ class Solution:
 # if the middle index is 5 then we know we are searching to right of it (if left most index is < 5)
 
 # and if reverse is the case we have to search to the left of it
+
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        start , end = 0, len(nums) - 1 
+        curr_min = float("inf")
+        
+        while start  <  end :
+            mid = (start + end ) // 2
+            curr_min = min(curr_min,nums[mid])
+            
+            # right has the min 
+            if nums[mid] > nums[end]:
+                start = mid + 1
+                
+            # left has the  min 
+            else:
+                end = mid - 1 
+                
+        return min(curr_min,nums[start])
