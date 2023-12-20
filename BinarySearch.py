@@ -631,7 +631,30 @@ class Solution:
 # Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
 # You must write an algorithm with O(log n) runtime complexity.
 
-Example 1:
+# Example 1:
 
-Input: nums = [4,5,6,7,0,1,2], target = 0
-Output: 4
+# Input: nums = [4,5,6,7,0,1,2], target = 0
+# Output: 4
+
+class Solution:
+    def search(self, nums: list[int], target: int) -> int:
+        l, r = 0, len(nums) - 1
+
+        while l <= r:
+            mid = (l + r) // 2
+            if target == nums[mid]:
+                return mid
+
+            # left sorted portion
+            if nums[l] <= nums[mid]:
+                if target > nums[mid] or target < nums[l]:
+                    l = mid + 1
+                else:
+                    r = mid - 1
+            # right sorted portion
+            else:
+                if target < nums[mid] or target > nums[r]:
+                    r = mid - 1
+                else:
+                    l = mid + 1
+        return -1
