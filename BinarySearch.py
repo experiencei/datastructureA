@@ -687,9 +687,12 @@ class Solution:
 
         while low <= high:
             mid = (low + high) // 2
+
+            # if the mid value is exactly equal to target return true
             if nums[mid] == target:
                 return True
          
+            # we want to keep adjusting till mid is no longer the same as left most pointer
             if nums[low] == nums[mid]:
                 low += 1
                 continue
