@@ -678,5 +678,5 @@ class Solution:
 # Output: true
 
 
-Solution ---> we can have linear value in non decreasing array like  2 , 2, 3 , 4 , 1 , 2 , 2
+# Solution ---> we can have linear value in non decreasing array like  2 , 2, 3 , 4 , 1 , 2 , 2
 # like we can have the same value on both side ( right & left)
