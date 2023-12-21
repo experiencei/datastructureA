@@ -697,11 +697,14 @@ class Solution:
                 low += 1
                 continue
             
+            # left sorted non decreasing portion
             if nums[low] <= nums[mid]:
                 if nums[low] <= target <= nums[mid]:
                     high = mid - 1
                 else:
                     low = mid + 1
+            
+            # right sorted non decreasing portion
             else:
                 if nums[mid] <= target <= nums[high]:
                     low = mid + 1
