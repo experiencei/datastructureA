@@ -671,3 +671,8 @@ class Solution:
 
 # Given the array nums after the rotation and an integer target, return true if target is in nums, or false if it is not in nums.
 # You must decrease the overall operation steps as much as possible.
+
+# Example 1:
+
+# Input: nums = [2,5,6,0,0,1,2], target = 0
+# Output: true
