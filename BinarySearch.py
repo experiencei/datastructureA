@@ -662,3 +662,5 @@ class Solution:
 
 
 # Search in Rotated Sorted Array II
+
+Question --> There is an integer array nums sorted in non-decreasing order (not necessarily with distinct values).
