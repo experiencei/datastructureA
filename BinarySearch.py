@@ -711,4 +711,5 @@ class Solution:
                 else:
                     high = mid - 1
         
+        # return false if no target found
         return False
