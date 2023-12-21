@@ -676,3 +676,6 @@ class Solution:
 
 # Input: nums = [2,5,6,0,0,1,2], target = 0
 # Output: true
+
+
+Solution ---> we can have linear value in non decreasing array 
