@@ -682,7 +682,7 @@ class Solution:
 # like we can have the same value on both side ( right & left)
 
 class Solution:
-    def search(self, nums: List[int], target: int) -> bool:
+    def search(self, nums: list[int], target: int) -> bool:
         low, high = 0, len(nums) - 1
 
         while low <= high:
