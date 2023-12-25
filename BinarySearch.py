@@ -726,13 +726,13 @@ class Solution:
 # String get(String key, int timestamp) Returns a value such that set was called previously, with timestamp_prev <= timestamp. If there are multiple such values, it returns the value associated with the largest timestamp_prev.
 # If there are no values, it returns "".
 
-Example 1:
+# Example 1:
 
-Input
-["TimeMap", "set", "get", "get", "set", "get", "get"]
-[[], ["foo", "bar", 1], ["foo", 1], ["foo", 3], ["foo", "bar2", 4], ["foo", 4], ["foo", 5]]
-Output
-[null, null, "bar", "bar", null, "bar2", "bar2"]
+# Input
+# ["TimeMap", "set", "get", "get", "set", "get", "get"]
+# [[], ["foo", "bar", 1], ["foo", 1], ["foo", 3], ["foo", "bar2", 4], ["foo", 4], ["foo", 5]]
+# Output
+# [null, null, "bar", "bar", null, "bar2", "bar2"]
 
 Explanation
 TimeMap timeMap = new TimeMap();
