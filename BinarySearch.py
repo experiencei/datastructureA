@@ -794,6 +794,7 @@ class TimeMap:
 
 # Solution  ---> we want to run the binary search on the list till we get the extreme left target value
 # and like wise on the right side as well till we get the extreme right target value
+
 class Solution:
     def searchRange(self, nums: list[int], target: int) -> list[int]:
         
@@ -809,6 +810,8 @@ class Solution:
                     right = mid - 1
                 elif nums[mid] < target:
                     left = mid + 1
+
+                    # binary search for the both extreme left and right 
                 else:
                     idx = mid
                     if is_searching_left:
