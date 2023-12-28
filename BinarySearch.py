@@ -777,3 +777,6 @@ class TimeMap:
             elif mapForKey[mid][1] > timestamp: right = mid - 1
             else: left = mid + 1
         return mapForKey[right][0]
+
+
+
