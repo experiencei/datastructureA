@@ -811,7 +811,7 @@ class Solution:
                 elif nums[mid] < target:
                     left = mid + 1
 
-                    # binary search for the both extreme left and right 
+                # binary search for the both extreme left and right 
                 else:
                     idx = mid
                     if is_searching_left:
