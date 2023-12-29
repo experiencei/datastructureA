@@ -828,3 +828,4 @@ class Solution:
 
 
 # Search Suggestions System
+Question --> You are given an array of strings products and a string searchWord.
