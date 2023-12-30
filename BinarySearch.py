@@ -836,10 +836,10 @@ class Solution:
 # Return a list of lists of the suggested products after each character of searchWord is typed.
 
 
-Example 1:
+# Example 1:
 
-Input: products = ["mobile","mouse","moneypot","monitor","mousepad"], searchWord = "mouse"
-Output: [["mobile","moneypot","monitor"],["mobile","moneypot","monitor"],["mouse","mousepad"],["mouse","mousepad"],["mouse","mousepad"]]
-Explanation: products sorted lexicographically = ["mobile","moneypot","monitor","mouse","mousepad"].
-After typing m and mo all products match and we show user ["mobile","moneypot","monitor"].
-After typing mou, mous and mouse the system suggests ["mouse","mousepad"].
+# Input: products = ["mobile","mouse","moneypot","monitor","mousepad"], searchWord = "mouse"
+# Output: [["mobile","moneypot","monitor"],["mobile","moneypot","monitor"],["mouse","mousepad"],["mouse","mousepad"],["mouse","mousepad"]]
+# Explanation: products sorted lexicographically = ["mobile","moneypot","monitor","mouse","mousepad"].
+# After typing m and mo all products match and we show user ["mobile","moneypot","monitor"].
+# After typing mou, mous and mouse the system suggests ["mouse","mousepad"].
