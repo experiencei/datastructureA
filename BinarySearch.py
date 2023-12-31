@@ -843,3 +843,7 @@ class Solution:
 # Explanation: products sorted lexicographically = ["mobile","moneypot","monitor","mouse","mousepad"].
 # After typing m and mo all products match and we show user ["mobile","moneypot","monitor"].
 # After typing mou, mous and mouse the system suggests ["mouse","mousepad"].
+
+
+Solution --> we want to loop through every words in the products array and use two pointer approach
+to eliminate those that doesn't have the prefix and return the minimum of the search words (3)
