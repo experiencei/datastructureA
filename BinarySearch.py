@@ -866,6 +866,9 @@ class Solution:
             res.append([])
             remain  = r - l + 1
             for j in range(min(3 , remain)):
-                
+                res[-1].append(products[i+ j])
+            
+        return res
+
 
 
