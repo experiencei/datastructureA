@@ -846,4 +846,7 @@ class Solution:
 
 
 # Solution --> we want to loop through every words in the products array and use two pointer approach
-# to eliminate those that doesn't have the prefix and return the minimum of the search words (3)
+# to eliminate those that doesn't have the prefix and return the minimum matching of the search words (3)
+
+
+
