@@ -851,13 +851,17 @@ class Solution:
 class Solution:
     def suggestedProducts(self, products: list[str] , searchWord: str) -> list[list[str]]:
         res = []
+
+        # sort the products list in lexicological order
         products.sort()
 
+        # run a binary search on it
         l , r = 0 , len(products) - 1
 
         for i in range(len(searchWord)):
             c = searchWord[i]
 
+            # as long as the binary search is still in place and the letter exist within the search
             while l <= r and (len(products[l]) <= i or products[l][i] != c):
                 l += 1
             while l <= r and (len(products[r]) <= i or products[r][i] != c):
@@ -869,6 +873,5 @@ class Solution:
                 res[-1].append(products[i+ j])
             
         return res
-
 
 
