@@ -900,4 +900,4 @@ class Solution:
 # Solution --> we want to run a binary search on the Input nums and split the array based on Maximum been the sum of all the Input values 
 # and minimum been the largest value of the input
 
-we want to split the array so that the largest of the split array is less than the mid value of the sum of array
+# we want to split the array so that the largest of the split array is less than the mid value of the sum of array
