@@ -893,5 +893,8 @@ class Solution:
 
 # Input: nums = [7,2,5,10,8], k = 2
 # Output: 18
+
 # Explanation: There are four ways to split nums into two subarrays.
 # The best way is to split it into [7,2,5] and [10,8], where the largest sum among the two subarrays is only 18.
+
+Solution --> we want to run a binary search on the Input nums and split the array based on the
