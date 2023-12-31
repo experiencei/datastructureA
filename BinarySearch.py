@@ -868,7 +868,11 @@ class Solution:
                 r -= 1
 
             res.append([])
+
+            # remaining searchWords within the binary search
             remain  = r - l + 1
+
+            # return the minimum
             for j in range(min(3 , remain)):
                 res[-1].append(products[i+ j])
             
