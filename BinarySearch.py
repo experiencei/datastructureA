@@ -845,5 +845,5 @@ class Solution:
 # After typing mou, mous and mouse the system suggests ["mouse","mousepad"].
 
 
-Solution --> we want to loop through every words in the products array and use two pointer approach
-to eliminate those that doesn't have the prefix and return the minimum of the search words (3)
+# Solution --> we want to loop through every words in the products array and use two pointer approach
+# to eliminate those that doesn't have the prefix and return the minimum of the search words (3)
