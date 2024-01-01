@@ -45,12 +45,16 @@ class Solution:
                 
                 # append list one value to the node if it happens to be smaller one
                 node.next = list1
+                # assign the next value to be list1
                 list1 = list1.next
             else:
                 node.next = list2
                 list2 = list2.next
+
+            # adjust the tail/node regardless of which value we move to the output
             node = node.next
 
+        join the rest of the remaining value in the remaining list
         node.next = list1 or list2
 
         return dummy.next
