@@ -54,7 +54,7 @@ class Solution:
             # adjust the tail/node regardless of which value we move to the output
             node = node.next
 
-        join the rest of the remaining value in the remaining list
+        # join the rest of the remaining value in the remaining list
         node.next = list1 or list2
 
         return dummy.next
