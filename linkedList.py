@@ -32,6 +32,8 @@ class Solution:
 # Input: list1 = [1,2,4], list2 = [1,3,4]
 # Output: [1,1,2,3,4,4]
 
+Solution ---> we want to compare the listNode and assign into output the smaller value of both list
+
 class Solution:
     def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
         dummy = node = ListNode()
