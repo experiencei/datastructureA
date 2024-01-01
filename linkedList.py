@@ -32,14 +32,18 @@ class Solution:
 # Input: list1 = [1,2,4], list2 = [1,3,4]
 # Output: [1,1,2,3,4,4]
 
-Solution ---> we want to compare the listNode and assign into output the smaller value of both list
+# Solution ---> we want to compare the listNode and assign into output the smaller value of both list
+
 
 class Solution:
     def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
         dummy = node = ListNode()
 
+        # as long as there's value in both list1 and list2
         while list1 and list2:
             if list1.val < list2.val:
+                
+                # append list one value to the node if it happens to be smaller one
                 node.next = list1
                 list1 = list1.next
             else:
