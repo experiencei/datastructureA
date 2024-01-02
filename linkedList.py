@@ -111,8 +111,9 @@ class Solution:
 # Output: [1,2,3,4,5]
 
 
-Solution -->  we are using dummyNode to avoid any bug that may occur and to return the node we want to return dummy.next 
-which is equal to 
+# Solution -->  we are using dummyNode to avoid any bug that may occur and to return the node we want to return dummy.next 
+# which is equal to head
+
 class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         dummy = ListNode(next=head)
