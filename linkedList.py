@@ -68,8 +68,8 @@ class Solution:
 # Input: head = [1,2,2,1]
 # Output: true
 
-Solution --> we want to loop through all linked list and get the middle of the list with slow pointer
-and reverse the second half of it ... [1 --> 2 --> 2 --> 1]
+# Solution --> we want to loop through all linked list and get the middle of the list with slow pointer
+# and reverse the second half of it ... [1 --> 2 --> 2 --> 1] = [1 --> 2 <-- 2 <-- 1]
 
 class Solution:
     def isPalindrome(self, head: ListNode) -> bool:
