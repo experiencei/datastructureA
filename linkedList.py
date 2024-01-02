@@ -109,3 +109,22 @@ class Solution:
 
 # Input: head = [1,2,6,3,4,5,6], val = 6
 # Output: [1,2,3,4,5]
+
+
+Solution -->  we are using dummyNode to avoid any bug that may occur and to return the node we want to return dummy.next 
+which is equal to 
+class Solution:
+    def removeElements(self, head: ListNode, val: int) -> ListNode:
+        dummy = ListNode(next=head)
+        prev, curr = dummy, head
+        
+        while curr:
+            nxt = curr.next
+            
+            if curr.val == val:
+                prev.next = nxt
+            else:
+                prev = curr
+            
+            curr = nxt
+        return dummy.next
