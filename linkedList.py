@@ -151,5 +151,8 @@ class Solution:
             # we want to remove
             while cur.next and cur.next.val == cur.val:
                 cur.next = cur.next.next
+
+            # else update the pointer
             cur = cur.next
+            # and return the head
         return head
