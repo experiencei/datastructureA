@@ -139,3 +139,14 @@ class Solution:
 # Example 1:
 # Input: head = [1,1,2]
 # Output: [1,2]
+
+class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        cur = head
+
+        as long as there's value we want to keep looping
+        while cur:
+            while cur.next and cur.next.val == cur.val:
+                cur.next = cur.next.next
+            cur = cur.next
+        return head
