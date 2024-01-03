@@ -144,8 +144,11 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         cur = head
 
-        as long as there's value we want to keep looping
+        # as long as there's value we want to keep looping
         while cur:
+            
+            # while there's value and previous value and next value to previous are the same
+            # we want to remove
             while cur.next and cur.next.val == cur.val:
                 cur.next = cur.next.next
             cur = cur.next
