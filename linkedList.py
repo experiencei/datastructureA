@@ -169,4 +169,24 @@ class Solution:
 # Output: [3,4,5]
 # Explanation: The middle node of the list is node 3.
 
+Solution --> we will be using 2 pointer approach of (fast & slow pointer)
+and return the slow pointer when the first iteration is reach ( the end)
+
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return head
+        
+
+        # they both begins at the head
+        slow = fast = head
+
+        # while there's value for fast pointer and slow pointer to reach
+        while fast and fast.next:
+            
+            slow, fast = slow.next, fast.next.next
+
+        return slow
+
+
   
