@@ -226,7 +226,9 @@ class Solution:
         # as long as they are not equal we need to keep looping 
          
         while l1 != l2:
+            # if there's node  add l1 else set l1 to l2 (head)
             l1 = l1.next if l1 else headB
+            # if there's node add l2 else set l2 to l1 (head)
             l2 = l2.next if l2 else headA
         return l1
 
