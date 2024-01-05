@@ -209,4 +209,19 @@ class Solution:
 # skipB - The number of nodes to skip ahead in listB (starting from the head) to get to the intersected node.
 # The judge will then create the linked structure based on these inputs and pass the two heads, headA and headB to your program. 
 # If you correctly return the intersected node, then your solution will be accepted.
+
+
+Solution -->  we are looking for intersection and to know that there will be 
+pointer starting from both head of the list , if they're not equal that when we set the
+other pointer that is shorter length to the second one
+class Solution:
+    def getIntersectionNode(
+        self, headA: ListNode, headB: ListNode
+    ) -> Optional[ListNode]:
+        l1, l2 = headA, headB
+        while l1 != l2:
+            l1 = l1.next if l1 else headB
+            l2 = l2.next if l2 else headA
+        return l1
+
   
