@@ -211,14 +211,20 @@ class Solution:
 # If you correctly return the intersected node, then your solution will be accepted.
 
 
-Solution -->  we are looking for intersection and to know that there will be 
-pointer starting from both head of the list , if they're not equal that when we set the
-other pointer that is shorter length to the second one
+# Solution -->  we are looking for intersection and to know that there will be 
+# pointer starting from both head of the list , if they're not equal that when we set the
+# other pointer that is shorter length to the second one
+
 class Solution:
     def getIntersectionNode(
         self, headA: ListNode, headB: ListNode
     ) -> Optional[ListNode]:
+
+        # set the headA and headB pointer
         l1, l2 = headA, headB
+
+        # as long as they are not equal we need to keep looping 
+         
         while l1 != l2:
             l1 = l1.next if l1 else headB
             l2 = l2.next if l2 else headA
