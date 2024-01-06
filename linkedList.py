@@ -250,7 +250,9 @@ class Solution:
 # Input: head = [1,2,3,4]
 # Output: [1,4,2,3]
 
-Solution --> 
+# Solution --> find the middle of the list and reverse the second & 
+# alternate the first list and the second list (reverse order)
+
 class Solution:
     def reorderList(self, head: ListNode) -> None:
         # find middle
