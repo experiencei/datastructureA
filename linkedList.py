@@ -304,6 +304,8 @@ class Solution:
     def pairSum(self, head: Optional[ListNode]) -> int:
         slow, fast = head, head
         prev = None
+
+        # loop and reverse the links of the first half
         while fast and fast.next:
             fast = fast.next.next
             tmp = slow.next
@@ -315,7 +317,7 @@ class Solution:
         while slow:
             # check the max
             res = max(res, prev.val + slow.val)
-            update the pointer
+            # update the pointer
             prev = prev.next
             slow = slow.next
         return res
