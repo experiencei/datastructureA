@@ -297,5 +297,23 @@ class Solution:
 # There are no other nodes with twins in the linked list.
 # Thus, the maximum twin sum of the linked list is 6. 
 
-Solution --> we want to keep looping using fast & slow pointer and  [5-> 4 -> 2 -> 1] == [5 <- 4 <- 2 -> 1]
-after breaking and reversing the link start your comparison according to the 
+# Solution --> we want to keep looping using fast & slow pointer and  [5-> 4 -> 2 -> 1] == [5 <- 4 <- 2 -> 1]
+# after breaking and reversing the link start your comparison according to the 
+
+class Solution:
+    def pairSum(self, head: Optional[ListNode]) -> int:
+        slow, fast = head, head
+        prev = None
+        while fast and fast.next:
+            fast = fast.next.next
+            tmp = slow.next
+            slow.next = prev
+            prev = slow
+            slow = tmp
+
+        res = 0
+        while slow:
+            res = max(res, prev.val + slow.val)
+            prev = prev.next
+            slow = slow.next
+        return res
