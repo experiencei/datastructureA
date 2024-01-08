@@ -288,11 +288,14 @@ class Solution:
 
 # Given the head of a linked list with even length, return the maximum twin sum of the linked list.
 
-Example 1:
+# Example 1:
 
-Input: head = [5,4,2,1]
-Output: 6
-Explanation:
-Nodes 0 and 1 are the twins of nodes 3 and 2, respectively. All have twin sum = 6.
-There are no other nodes with twins in the linked list.
-Thus, the maximum twin sum of the linked list is 6. 
+# Input: head = [5,4,2,1]
+# Output: 6
+# Explanation:
+# Nodes 0 and 1 are the twins of nodes 3 and 2, respectively. All have twin sum = 6.
+# There are no other nodes with twins in the linked list.
+# Thus, the maximum twin sum of the linked list is 6. 
+
+Solution --> we want to keep looping using fast & slow pointer and  [5-> 4 -> 2 -> 1] == [5 <- 4 <- 2 -> 1]
+after breaking and reversing the link start your comparison according to the 
