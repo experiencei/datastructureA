@@ -313,7 +313,9 @@ class Solution:
 
         res = 0
         while slow:
+            # check the max
             res = max(res, prev.val + slow.val)
+            update the pointer
             prev = prev.next
             slow = slow.next
         return res
