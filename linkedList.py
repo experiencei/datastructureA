@@ -322,4 +322,4 @@ class Solution:
             slow = slow.next
         return res
 
-remove-nth-node-from-end-of-list
+# remove-nth-node-from-end-of-list
