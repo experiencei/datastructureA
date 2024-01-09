@@ -321,3 +321,5 @@ class Solution:
             prev = prev.next
             slow = slow.next
         return res
+
+remove-nth-node-from-end-of-list
