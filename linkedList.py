@@ -328,12 +328,14 @@ class Solution:
 #  remove the nth node from the end of the list and return its head.
 
 
-Example 1:
+# Example 1:
 
 
-Input: head = [1,2,3,4,5], n = 2
-Output: [1,2,3,5]
+# Input: head = [1,2,3,4,5], n = 2
+# Output: [1,2,3,5]
 
 # Solution --> to remove the n node from the end we will be using to pointer L(left) & R(right)
 # with the interval of n in between ... so by the time Right is at null Left pointer will
 # be exactly at preceeding Left of it (because left will be starting at dummy node)
+
+
