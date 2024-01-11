@@ -352,6 +352,7 @@ class Solution:
             right = right.next
             n -= 1
 
+        # while there's right keep increementing both pointers
         while right:
             left = left.next
             right = right.next
