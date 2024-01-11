@@ -344,6 +344,7 @@ class Solution:
         dummy = ListNode(0, head)
         # left pointer starting at dummy node
         left = dummy
+        # right pointer starting at head 
         right = head
 
         while n > 0:
