@@ -372,7 +372,11 @@ class Solution:
 # Example 1:
 
 # Input: head = [1,2,3,4,5], k = 2
-# Output: [1,4,3,2,5]
+           |   ||    
+# Output: [1,   4,3,2,5]
+
+Solution --> we want to maintain interval between right and left pointer and make clone of the right pointer 
+when the clone right pointer hit the ends of the list the left pointer will be exactly at the interval of k from end needed
 
 class Solution:
     def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
