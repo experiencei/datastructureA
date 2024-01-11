@@ -347,6 +347,7 @@ class Solution:
         # right pointer starting at head 
         right = head
 
+        # as long as n > 0 (to keep right pointer at the interval of n)
         while n > 0:
             right = right.next
             n -= 1
