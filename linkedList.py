@@ -338,4 +338,22 @@ class Solution:
 # with the interval of n in between ... so by the time Right is at null Left pointer will
 # be exactly at preceeding Left of it (because left will be starting at dummy node)
 
+class Solution:
+    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+        # dummy node to avoid edge case
+        dummy = ListNode(0, head)
+        # left pointer starting at dummy node
+        left = dummy
+        right = head
 
+        while n > 0:
+            right = right.next
+            n -= 1
+
+        while right:
+            left = left.next
+            right = right.next
+
+        # delete
+        left.next = left.next.next
+        return dummy.next
