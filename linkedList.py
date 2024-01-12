@@ -426,13 +426,14 @@ class Solution:
         oldToCopy = {None: None}
 
         cur = head
-        first loop to make copy of the node
+        # first loop to make copy of the node
         while cur:
             copy = Node(cur.val)
             oldToCopy[cur] = copy
             cur = cur.next
         cur = head
-        second 
+        
+        # second loop to assign the pointer to each pointer
         while cur:
             copy = oldToCopy[cur]
             copy.next = oldToCopy[cur.next]
