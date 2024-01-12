@@ -422,14 +422,17 @@ class Solution:
 
 class Solution:
     def copyRandomList(self, head: "Node") -> "Node":
+        # assign None should incase the loop reach pointer
         oldToCopy = {None: None}
 
         cur = head
+        first loop to make copy of the node
         while cur:
             copy = Node(cur.val)
             oldToCopy[cur] = copy
             cur = cur.next
         cur = head
+        second 
         while cur:
             copy = oldToCopy[cur]
             copy.next = oldToCopy[cur.next]
