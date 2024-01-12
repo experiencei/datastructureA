@@ -415,7 +415,7 @@ class Solution:
 # Your code will only be given the head of the original linked list.
 
 
-Example 1:
+# Example 1:
 
-Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
-Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+# Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+# Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
