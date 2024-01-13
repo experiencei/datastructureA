@@ -432,7 +432,7 @@ class Solution:
             oldToCopy[cur] = copy
             cur = cur.next
         cur = head
-        
+
         # second loop to assign the pointer to each pointer
         while cur:
             copy = oldToCopy[cur]
@@ -440,3 +440,7 @@ class Solution:
             copy.random = oldToCopy[cur.random]
             cur = cur.next
         return oldToCopy[head]
+
+Design Linked List
+
+Question --->
