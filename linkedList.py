@@ -535,3 +535,6 @@ class MyLinkedList:
         if node and node != self.right and index == 0:
             node.prev.next = node.next
             node.next.prev = node.prev
+
+
+# Design Browser History
